@@ -334,6 +334,11 @@ shadow.addEventListener("click", () => {
   document.querySelectorAll('.filter__price3.filter__choice')[0].classList.remove('active')
   document.querySelector('.filter__apps2.filter__choice.mobile').classList.remove('active')
   document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active');
+
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, scrollY)
   
 });
 
@@ -352,6 +357,11 @@ filterApps.addEventListener("click", () => {
   shadow.classList.toggle("active");
   filterAppsList.classList.toggle("active");
   filterAppsListM.classList.add("active");
+
+  scrollY = window.scrollY;
+  document.body.style.top = `-${window.scrollY}px`;
+  document.body.style.position = 'fixed';
+  document.body.style.width = '100%';
   
 });
 
@@ -360,6 +370,11 @@ filterBed.addEventListener("click", () => {
   filterPriceList.classList.remove("active");
   shadow.classList.toggle("active");
   filterBedList.classList.toggle("active");
+
+  scrollY = window.scrollY;
+  document.body.style.top = `-${window.scrollY}px`;
+  document.body.style.position = 'fixed';
+  document.body.style.width = '100%';
 });
 
 filterPrice.addEventListener("click", () => {
@@ -370,10 +385,15 @@ filterPrice.addEventListener("click", () => {
   
 
   filterPriceList.classList.toggle("active");
+
+  scrollY = window.scrollY;
+  document.body.style.top = `-${window.scrollY}px`;
+  document.body.style.position = 'fixed';
+  document.body.style.width = '100%';
 });
 filterVal.addEventListener("click", () => {
   filterValList.classList.toggle("active");
-  console.log(421)
+
   if (window.matchMedia("(max-width: 830px)").matches) {
     filterValListM.classList.toggle("active");
   }
@@ -383,6 +403,10 @@ filterValM.addEventListener("click", () => {
   filterValListM.classList.toggle("active");
   shadow.classList.add("active");
 
+  scrollY = window.scrollY;
+  document.body.style.top = `-${window.scrollY}px`;
+  document.body.style.position = 'fixed';
+  document.body.style.width = '100%';
 });
 for(let i = 0; i < filterSearch.length; i++){
 
@@ -392,7 +416,7 @@ for(let i = 0; i < filterSearch.length; i++){
     document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.add('active');
     document.querySelector('.filter__list-box').classList.add('unactive')
     document.querySelector('.filter__list-box2').classList.remove('unactive')
-    // filterSearchList.classList.add("active");
+    filterSearchList.classList.add("active");
     // document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active')
     if (!shadow.classList.contains("active")) {
       shadow.classList.add("active");
@@ -476,15 +500,30 @@ document.querySelector(".filter__price3 svg").addEventListener("click", () => {
   filterValListM.classList.remove("active");
   shadow.classList.remove("active");
   
+  
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, scrollY)
 });
 document.querySelector(".filter__apps2 svg").addEventListener("click", () => {
   filterAppsListM.classList.remove("active");
   shadow.classList.remove("active");
+
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, scrollY)
   
 });
 document.querySelector(".filter__apps-btn2").addEventListener("click", () => {
   filterAppsListM.classList.remove("active");
   shadow.classList.remove("active");
+
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, scrollY)
 
 });
 
@@ -492,6 +531,12 @@ document.querySelectorAll(".filter__apps-btn2")[1].addEventListener("click", () 
   document.querySelector('body').classList.remove('active');
   document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active');
   shadow.classList.remove('active')
+
+  
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, scrollY)
 })  
 
 
@@ -679,12 +724,23 @@ const openPriceIpad = document.querySelectorAll('.filter__price2-item.l')[1];
 openPriceIpad.addEventListener('click', ()=>{
   document.querySelectorAll('.filter__price3.filter__choice')[0].classList.add('active')
   shadow.classList.add('active')
+
+  scrollY = window.scrollY;
+  document.body.style.top = `-${window.scrollY}px`;
+  document.body.style.position = 'fixed';
+  document.body.style.width = '100%';
 })
 
 document.querySelector('.filter__list-close').addEventListener('click', ()=>{
   document.querySelector('body').classList.remove('active');
   document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active');
   shadow.classList.remove('active')
+
+  
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, scrollY)
 })
 
 document.querySelectorAll('.filter__search-list.filter__choice .filter__apps-item2.l button')[0].addEventListener('click', ()=>{
