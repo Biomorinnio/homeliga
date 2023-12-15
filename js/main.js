@@ -258,9 +258,10 @@ for(let i of burgerOpen){
 
   i.addEventListener("click", () => {
     burgerMenu.classList.add("active");
-    if (window.matchMedia("(min-width: 768px)").matches) {
+    
       shadow.classList.add('active')
-    }
+    
+    document.querySelector('.shadow').style.background = 'unset';
    
     scrollY = window.scrollY;
     document.body.style.top = `-${window.scrollY}px`;
@@ -275,11 +276,14 @@ for(let i of burgerOpen){
 }
 burgerClose.addEventListener("click", () => {
   burgerMenu.classList.remove("active");
-
+  document.querySelector('.shadow').classList.remove('active')
   document.body.style.position = '';
   document.body.style.top = '';
   document.body.style.width = '';
-  window.scrollTo(0, scrollY)
+  window.scrollTo(0, scrollY);
+  if (window.matchMedia("(max-width: 1180px)").matches) {
+    document.querySelector('.shadow').style.background = 'rgba(34,33,30,.7)';
+  }
   
   if (window.matchMedia("(max-width: 814px)").matches) {
     document.querySelector('.widget').style.opacity = '1'
@@ -316,7 +320,7 @@ const filterSearchList = document.querySelector(".filter__search-list");
 for (let i = 0; i < switchLang.length; i++) {
   switchLang[i].addEventListener("click", () => {
     switchList[i].classList.toggle("active");
-    shadow.classList.toggle("active");
+   
   });
 }
 
@@ -339,6 +343,10 @@ shadow.addEventListener("click", () => {
   document.body.style.top = '';
   document.body.style.width = '';
   window.scrollTo(0, scrollY)
+
+  if (window.matchMedia("(max-width: 1180px)").matches) {
+    document.querySelector('.shadow').style.background = 'rgba(34,33,30,.7)';
+  }
   
 });
 

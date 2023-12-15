@@ -754,7 +754,7 @@ ul.filter__price li {
   padding: 20px 44px;
   color: var(--White, #fff);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   border-radius: 8px;
 }
 .filter__search-btn:hover {
@@ -826,7 +826,7 @@ ul.filter__price li {
   color: var(--Dark, #2e2f36);
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-transition: 0.3s all ease;
   -moz-transition: 0.3s all ease;
   -ms-transition: 0.3s all ease;
@@ -972,6 +972,7 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
   display: none;
   height: 100%;
   width: 100%;
+  
 }
 .shadow.active {
   z-index: 3;
@@ -1051,7 +1052,7 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
 .services__item-subtitle {
   color: #525252;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 21.7px;
   word-wrap: break-word;
 }
@@ -1060,7 +1061,7 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
   color: #b4a06b;
   font-size: 14px;
 
-  font-weight: 500;
+  font-weight: 600;
   line-height: 21px;
 }
 
@@ -1370,7 +1371,7 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
 
   font-size: 12px;
 
-  font-weight: 300;
+  font-weight: 400;
   line-height: 160%; /* 19.2px */
 }
 
@@ -1638,7 +1639,7 @@ h5.swiper__title {
 .swiper__profile-title {
   font-size: 16px;
   max-width: 145px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 130%; /* 20.8px */
 }
 
@@ -1683,7 +1684,7 @@ h5.swiper__title {
   margin: 25px 0px 30px;
   font-size: 16px;
 
-  font-weight: 300;
+  font-weight: 400;
   line-height: 155%; /* 24.8px */
 }
 
@@ -1749,7 +1750,7 @@ h5.swiper__title {
   -ms-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
-  font-weight: 400;
+  font-weight: 500 !important;
 }
 .catalog__form-btn:hover {
   background: #cbbd98;
@@ -3233,6 +3234,12 @@ h5.swiper__title {
 }
 
 @media (max-width: 1180px) {
+  .shadow{
+    background:rgba(34,33,30,.7);
+  }
+  .shadow.active{
+    z-index: 99;
+  }
   .imageContain {
     background-image: unset !important;
     display: flex;
@@ -3681,7 +3688,7 @@ h5.swiper__title {
     width: 100%;
     color: var(--Dark, #2e2f36);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
   }
   .swiper__card-item.one {
     min-width: 61px;
@@ -3718,7 +3725,7 @@ h5.swiper__title {
 
     font-size: 12px;
 
-    font-weight: 300;
+    font-weight: 400;
     line-height: 160%; /* 19.2px */
   }
   .swiper__title {
@@ -3839,7 +3846,7 @@ h5.swiper__title {
     max-width: 259px;
     font-size: 16px;
 
-    font-weight: 300;
+    font-weight: 400;
     line-height: 155%; /* 24.8px */
   }
   .catalog__form {
@@ -4135,7 +4142,7 @@ h5.swiper__title {
     background: var(--Grey-BG, #f3f3f3);
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
   }
   .filter__apps-btn2 {
@@ -4145,7 +4152,7 @@ h5.swiper__title {
 
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     width: 100%;
   }
@@ -4586,7 +4593,7 @@ h5.swiper__title {
 
   .filter__search-list.filter__choice{
     top: 0px;
- 
+    border-radius: 0px;
     max-height: 100vh;
     overflow-x: unset;
     overflow-y: unset;
@@ -5109,7 +5116,7 @@ background: var(--White, #FFF);;
     padding: 14px 0px;
     color: var(--Dark, #2e2f36);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
   }
   .swiper__card-item.one {
     min-width: 61px;
@@ -5146,7 +5153,7 @@ background: var(--White, #FFF);;
 
     font-size: 12px;
 
-    font-weight: 300;
+    font-weight: 400;
     line-height: 160%; /* 19.2px */
   }
   .swiper__title {
@@ -5267,7 +5274,7 @@ background: var(--White, #FFF);;
     max-width: 259px;
     font-size: 16px;
 
-    font-weight: 300;
+    font-weight: 400;
     line-height: 155%; /* 24.8px */
   }
   .catalog__form {
@@ -5520,7 +5527,7 @@ background: var(--White, #FFF);;
     background: var(--Grey-BG, #f3f3f3);
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
   }
   .filter__apps-btn2 {
@@ -5530,7 +5537,7 @@ background: var(--White, #FFF);;
 
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: normal;
     width: 100%;
   }
