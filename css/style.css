@@ -4595,7 +4595,7 @@ h5.swiper__title {
   .filter__search-list.filter__choice{
     top: 0px;
     border-radius: 0px;
-    min-height: 100vh;
+    min-height: 100svh;
     overflow-x: unset;
     overflow-y: unset;
    
@@ -4607,7 +4607,7 @@ h5.swiper__title {
 
     position: relative;
     overflow: scroll;
-    height: 100vh;
+    height: 100svh;
     z-index: 999;
     padding-bottom: 120px;
     background-color: white;
@@ -4624,7 +4624,7 @@ h5.swiper__title {
   }
   .filter__list-box{
     overflow: scroll;
-    height: 100vh;
+    height: 100svh;
     z-index: 999;
     padding-bottom: 120px;
     background-color: white;
