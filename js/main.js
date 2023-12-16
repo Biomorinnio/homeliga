@@ -701,7 +701,7 @@ document.querySelector('.widget__close').addEventListener('click', ()=>{
 if (window.matchMedia("(max-width: 1180px)").matches) {
   document.querySelector('.filter__search-box').addEventListener('click', ()=>{
     document.querySelector('.filter__search-list.filter__choice.mobile').classList.add('active');
-    shadow.classList.add('active')
+  
     
     document.querySelector('body').classList.add('active')
   })

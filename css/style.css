@@ -4590,14 +4590,15 @@ h5.swiper__title {
   .about__descr-box {
     display: none;
   }
+ 
 
   .filter__search-list.filter__choice{
     top: 0px;
     border-radius: 0px;
-    max-height: 100vh;
+    min-height: 100vh;
     overflow-x: unset;
     overflow-y: unset;
-    
+   
   }
   .filter__list-box.unactive, .filter__list-box2.unactive{
     display: none;
@@ -4606,10 +4607,10 @@ h5.swiper__title {
 
     position: relative;
     overflow: scroll;
-    max-height: 100vh;
+    height: 100vh;
     z-index: 999;
+    padding-bottom: 120px;
     background-color: white;
-    padding-bottom: 95px;
   }
   .filter__search-list .filter__search-list.filter__choice{
     position: relative;
@@ -4623,11 +4624,11 @@ h5.swiper__title {
   }
   .filter__list-box{
     overflow: scroll;
-    max-height: 100vh;
+    height: 100vh;
     z-index: 999;
-
+    padding-bottom: 120px;
     background-color: white;
-    padding-bottom: 104px;
+    
   }
   .filter__list-box::-webkit-scrollbar, .filter__list-box2::-webkit-scrollbar {
     border-radius: 30px;
