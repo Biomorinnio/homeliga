@@ -651,6 +651,7 @@ hr {
   padding: 10px 20px 34px;
   border-radius: 8px 8px 0px 0px;
   margin-bottom: -25px;
+  backdrop-filter: blur(10px);
 
   background: rgba(34, 33, 30, 0.7);
 }
@@ -662,6 +663,7 @@ hr {
   display: flex;
   align-items: center;
   gap: 20px;
+  z-index: 5;
 }
 
 .filter__uls {
