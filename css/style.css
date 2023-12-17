@@ -641,7 +641,9 @@ hr {
 }
 
 .filter__btns {
+  /* overflow: hidden; */
   display: flex;
+ 
 }
 
 .filter__btn {
@@ -663,7 +665,7 @@ hr {
   display: flex;
   align-items: center;
   gap: 20px;
-  z-index: 5;
+  z-index: 2;
 }
 
 .filter__uls {
@@ -3236,6 +3238,9 @@ h5.swiper__title {
 }
 
 @media (max-width: 1180px) {
+  .filter__settings{
+    z-index: unset;
+  }
   .shadow{
     background:rgba(34,33,30,.7);
   }
