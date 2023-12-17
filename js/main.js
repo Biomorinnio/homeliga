@@ -338,6 +338,7 @@ shadow.addEventListener("click", () => {
   document.querySelectorAll('.filter__price3.filter__choice')[0].classList.remove('active')
   document.querySelector('.filter__apps2.filter__choice.mobile').classList.remove('active')
   document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active');
+  document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.remove('active');
 
   document.body.style.position = '';
   document.body.style.top = '';
@@ -365,11 +366,11 @@ filterApps.addEventListener("click", () => {
   shadow.classList.toggle("active");
   filterAppsList.classList.toggle("active");
   filterAppsListM.classList.add("active");
-
-  scrollY = window.scrollY;
-  document.body.style.top = `-${window.scrollY}px`;
-  document.body.style.position = 'fixed';
-  document.body.style.width = '100%';
+  document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.remove('active');
+  // scrollY = window.scrollY;
+  // document.body.style.top = `-${window.scrollY}px`;
+  // document.body.style.position = 'fixed';
+  // document.body.style.width = '100%';
   
 });
 
@@ -378,11 +379,11 @@ filterBed.addEventListener("click", () => {
   filterPriceList.classList.remove("active");
   shadow.classList.toggle("active");
   filterBedList.classList.toggle("active");
-
-  scrollY = window.scrollY;
-  document.body.style.top = `-${window.scrollY}px`;
-  document.body.style.position = 'fixed';
-  document.body.style.width = '100%';
+  document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.remove('active');
+  // scrollY = window.scrollY;
+  // document.body.style.top = `-${window.scrollY}px`;
+  // document.body.style.position = 'fixed';
+  // document.body.style.width = '100%';
 });
 
 filterPrice.addEventListener("click", () => {
@@ -390,14 +391,14 @@ filterPrice.addEventListener("click", () => {
   filterBedList.classList.remove("active");
   filterValList.classList.remove("active");
   shadow.classList.toggle("active");
-  
+  document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.remove('active');
 
   filterPriceList.classList.toggle("active");
 
-  scrollY = window.scrollY;
-  document.body.style.top = `-${window.scrollY}px`;
-  document.body.style.position = 'fixed';
-  document.body.style.width = '100%';
+  // scrollY = window.scrollY;
+  // document.body.style.top = `-${window.scrollY}px`;
+  // document.body.style.position = 'fixed';
+  // document.body.style.width = '100%';
 });
 filterVal.addEventListener("click", () => {
   filterValList.classList.toggle("active");
@@ -419,16 +420,30 @@ filterValM.addEventListener("click", () => {
 for(let i = 0; i < filterSearch.length; i++){
 
   filterSearch[i].addEventListener("input", () => {
+    
     if(i==0) filterSearch[i+1].value = filterSearch[i].value;
     else filterSearch[i-1].value = filterSearch[i].value;
-    document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.add('active');
-    document.querySelector('.filter__list-box').classList.add('unactive')
-    document.querySelector('.filter__list-box2').classList.remove('unactive')
-    filterSearchList.classList.add("active");
-    // document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active')
-    if (!shadow.classList.contains("active")) {
-      shadow.classList.add("active");
+    if (window.matchMedia("(min-width: 1181px)").matches) {
+     
+      document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.add('active');
+      if (!shadow.classList.contains("active")) {
+        shadow.classList.add("active");
+      }
+      filterSearchList.classList.add("active");
     }
+    if (window.matchMedia("(max-width: 1180px)").matches) {
+     
+      document.querySelector('.filter__search-list.filter__choice.mobile .filter__list-box').classList.add('unactive')
+      document.querySelector('.filter__search-list.filter__choice.mobile .filter__list-box2').classList.remove('unactive')
+      console.log(  document.querySelector('.filter__search-list.filter__choice.mobile .filter__list-box2'))
+    }
+
+   
+    filterAppsList.classList.remove("active");
+    filterPriceList.classList.remove("active");
+    filterBedList.classList.remove("active");
+    // document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active')
+   
   });
 }
 
@@ -703,9 +718,9 @@ if (window.matchMedia("(max-width: 1180px)").matches) {
     document.querySelector('.filter__search-list.filter__choice.mobile').classList.add('active');
     
     scrollY = window.scrollY;
-  document.body.style.top = `-${window.scrollY}px`;
-  document.body.style.position = 'fixed';
-  document.body.style.width = '100%';
+    document.body.style.top = `-${window.scrollY}px`;
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
     
     document.querySelector('body').classList.add('active')
   })

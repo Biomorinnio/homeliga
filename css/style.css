@@ -970,6 +970,10 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
   background: var(--Grey-BG, #f3f3f3);
 }
 
+.filter__search-list.filter__choice .filter__list-box2 .filter__search-list{
+  top: 0px;
+}
+
 .shadow {
   z-index: -100;
   position: absolute;
@@ -979,7 +983,7 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
   
 }
 .shadow.active {
-  z-index: 3;
+  z-index: 1;
   display: block;
 }
 .header__switch-item2 {
@@ -3238,6 +3242,9 @@ h5.swiper__title {
 }
 
 @media (max-width: 1180px) {
+  /* .filter__search-list.filter__choice .filter__list-box2 .filter__search-list{
+    top: 70px;
+  } */
   .filter__settings{
     z-index: unset;
   }
