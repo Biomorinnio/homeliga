@@ -4700,7 +4700,9 @@ background: var(--White, #FFF);;
 }
 
 @media (max-width: 768px) {
- 
+  .swiper__card:hover .swiper__front img{
+    transform: unset;
+  }
 /* body.active {
     height: 100vh;
     overflow: hidden;
