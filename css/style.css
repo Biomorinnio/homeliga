@@ -6081,7 +6081,7 @@ background: var(--White, #FFF);;
     height: 200px;
   }
   .imageContain {
-    margin: 35vh 10%;
+    margin: 35vh auto;
   }
 
   .swiper-pagination7.mobile {

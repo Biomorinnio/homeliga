@@ -367,10 +367,14 @@ filterApps.addEventListener("click", () => {
   filterAppsList.classList.toggle("active");
   filterAppsListM.classList.add("active");
   document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.remove('active');
-  // scrollY = window.scrollY;
-  // document.body.style.top = `-${window.scrollY}px`;
-  // document.body.style.position = 'fixed';
-  // document.body.style.width = '100%';
+
+  if (window.matchMedia("(max-width: 1180px)").matches) {
+  
+    scrollY = window.scrollY;
+    document.body.style.top = `-${window.scrollY}px`;
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
+  }
   
 });
 
@@ -610,6 +614,13 @@ function imagePop(id) {
     document.getElementsByClassName("imageContain")[0].style.backgroundImage =
       imageUrls[imageIndex];
   }
+
+
+    scrollY = window.scrollY;
+    document.body.style.top = `-${window.scrollY}px`;
+    document.body.style.position = 'fixed';
+    document.body.style.width = '100%';
+  
 }
 
 function imageChange(id) {
@@ -658,6 +669,13 @@ function imageMoveRight() {
 function imagePopNone() {
   document.getElementsByClassName("imagePop")[0].style.display = "none";
   // document.querySelector("body").classList.remove('overflow')
+
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, scrollY);
+
+
 }
 
 window.addEventListener('scroll', function() {
