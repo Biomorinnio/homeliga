@@ -6204,3 +6204,10 @@ body.overflow {
     opacity: 1 !important;
   }
 }
+
+@media(max-width:390px){
+  .services__item{
+    min-width: unset;
+    min-height: 301px;
+  }
+}
