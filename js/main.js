@@ -599,8 +599,8 @@ function imagePop(id) {
   imageIndex = imageUrls.indexOf(imageName);
  
 
-  document.getElementsByClassName("imageContain")[0].style.animation =
-    "he 800ms forwards";
+  // document.getElementsByClassName("imageContain")[0].style.animation =
+  //   "he 800ms forwards";
   if(imageIndex == -1){
     document.getElementsByClassName("imageContain")[0].style.backgroundImage =
     imageUrls[0];
