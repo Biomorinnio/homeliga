@@ -1,5 +1,3 @@
-
-
 var swiper = new Swiper(".mySwiper1.mobile", {
   loop: true,
   slidesPerView: 1,
@@ -67,16 +65,7 @@ swiperFirst.on('slideChange', function () {
  
   
 });
-// if (window.matchMedia("(min-width: 1220px)").matches) {
-  
-//   setTimeout(()=>{
-  
-//     swiperFirst.slides[swiperFirst.activeIndex].classList.add('visible')
-//     swiperFirst.slides[swiperFirst.activeIndex+1].classList.add('visible')
-//     swiperFirst.slides[swiperFirst.activeIndex+2].classList.add('visible')
-  
-//   }, 1000)
-// }
+
 
 var swiper2 = new Swiper(".mySwiper2.mobile", {
   loop: true,
@@ -143,17 +132,6 @@ swiperSecond.on('slideChange', function () {
  
   
 });
-// if (window.matchMedia("(min-width: 1220px)").matches) {
-
-//   setTimeout(()=>{
-  
-//     swiperSecond.slides[swiperSecond.activeIndex].classList.add('visible')
-//     swiperSecond.slides[swiperSecond.activeIndex+1].classList.add('visible')
-//     swiperSecond.slides[swiperSecond.activeIndex+2].classList.add('visible')
-  
-//   }, 1000)
-// }
-
 
 
 
@@ -170,7 +148,7 @@ var swiper3 = new Swiper(".mySwiper3", {
     clickable: true,
   },
   breakpoints: {
-    // when window width is >= 320px
+    
     1180: {
       slidesPerView: 3,
       spaceBetween: 30,
@@ -248,11 +226,27 @@ var swiper7 = new Swiper(".mySwiper7", {
   },
 });
 
+let scrollY;
+function openedPopup(){
+  scrollY = window.scrollY;
+  document.body.style.top = `-${window.scrollY}px`;
+  document.body.style.position = 'fixed';
+  document.body.style.width = '100%';
+}
+
+function closedPopup(){
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, scrollY);
+}
+
+
 const burgerOpen = document.querySelectorAll(".header__burger");
 const burgerClose = document.querySelector(".burger__menu-close");
 const burgerMenu = document.querySelector(".burger__menu");
 
-let scrollY;
+
 
 for(let i of burgerOpen){
 
@@ -263,10 +257,7 @@ for(let i of burgerOpen){
     
     document.querySelector('.shadow').style.background = 'unset';
    
-    scrollY = window.scrollY;
-    document.body.style.top = `-${window.scrollY}px`;
-    document.body.style.position = 'fixed';
-    document.body.style.width = '100%';
+    openedPopup();
     if (window.matchMedia("(max-width: 814px)").matches) {
       document.querySelector('.widget').style.opacity = '0';
 
@@ -277,10 +268,7 @@ for(let i of burgerOpen){
 burgerClose.addEventListener("click", () => {
   burgerMenu.classList.remove("active");
   document.querySelector('.shadow').classList.remove('active')
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
-  window.scrollTo(0, scrollY);
+  closedPopup();
   if (window.matchMedia("(max-width: 1180px)").matches) {
     document.querySelector('.shadow').style.background = 'rgba(34,33,30,.7)';
   }
@@ -340,10 +328,7 @@ shadow.addEventListener("click", () => {
   document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active');
   document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.remove('active');
 
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
-  window.scrollTo(0, scrollY)
+  closedPopup();
 
   if (window.matchMedia("(max-width: 1180px)").matches) {
     document.querySelector('.shadow').style.background = 'rgba(34,33,30,.7)';
@@ -370,10 +355,7 @@ filterApps.addEventListener("click", () => {
 
   if (window.matchMedia("(max-width: 1180px)").matches) {
   
-    scrollY = window.scrollY;
-    document.body.style.top = `-${window.scrollY}px`;
-    document.body.style.position = 'fixed';
-    document.body.style.width = '100%';
+    openedPopup();
   }
   
 });
@@ -384,10 +366,7 @@ filterBed.addEventListener("click", () => {
   shadow.classList.toggle("active");
   filterBedList.classList.toggle("active");
   document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.remove('active');
-  // scrollY = window.scrollY;
-  // document.body.style.top = `-${window.scrollY}px`;
-  // document.body.style.position = 'fixed';
-  // document.body.style.width = '100%';
+
 });
 
 filterPrice.addEventListener("click", () => {
@@ -399,10 +378,6 @@ filterPrice.addEventListener("click", () => {
 
   filterPriceList.classList.toggle("active");
 
-  // scrollY = window.scrollY;
-  // document.body.style.top = `-${window.scrollY}px`;
-  // document.body.style.position = 'fixed';
-  // document.body.style.width = '100%';
 });
 filterVal.addEventListener("click", () => {
   filterValList.classList.toggle("active");
@@ -416,10 +391,7 @@ filterValM.addEventListener("click", () => {
   filterValListM.classList.toggle("active");
   shadow.classList.add("active");
 
-  scrollY = window.scrollY;
-  document.body.style.top = `-${window.scrollY}px`;
-  document.body.style.position = 'fixed';
-  document.body.style.width = '100%';
+  openedPopup();
 });
 for(let i = 0; i < filterSearch.length; i++){
 
@@ -446,7 +418,7 @@ for(let i = 0; i < filterSearch.length; i++){
     filterAppsList.classList.remove("active");
     filterPriceList.classList.remove("active");
     filterBedList.classList.remove("active");
-    // document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active')
+   
    
   });
 }
@@ -489,31 +461,7 @@ for (let i = 0; i < swiperLikes.length; i++) {
 
 
 
-// for (let i = 0; i < phoneMask.length; i++)
-//   phoneMask[i].addEventListener("input", (e) => {
-//     if (phoneMask[i].value.length == 1) {
-//       phoneMask[i].value = "+7" + e.target.value;
-//     } else {
-//       if (
-//         phoneMask[i].value
-//           .split("+")
-//           .join("")
-//           .split("(")
-//           .join("")
-//           .split(")")
-//           .join("")
-//           .split(" ")
-//           .join("")
-//           .split("-")
-//           .join("").length <= 11
-//       ) {
-//         phoneMask[i].value = e.target.value;
-//         number = e.target.value;
-//       } else {
-//         phoneMask[i].value = number;
-//       }
-//     }
-//   });
+
 
 const bedMobile = document.querySelectorAll(".filter__bed1-item");
 
@@ -528,29 +476,20 @@ document.querySelector(".filter__price3 svg").addEventListener("click", () => {
   shadow.classList.remove("active");
   
   
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
-  window.scrollTo(0, scrollY)
+  closedPopup();
 });
 document.querySelector(".filter__apps2 svg").addEventListener("click", () => {
   filterAppsListM.classList.remove("active");
   shadow.classList.remove("active");
 
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
-  window.scrollTo(0, scrollY)
+ closedPopup();
   
 });
 document.querySelector(".filter__apps-btn2").addEventListener("click", () => {
   filterAppsListM.classList.remove("active");
   shadow.classList.remove("active");
 
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
-  window.scrollTo(0, scrollY)
+ closedPopup();
 
 });
 
@@ -560,25 +499,12 @@ document.querySelectorAll(".filter__apps-btn2")[1].addEventListener("click", () 
   shadow.classList.remove('active')
 
   
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
-  window.scrollTo(0, scrollY)
+ closedPopup();
 })  
 
 
 
-// document.querySelector('.swiper-button-next5').addEventListener('click', ()=>{
-//   document.querySelector(".mySwiper5 .swiper-wrapper").style.marginLeft = `0px`;
-// })
 
-// if (!window.matchMedia("(max-width: 840px)").matches) {
-//   window.addEventListener("load", function () {
-//     document.querySelector(".mySwiper5 .swiper-wrapper").style.marginLeft = `${
-//       document.querySelector(".container").offsetLeft + 20
-//     }px`;
-//   });
-// }
 
 
 var imageUrls = [
@@ -594,7 +520,7 @@ var imageNumber = imageUrls.length;
 
 function imagePop(id) {
   document.getElementById("imagePopId").style.display = "block";
-  // document.querySelector("body").classList.add('overflow')
+ 
 
   var imageName = document.getElementById(id + "-image").style.backgroundImage;
   
@@ -603,8 +529,7 @@ function imagePop(id) {
   imageIndex = imageUrls.indexOf(imageName);
  
 
-  // document.getElementsByClassName("imageContain")[0].style.animation =
-  //   "he 800ms forwards";
+
   if(imageIndex == -1){
     document.getElementsByClassName("imageContain")[0].style.backgroundImage =
     imageUrls[0];
@@ -616,10 +541,7 @@ function imagePop(id) {
   }
 
 
-    scrollY = window.scrollY;
-    document.body.style.top = `-${window.scrollY}px`;
-    document.body.style.position = 'fixed';
-    document.body.style.width = '100%';
+    openedPopup();
   
 }
 
@@ -668,12 +590,8 @@ function imageMoveRight() {
 
 function imagePopNone() {
   document.getElementsByClassName("imagePop")[0].style.display = "none";
-  // document.querySelector("body").classList.remove('overflow')
 
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
-  window.scrollTo(0, scrollY);
+ closedPopup();;
 
 
 }
@@ -735,10 +653,7 @@ if (window.matchMedia("(max-width: 1180px)").matches) {
   document.querySelector('.filter__search-box').addEventListener('click', ()=>{
     document.querySelector('.filter__search-list.filter__choice.mobile').classList.add('active');
     
-    scrollY = window.scrollY;
-    document.body.style.top = `-${window.scrollY}px`;
-    document.body.style.position = 'fixed';
-    document.body.style.width = '100%';
+    openedPopup();
     
     document.querySelector('body').classList.add('active')
   })
@@ -782,10 +697,7 @@ document.querySelector('.filter__list-close').addEventListener('click', ()=>{
   shadow.classList.remove('active')
 
   
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
-  window.scrollTo(0, scrollY)
+ closedPopup();
 })
 
 document.querySelectorAll('.filter__search-list.filter__choice .filter__apps-item2.l button')[0].addEventListener('click', ()=>{
@@ -821,7 +733,7 @@ for (let j = 0; j < sumbitBtn.length; j++) {
 
 
     document.querySelector('.modal').classList.add('active')
-    // document.querySelector('body').classList.add('overflow')
+ 
   
 
 

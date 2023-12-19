@@ -1,0 +1,2148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <title>Homeliga</title>
+  </head>
+  <body>
+   
+    <header class="header other-pages">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__top-left">
+            <svg
+              class="header__burger"
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+            >
+              <rect
+                width="34"
+                height="34"
+                rx="5"
+                fill="white"
+                fill-opacity="0.1"
+              />
+              <rect x="8" y="11" width="18" height="2" rx="1" fill="white" />
+              <rect x="8" y="16" width="18" height="2" rx="1" fill="white" />
+              <rect x="8" y="21" width="18" height="2" rx="1" fill="white" />
+            </svg>
+            <span class="header__top-title">Меню</span>
+
+           
+          </div>
+          <a class="header__top-logo" href="/">
+            <img src="img/header__logo.svg" alt="" class="header__logo-img" />
+          </a>
+          <div class="header__top-right">
+            <ul class="header__top-switch mobile">
+              <li class="header__switch-item">
+                <img class="header__switch-icon" src="img/ru.svg" alt="" />
+
+                RU
+                <svg
+                  width="7"
+                  height="6"
+                  viewBox="0 0 7 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.5 6L0.468912 0.749999L6.53109 0.75L3.5 6Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+              <ul class="header__top-switch2">
+                <li class="header__switch-item2 active">
+                  <img src="img/ru.svg" alt="" />
+                  RU
+                </li>
+                <li class="header__switch-item2">
+                  <img src="img/eng.svg" alt="" />
+                  ENG
+                </li>
+              </ul>
+            </ul>
+            <a href="tel:+74991234545" class="header__phone">
+              <p class="header__phone-text">+7 (499) 123-45-45</p>
+              <svg
+                class="header__phone-icon"
+                width="12"
+                height="20"
+                viewBox="0 0 12 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_569_5170)">
+                  <path
+                    d="M9.14286 0.833252H2.85714C1.55679 0.833252 0.5 1.95409 0.5 3.33325V16.6666C0.5 18.0458 1.55679 19.1666 2.85714 19.1666H9.14286C10.4432 19.1666 11.5 18.0458 11.5 16.6666V3.33325C11.5 1.95409 10.4432 0.833252 9.14286 0.833252ZM7.57143 17.4999H4.42857V16.6666H7.57143V17.4999ZM10.125 14.9999H1.875V3.33325H10.125V14.9999Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_569_5170">
+                    <rect width="12" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+           
+          </div>
+        </div>
+      </div>
+      <div class="burger__menu mobile">
+        <svg
+          class="burger__menu-close"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_508_4194)">
+            <path
+              d="M23.75 8.0125L21.9875 6.25L15 13.2375L8.0125 6.25L6.25 8.0125L13.2375 15L6.25 21.9875L8.0125 23.75L15 16.7625L21.9875 23.75L23.75 21.9875L16.7625 15L23.75 8.0125Z"
+              fill="#858585"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_508_4194">
+              <rect width="30" height="30" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+
+        <img src="img/header__logo.svg" alt="" class="header__logo" />
+        <!-- <div class="burger__menu-box">
+          <ul class="header__top-switch">
+            <li class="header__switch-item">
+              RU
+              <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 6L0.468912 0.749999L6.53109 0.75L3.5 6Z" fill="#22211E"/>
+                </svg>                          
+              </li>
+              <ul class="header__top-switch2">
+                <li class="header__switch-item2 active">
+                  <img src="img/ru.svg" alt="">
+                  RU
+                </li>
+                <li class="header__switch-item2">
+                  <img src="img/eng.svg" alt="">
+                  ENG
+                </li>
+              </ul>
+          </ul>
+          <div class="header__location">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.3588 0.391396L0.240662 4.20624L0.240662 4.70828L3.70195 6.04825L5.04192 9.50954H5.54396L9.3588 0.391396Z" fill="#727272"/>
+              </svg>
+            <p class="header__location-text">
+              Дубай
+            </p>                
+          </div>
+        </div> -->
+        <nav class="header__top-nav">
+          <ul class="header__top-list">
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Избранное</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#services" class="header__top-link">Услуги</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Комплексы</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#catalog" class="header__top-link"
+                >Каталог недвижимости</a
+              >
+            </li>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Застройщики</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Районы</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#blog" class="header__top-link">Блог о Дубае</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#about" class="header__top-link">Об агентстве</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- <button class="header__btn">
+          Проконсультироваться
+        </button> -->
+
+        <div class="burger__bottom">
+          <div class="footer__soc">
+            <a href="#" class="footer__soc-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_294_1205)">
+                  <mask
+                    id="mask0_294_1205"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1205)">
+                    <path
+                      d="M35 17.5C35 7.83501 27.165 0 17.5 0C7.83501 0 0 7.83501 0 17.5C0 27.165 7.83501 35 17.5 35C27.165 35 35 27.165 35 17.5Z"
+                      fill="#B4A06B"
+                    />
+                    <path
+                      d="M25.3391 9.63331C23.4629 7.70197 20.8695 6.65356 18.2208 6.65356C12.5924 6.65356 8.06765 11.2335 8.12285 16.8067C8.12285 18.5725 8.61948 20.2831 9.44717 21.8281L8.01245 27.0702L13.365 25.6907C14.8549 26.5184 16.5103 26.9047 18.1656 26.9047C23.7388 26.9047 28.2636 22.3248 28.2636 16.7515C28.2636 14.0477 27.2152 11.5095 25.3391 9.63331ZM18.2208 25.1941C16.731 25.1941 15.2411 24.8078 13.972 24.0353L13.6408 23.8698L10.4404 24.6975L11.2681 21.5522L11.0474 21.2212C8.61948 17.3034 9.7782 12.1164 13.7513 9.6885C17.7242 7.26055 22.856 8.41931 25.2839 12.3923C27.7118 16.3653 26.5531 21.497 22.58 23.9249C21.3109 24.7527 19.7658 25.1941 18.2208 25.1941ZM23.0767 19.0691L22.4697 18.7932C22.4697 18.7932 21.5868 18.407 21.035 18.131C20.9799 18.131 20.9246 18.0759 20.8695 18.0759C20.7039 18.0759 20.5936 18.131 20.4832 18.1862C20.4832 18.1862 20.4281 18.2414 19.6556 19.1242C19.6003 19.2347 19.49 19.2898 19.3796 19.2898H19.3244C19.2692 19.2898 19.1589 19.2347 19.1036 19.1795L18.8278 19.0691C18.2208 18.7932 17.6691 18.4621 17.2276 18.0207C17.1172 17.9103 16.9517 17.7999 16.8413 17.6896C16.455 17.3034 16.0688 16.8619 15.7929 16.3653L15.7377 16.2549C15.6825 16.1998 15.6825 16.1445 15.6274 16.0342C15.6274 15.9238 15.6274 15.8135 15.6825 15.7583C15.6825 15.7583 15.9032 15.4824 16.0688 15.3169C16.1792 15.2064 16.2343 15.041 16.3448 14.9306C16.455 14.765 16.5103 14.5443 16.455 14.3788C16.3999 14.1028 15.7377 12.613 15.5721 12.282C15.4618 12.1164 15.3514 12.0612 15.1859 12.006H15.0203C14.91 12.006 14.7445 12.006 14.5789 12.006C14.4686 12.006 14.3582 12.0612 14.2478 12.0612L14.1927 12.1164C14.0822 12.1716 13.972 12.282 13.8615 12.3371C13.7513 12.4475 13.696 12.5578 13.5857 12.6682C13.1994 13.1648 12.9786 13.7719 12.9786 14.3788C12.9786 14.8202 13.0891 15.2617 13.2546 15.6479L13.3098 15.8135C13.8064 16.8619 14.4686 17.7999 15.3514 18.6277L15.5721 18.8484C15.7377 19.014 15.9032 19.1242 16.0136 19.2898C17.1724 20.2831 18.4967 21.0005 19.9865 21.3867C20.1521 21.4419 20.3728 21.4419 20.5384 21.497C20.7039 21.497 20.9246 21.497 21.0902 21.497C21.3661 21.497 21.6971 21.3867 21.9179 21.2763C22.0835 21.166 22.1938 21.166 22.3041 21.0556L22.4145 20.9452C22.5249 20.8349 22.6353 20.7797 22.7455 20.6693C22.856 20.559 22.9663 20.4486 23.0215 20.3383C23.1319 20.1176 23.1871 19.8416 23.2422 19.5657C23.2422 19.4554 23.2422 19.2898 23.2422 19.1795C23.2422 19.1795 23.1871 19.1242 23.0767 19.0691Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1205">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="footer__soc-link">
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_294_1212)">
+                  <mask
+                    id="mask0_294_1212"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1212)">
+                    <path
+                      d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 0C7.83562 0 0 7.83562 0 17.5C0 27.1644 7.83562 35 17.5 35C27.1644 35 35 27.1644 35 17.5C35 7.83562 27.1644 0 17.5 0ZM26.0954 11.989L23.2225 25.5223C23.011 26.4819 22.4394 26.7152 21.6416 26.2631L17.2666 23.0402L15.1579 25.0731C14.9537 25.3356 14.6373 25.5034 14.2829 25.5034C14.28 25.5034 14.2785 25.5034 14.2756 25.5034L14.5863 21.0496L22.6946 13.7259C23.0446 13.4152 22.6159 13.2387 22.1506 13.5494L12.1334 19.8581L7.81666 18.5106C6.88334 18.2146 6.85709 17.5773 8.01354 17.1194L24.8806 10.6181C25.6652 10.3323 26.3477 10.8048 26.094 11.9904L26.0954 11.989Z"
+                      fill="#B4A06B"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1212">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <a href="tel:+74991234545" class="header__phone"
+            >+7 (499) 123-45-45</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section class="developers" id="developers">
+        <div class="container developers__inner none">
+          <div class="developers__descr">
+            <h2 class="developers__title">Еще квартиры в этом ЖК</h2>
+            <button class="developers__descr-btn none">Смотреть все</button>
+      
+          </div>
+    
+          <div class="swiper mySwiper1 none"> 
+            
+                <div class="swiper-wrapper">
+                 
+      
+                    <div class="swiper-slide visible">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                            <li class="swiper__card-item one">Акция</li>
+                            <li class="swiper__card-item">Старт продаж</li>
+                          </ul>
+                          <div class="swiper__front">
+                            <img src="img/swiper-1.1.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__back none">
+                            <img src="img/swiper-1.2.png" alt="" iclass="swiper__img">
+                          </div>
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper__text-box">
+  
+                        <div class="swiper__box">
+                          <h4 class="swiper__title">
+                            Creek Waters
+                          </h4>
+                          <a href="#" class="swiper__link">Подробнее</a>
+                        </div>
+                        <h6 class="swiper__subtitle">
+                          ОАЭ, Дубай, Dubai Creek Harbour
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="swiper-slide visible">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                           
+                            <li class="swiper__card-item">Готово к заселению</li>
+                          </ul>
+                          <div class="swiper__front">
+                            <img src="img/swiper-2.1.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__back none">
+                            <img src="img/swiper-3.1.png" alt="" iclass="swiper__img">
+                          </div>
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper__text-box">
+  
+                        <div class="swiper__box">
+                          <h4 class="swiper__title">
+                            SLS Residences The Palm
+                          </h4>
+                          <a href="#" class="swiper__link">Подробнее</a>
+                        </div>
+                        <h6 class="swiper__subtitle">
+                          ОАЭ, Дубай, Dubai Creek Harbour
+                      </h6>
+                      </div>
+                    </div>
+                    <div class="swiper-slide visible">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                    
+                            <li class="swiper__card-item">Сдача в 2026</li>
+                          </ul>
+                          <div class="swiper__front">
+                            <img src="img/swiper-3.1.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__back none">
+                            <img src="img/swiper-2.1.png" alt="" iclass="swiper__img">
+                          </div>
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper__text-box">
+  
+                        <div class="swiper__box">
+                          <h4 class="swiper__title">
+                            Cavalli Tower
+                          </h4>
+                          <a href="#" class="swiper__link">Подробнее</a>
+                        </div>
+                        <h6 class="swiper__subtitle">
+                          ОАЭ, Дубай, Dubai Creek Harbour
+                      </h6>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                            <li class="swiper__card-item one">Акция</li>
+                            <li class="swiper__card-item">Старт продаж</li>
+                          </ul>
+                          <div class="swiper__front">
+                            <img src="img/swiper-1.1.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__back none">
+                            <img src="img/swiper-1.2.png" alt="" iclass="swiper__img">
+                          </div>
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper__text-box">
+  
+                        <div class="swiper__box">
+                          <h4 class="swiper__title">
+                            Creek Waters
+                          </h4>
+                          <a href="#" class="swiper__link">Подробнее</a>
+                        </div>
+                        <h6 class="swiper__subtitle">
+                          ОАЭ, Дубай, Dubai Creek Harbour
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="swiper-slide ">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                           
+                            <li class="swiper__card-item">Готово к заселению</li>
+                          </ul>
+                          <div class="swiper__front">
+                            <img src="img/swiper-2.1.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__back none">
+                            <img src="img/swiper-3.1.png" alt="" iclass="swiper__img">
+                          </div>
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper__text-box">
+  
+                        <div class="swiper__box">
+                          <h4 class="swiper__title">
+                            SLS Residences The Palm
+                          </h4>
+                          <a href="#" class="swiper__link">Подробнее</a>
+                        </div>
+                        <h6 class="swiper__subtitle">
+                          ОАЭ, Дубай, Dubai Creek Harbour
+                      </h6>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                    
+                            <li class="swiper__card-item">Сдача в 2026</li>
+                          </ul>
+                          <div class="swiper__front">
+                            <img src="img/swiper-3.1.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__back none">
+                            <img src="img/swiper-2.1.png" alt="" iclass="swiper__img">
+                          </div>
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper__text-box">
+  
+                        <div class="swiper__box">
+                          <h4 class="swiper__title">
+                            Cavalli Tower
+                          </h4>
+                          <a href="#" class="swiper__link">Подробнее</a>
+                        </div>
+                        <h6 class="swiper__subtitle">
+                          ОАЭ, Дубай, Dubai Creek Harbour
+                      </h6>
+                      </div>
+                    </div>
+                   
+                    
+                </div>     
+          </div>
+      
+          <svg class="swiper-button-prev none" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5 32.2501L25.75 33.9999L12.5 20.75L25.75 7.5L27.5 9.25003L16.0001 20.75L27.5 32.2501Z" fill="#2E2F36"/>
+            </svg>          
+          <svg class="swiper-button-next none" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 7.74994L14.25 6.00006L27.5 19.25L14.25 32.5L12.5 30.75L23.9999 19.25L12.5 7.74994Z" fill="#2E2F36"/>
+          </svg>
+          <div class="swiper-pagination mobile">
+           
+          </div>
+          <button class="developers__descr-btn mobile">Смотреть все</button>
+        </div>
+        <div class="container developers__inner mobile">
+          <div class="developers__descr">
+            <h2 class="developers__title">Подборка ЖК<br/> на старте продаж</h2>
+            <button class="developers__descr-btn ipad">Смотреть все</button>
+      
+          </div>
+        </div>
+     
+  
+          <div class="swiper mySwiper1 mobile"> 
+                <div class="swiper-wrapper">
+                 
+                  
+                  <div class="swiper-slide">
+                      <div class="swiper-slide__box">
+                        <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                            <li class="swiper__card-item one">Акция</li>
+                            <li class="swiper__card-item">Старт продаж</li>
+                          </ul>
+                          <div class="swiper__front">
+                            <img src="img/swiper-1.1.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__back none">
+                            <img src="img/swiper-1.2.png" alt="" iclass="swiper__img">
+                          </div>
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="swiper__text-box">
+  
+                        <div class="swiper__box">
+                          <h4 class="swiper__title">
+                            Creek Waters
+                          </h4>
+                          <a href="#" class="swiper__link">Подробнее</a>
+                        </div>
+                        <h6 class="swiper__subtitle">
+                          ОАЭ, Дубай, Dubai Creek Harbour
+                        </h6>
+                        </div>
+                    </div>
+                  </div>
+                  
+                  <div class="swiper-slide">
+                      <div class="swiper-slide__box">
+                        <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                           
+                            <li class="swiper__card-item">Готово к заселению</li>
+                          </ul>
+                          <div class="swiper__front">
+                            <img src="img/swiper-2.1.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__back none">
+                            <img src="img/swiper-3.1.png" alt="" iclass="swiper__img">
+                          </div>
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="swiper__text-box">
+  
+                        <div class="swiper__box">
+                          <h4 class="swiper__title">
+                            SLS Residences The Palm
+                          </h4>
+                          <a href="#" class="swiper__link">Подробнее</a>
+                        </div>
+                        <h6 class="swiper__subtitle">
+                          ОАЭ, Дубай, Dubai Creek Harbour
+                      </h6>
+                        </div>
+                    </div>
+                  </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide__box">
+  
+                        <div class="swiper__card-box">
+    
+                          <div class="swiper__card">
+                            <ul class="swiper__card-list">
+                      
+                              <li class="swiper__card-item">Сдача в 2026</li>
+                            </ul>
+                            <div class="swiper__front">
+                              <img src="img/swiper-3.1.png" class="swiper__img">
+                            </div>
+                            <div class="swiper__back none">
+                              <img src="img/swiper-2.1.png" alt="" iclass="swiper__img">
+                            </div>
+                            <div class="swiper__card-pagination none">
+                              <div class="swiper__card-line active"></div>
+                              <div class="swiper__card-line"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper__text-box">
+    
+                          <div class="swiper__box">
+                            <h4 class="swiper__title">
+                              Cavalli Tower
+                            </h4>
+                            <a href="#" class="swiper__link">Подробнее</a>
+                          </div>
+                          <h6 class="swiper__subtitle">
+                            ОАЭ, Дубай, Dubai Creek Harbour
+                        </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide__box">
+  
+                        <div class="swiper__card-box">
+    
+                          <div class="swiper__card">
+                            <ul class="swiper__card-list">
+                              <li class="swiper__card-item one">Акция</li>
+                              <li class="swiper__card-item">Старт продаж</li>
+                            </ul>
+                            <div class="swiper__front">
+                              <img src="img/swiper-1.1.png" class="swiper__img">
+                            </div>
+                            <div class="swiper__back none">
+                              <img src="img/swiper-1.2.png" alt="" iclass="swiper__img">
+                            </div>
+                            <div class="swiper__card-pagination none">
+                              <div class="swiper__card-line active"></div>
+                              <div class="swiper__card-line"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper__text-box">
+    
+                          <div class="swiper__box">
+                            <h4 class="swiper__title">
+                              Creek Waters
+                            </h4>
+                            <a href="#" class="swiper__link">Подробнее</a>
+                          </div>
+                          <h6 class="swiper__subtitle">
+                            ОАЭ, Дубай, Dubai Creek Harbour
+                          </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide__box">
+  
+                        <div class="swiper__card-box">
+    
+                          <div class="swiper__card">
+                            <ul class="swiper__card-list">
+                             
+                              <li class="swiper__card-item">Готово к заселению</li>
+                            </ul>
+                            <div class="swiper__front">
+                              <img src="img/swiper-2.1.png" class="swiper__img">
+                            </div>
+                            <div class="swiper__back none">
+                              <img src="img/swiper-3.1.png" alt="" iclass="swiper__img">
+                            </div>
+                            <div class="swiper__card-pagination none">
+                              <div class="swiper__card-line active"></div>
+                              <div class="swiper__card-line"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper__text-box">
+    
+                          <div class="swiper__box">
+                            <h4 class="swiper__title">
+                              SLS Residences The Palm
+                            </h4>
+                            <a href="#" class="swiper__link">Подробнее</a>
+                          </div>
+                          <h6 class="swiper__subtitle">
+                            ОАЭ, Дубай, Dubai Creek Harbour
+                        </h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide__box">
+  
+                        <div class="swiper__card-box">
+    
+                          <div class="swiper__card">
+                            <ul class="swiper__card-list">
+                      
+                              <li class="swiper__card-item">Сдача в 2026</li>
+                            </ul>
+                            <div class="swiper__front">
+                              <img src="img/swiper-3.1.png" class="swiper__img">
+                            </div>
+                            <div class="swiper__back none">
+                              <img src="img/swiper-2.1.png" alt="" iclass="swiper__img">
+                            </div>
+                            <div class="swiper__card-pagination none">
+                              <div class="swiper__card-line active"></div>
+                              <div class="swiper__card-line"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper__text-box">
+    
+                          <div class="swiper__box">
+                            <h4 class="swiper__title">
+                              Cavalli Tower
+                            </h4>
+                            <a href="#" class="swiper__link">Подробнее</a>
+                          </div>
+                          <h6 class="swiper__subtitle">
+                            ОАЭ, Дубай, Dubai Creek Harbour
+                        </h6>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    
+                  </div>     
+                 
+                  <div class="swiper-pagination ">
+                  </div>
+          </div>
+      
+          <div class="container developers__inner mobile">
+          <button class="developers__descr-btn">Смотреть все</button>
+        </div>
+      </div>
+    
+          
+        
+    </section>
+  
+    <section class="apartaments" >
+        <div class="container developers__inner none">
+          <div class="developers__descr">
+            <h2 class="developers__title">Другие ЖК в этом районе</h2>
+            <button class="developers__descr-btn none">Смотреть все</button>
+      
+          </div>
+    
+          <div class="swiper mySwiper2 none"> 
+                <div class="swiper-wrapper">
+                 
+      
+                    <div class="swiper-slide visible">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                             <li class="swiper__card-item">№ лота: 236-612</li>
+                            <div class="swiper__like">Добавить в избранное</div>
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                              <g clip-path="url(#clip0_1_321)">
+                              <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1_321">
+                              <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                              </clipPath>
+                              </defs>
+                              </svg>                            
+                          </ul>
+                          <div class="swiper__top">
+                            <img src="img/swiper2-1.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__center">
+                            <h4 class="swiper__title">
+                              3-комнатные апартаменты
+                            </h4>
+                            <h6 class="swiper__subtitle">
+                              Madinat Jumeirah Living,  Дубай, ОАЭ
+                            </h6>
+                            <h3 class="swiper__title">
+                              2 320 000$
+                            </h3>
+                            <h5 class="swiper__title">
+                              2 спальни
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              30 м²
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              9 этаж из 12                        
+                            </h5>
+                          </div>
+                          <div class="swiper__bottom">
+                            <div class="swiper__bottom-left">
+                              <img src="img/swiper__profile-img.png" alt="" class="swiper__profile-img">
+                              <div class="swiper__profile">
+                                <h6 class="swiper__subtitle">
+                                  Агент
+                                </h6>
+                                <h5 class="swiper__profile-title">
+                                  Александра Иванова
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="swiper__bottom-right">
+                              <a href="#">
+  
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                  <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                                  <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-slide visible">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                             <li class="swiper__card-item">№ лота: 236-612</li>
+                            <div class="swiper__like">Добавить в избранное</div>
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                              <g clip-path="url(#clip0_1_321)">
+                              <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1_321">
+                              <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                              </clipPath>
+                              </defs>
+                              </svg>                            
+                          </ul>
+                          <div class="swiper__top">
+                            <img src="img/swiper2-2.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__center">
+                            <h4 class="swiper__title">
+                              3-комнатные апартаменты
+                            </h4>
+                            <h6 class="swiper__subtitle">
+                              Madinat Jumeirah Living,  Дубай, ОАЭ
+                            </h6>
+                            <h3 class="swiper__title">
+                              2 320 000$
+                            </h3>
+                            <h5 class="swiper__title">
+                              2 спальни
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              30 м²
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              9 этаж из 12                        
+                            </h5>
+                          </div>
+                          <div class="swiper__bottom">
+                            <div class="swiper__bottom-left">
+                              <img src="img/swiper__profile-img2.png" alt="" class="swiper__profile-img">
+                              <div class="swiper__profile">
+                                <h6 class="swiper__subtitle">
+                                  Агент
+                                </h6>
+                                <h5 class="swiper__profile-title">
+                                  Николай Петров
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="swiper__bottom-right">
+                              <a href="#">
+  
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                  <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                                  <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-slide visible">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                             <li class="swiper__card-item">№ лота: 236-612</li>
+                            <div class="swiper__like">Добавить в избранное</div>
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                              <g clip-path="url(#clip0_1_321)">
+                              <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1_321">
+                              <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                              </clipPath>
+                              </defs>
+                              </svg>                            
+                          </ul>
+                          <div class="swiper__top">
+                            <img src="img/swiper2-3.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__center">
+                            <h4 class="swiper__title">
+                              3-комнатные апартаменты
+                            </h4>
+                            <h6 class="swiper__subtitle">
+                              Madinat Jumeirah Living,  Дубай, ОАЭ
+                            </h6>
+                            <h3 class="swiper__title">
+                              2 320 000$
+                            </h3>
+                            <h5 class="swiper__title">
+                              2 спальни
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              30 м²
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              9 этаж из 12                        
+                            </h5>
+                          </div>
+                          <div class="swiper__bottom">
+                            <div class="swiper__bottom-left">
+                              <img src="img/swiper__profile-img3.png" alt="" class="swiper__profile-img">
+                              <div class="swiper__profile">
+                                <h6 class="swiper__subtitle">
+                                  Агент
+                                </h6>
+                                <h5 class="swiper__profile-title">
+                                  Николай Петров
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="swiper__bottom-right">
+                              <a href="#">
+  
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                  <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                                  <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                             <li class="swiper__card-item">№ лота: 236-612</li>
+                            <div class="swiper__like">Добавить в избранное</div>
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                              <g clip-path="url(#clip0_1_321)">
+                              <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1_321">
+                              <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                              </clipPath>
+                              </defs>
+                              </svg>                            
+                          </ul>
+                          <div class="swiper__top">
+                            <img src="img/swiper2-1.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__center">
+                            <h4 class="swiper__title">
+                              3-комнатные апартаменты
+                            </h4>
+                            <h6 class="swiper__subtitle">
+                              Madinat Jumeirah Living,  Дубай, ОАЭ
+                            </h6>
+                            <h3 class="swiper__title">
+                              2 320 000$
+                            </h3>
+                            <h5 class="swiper__title">
+                              2 спальни
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              30 м²
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              9 этаж из 12                        
+                            </h5>
+                          </div>
+                          <div class="swiper__bottom">
+                            <div class="swiper__bottom-left">
+                              <img src="img/swiper__profile-img.png" alt="" class="swiper__profile-img">
+                              <div class="swiper__profile">
+                                <h6 class="swiper__subtitle">
+                                  Агент
+                                </h6>
+                                <h5 class="swiper__profile-title">
+                                  Александра Иванова
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="swiper__bottom-right">
+                              <a href="#">
+  
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                  <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                                  <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                            <li class="swiper__card-item">№ лота: 236-612</li>
+                            <div class="swiper__like">Добавить в избранное</div>
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                              <g clip-path="url(#clip0_1_321)">
+                              <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1_321">
+                              <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                              </clipPath>
+                              </defs>
+                              </svg>                            
+                          </ul>
+                          <div class="swiper__top">
+                            <img src="img/swiper2-2.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__center">
+                            <h4 class="swiper__title">
+                              3-комнатные апартаменты
+                            </h4>
+                            <h6 class="swiper__subtitle">
+                              Madinat Jumeirah Living,  Дубай, ОАЭ
+                            </h6>
+                            <h3 class="swiper__title">
+                              2 320 000$
+                            </h3>
+                            <h5 class="swiper__title">
+                              2 спальни
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              30 м²
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              9 этаж из 12                        
+                            </h5>
+                          </div>
+                          <div class="swiper__bottom">
+                            <div class="swiper__bottom-left">
+                              <img src="img/swiper__profile-img2.png" alt="" class="swiper__profile-img">
+                              <div class="swiper__profile">
+                                <h6 class="swiper__subtitle">
+                                  Агент
+                                </h6>
+                                <h5 class="swiper__profile-title">
+                                  Николай Петров
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="swiper__bottom-right">
+                              <a href="#">
+  
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                  <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                                  <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          <ul class="swiper__card-list">
+                            <li class="swiper__card-item">№ лота: 236-612</li>
+                            <div class="swiper__like">Добавить в избранное</div>
+                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                              <g clip-path="url(#clip0_1_321)">
+                              <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                              </g>
+                              <defs>
+                              <clipPath id="clip0_1_321">
+                              <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                              </clipPath>
+                              </defs>
+                              </svg>                            
+                          </ul>
+                          <div class="swiper__top">
+                            <img src="img/swiper2-3.png" class="swiper__img">
+                          </div>
+                          <div class="swiper__center">
+                            <h4 class="swiper__title">
+                              3-комнатные апартаменты
+                            </h4>
+                            <h6 class="swiper__subtitle">
+                              Madinat Jumeirah Living,  Дубай, ОАЭ
+                            </h6>
+                            <h3 class="swiper__title">
+                              2 320 000$
+                            </h3>
+                            <h5 class="swiper__title">
+                              2 спальни
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              30 м²
+                              <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="2" cy="2" r="2" fill="#525252"/>
+                              </svg>
+                              9 этаж из 12                        
+                            </h5>
+                          </div>
+                          <div class="swiper__bottom">
+                            <div class="swiper__bottom-left">
+                              <img src="img/swiper__profile-img3.png" alt="" class="swiper__profile-img">
+                              <div class="swiper__profile">
+                                <h6 class="swiper__subtitle">
+                                  Агент
+                                </h6>
+                                <h5 class="swiper__profile-title">
+                                  Николай Петров
+                                </h5>
+                              </div>
+                            </div>
+                            <div class="swiper__bottom-right">
+                              <a href="#">
+  
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                  <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                                  <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                   
+                   
+                   
+                    
+                  </div>     
+          </div>
+                
+          <svg class="swiper-button-prev2 none" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5 32.2501L25.75 33.9999L12.5 20.75L25.75 7.5L27.5 9.25003L16.0001 20.75L27.5 32.2501Z" fill="#2E2F36"/>
+            </svg>          
+          <svg class="swiper-button-next2 none" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 7.74994L14.25 6.00006L27.5 19.25L14.25 32.5L12.5 30.75L23.9999 19.25L12.5 7.74994Z" fill="#2E2F36"/>
+          </svg>
+                <div class="swiper-pagination2 mobile">
+                  
+                </div>
+                <button class="developers__descr-btn mobile">Смотреть все</button>
+              </div>
+        <div class="container developers__inner mobile">
+          <div class="developers__descr">
+            <h2 class="developers__title">Подборка <br class="mobile"/>апартаментов у моря</h2>
+            <button class="developers__descr-btn ipad">Смотреть все</button>
+          </div>
+        </div>
+        <div class="swiper mySwiper2 mobile"> 
+          <div class="swiper-wrapper">
+           
+  
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">
+  
+                  <div class="swiper__card-box">
+    
+                    <div class="swiper__card">
+                      <ul class="swiper__card-list">
+                        <li class="swiper__card-item">№ лота: 236-612</li>
+                        <div class="swiper__like">Добавить в избранное</div>
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                          <g clip-path="url(#clip0_1_321)">
+                          <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_321">
+                          <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                      </ul>
+                      <div class="swiper__top">
+                        <img src="img/swiper2-1.png" class="swiper__img">
+                      </div>
+                      <div class="swiper__center">
+                        <h4 class="swiper__title">
+                          3-комнатные апартаменты
+                        </h4>
+                        <h6 class="swiper__subtitle">
+                          Madinat Jumeirah Living,  Дубай, ОАЭ
+                        </h6>
+                        <h3 class="swiper__title">
+                          2 320 000$
+                        </h3>
+                        <h5 class="swiper__title">
+                          2 спальни
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          30 м²
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          9 этаж из 12                        
+                        </h5>
+                      </div>
+                      <div class="swiper__bottom">
+                        <div class="swiper__bottom-left">
+                          <img src="img/swiper__profile-img.png" alt="" class="swiper__profile-img">
+                          <div class="swiper__profile">
+                            <h6 class="swiper__subtitle">
+                              Агент
+                            </h6>
+                            <h5 class="swiper__profile-title">
+                              Александра Иванова
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="swiper__bottom-right">
+                          <a href="#">
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                              <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                              <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      
+                      <div class="swiper__card-pagination none">
+                        <div class="swiper__card-line active"></div>
+                        <div class="swiper__card-line"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">
+  
+                  <div class="swiper__card-box">
+    
+                    <div class="swiper__card">
+                      <ul class="swiper__card-list">
+                        <li class="swiper__card-item">№ лота: 236-612</li>
+                        <div class="swiper__like">Добавить в избранное</div>
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                          <g clip-path="url(#clip0_1_321)">
+                          <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_321">
+                          <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                      </ul>
+                      <div class="swiper__top">
+                        <img src="img/swiper2-2.png" class="swiper__img">
+                      </div>
+                      <div class="swiper__center">
+                        <h4 class="swiper__title">
+                          3-комнатные апартаменты
+                        </h4>
+                        <h6 class="swiper__subtitle">
+                          Madinat Jumeirah Living,  Дубай, ОАЭ
+                        </h6>
+                        <h3 class="swiper__title">
+                          2 320 000$
+                        </h3>
+                        <h5 class="swiper__title">
+                          2 спальни
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          30 м²
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          9 этаж из 12                        
+                        </h5>
+                      </div>
+                      <div class="swiper__bottom">
+                        <div class="swiper__bottom-left">
+                          <img src="img/swiper__profile-img2.png" alt="" class="swiper__profile-img">
+                          <div class="swiper__profile">
+                            <h6 class="swiper__subtitle">
+                              Агент
+                            </h6>
+                            <h5 class="swiper__profile-title">
+                              Николай Петров
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="swiper__bottom-right">
+                          <a href="#">
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                              <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                              <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      
+                      <div class="swiper__card-pagination none">
+                        <div class="swiper__card-line active"></div>
+                        <div class="swiper__card-line"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">
+  
+                  <div class="swiper__card-box">
+    
+                    <div class="swiper__card">
+                      <ul class="swiper__card-list">
+                        <li class="swiper__card-item">№ лота: 236-612</li>
+                        <div class="swiper__like">Добавить в избранное</div>
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                          <g clip-path="url(#clip0_1_321)">
+                          <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_321">
+                          <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                      </ul>
+                      <div class="swiper__top">
+                        <img src="img/swiper2-3.png" class="swiper__img">
+                      </div>
+                      <div class="swiper__center">
+                        <h4 class="swiper__title">
+                          3-комнатные апартаменты
+                        </h4>
+                        <h6 class="swiper__subtitle">
+                          Madinat Jumeirah Living,  Дубай, ОАЭ
+                        </h6>
+                        <h3 class="swiper__title">
+                          2 320 000$
+                        </h3>
+                        <h5 class="swiper__title">
+                          2 спальни
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          30 м²
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          9 этаж из 12                        
+                        </h5>
+                      </div>
+                      <div class="swiper__bottom">
+                        <div class="swiper__bottom-left">
+                          <img src="img/swiper__profile-img3.png" alt="" class="swiper__profile-img">
+                          <div class="swiper__profile">
+                            <h6 class="swiper__subtitle">
+                              Агент
+                            </h6>
+                            <h5 class="swiper__profile-title">
+                              Николай Петров
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="swiper__bottom-right">
+                          <a href="#">
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                              <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                              <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      
+                      <div class="swiper__card-pagination none">
+                        <div class="swiper__card-line active"></div>
+                        <div class="swiper__card-line"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">
+  
+                  <div class="swiper__card-box">
+    
+                    <div class="swiper__card">
+                      <ul class="swiper__card-list">
+                        <li class="swiper__card-item">№ лота: 236-612</li>
+                        <div class="swiper__like">Добавить в избранное</div>
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                          <g clip-path="url(#clip0_1_321)">
+                          <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_321">
+                          <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                      </ul>
+                      <div class="swiper__top">
+                        <img src="img/swiper2-1.png" class="swiper__img">
+                      </div>
+                      <div class="swiper__center">
+                        <h4 class="swiper__title">
+                          3-комнатные апартаменты
+                        </h4>
+                        <h6 class="swiper__subtitle">
+                          Madinat Jumeirah Living,  Дубай, ОАЭ
+                        </h6>
+                        <h3 class="swiper__title">
+                          2 320 000$
+                        </h3>
+                        <h5 class="swiper__title">
+                          2 спальни
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          30 м²
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          9 этаж из 12                        
+                        </h5>
+                      </div>
+                      <div class="swiper__bottom">
+                        <div class="swiper__bottom-left">
+                          <img src="img/swiper__profile-img.png" alt="" class="swiper__profile-img">
+                          <div class="swiper__profile">
+                            <h6 class="swiper__subtitle">
+                              Агент
+                            </h6>
+                            <h5 class="swiper__profile-title">
+                              Александра Иванова
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="swiper__bottom-right">
+                          <a href="#">
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                              <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                              <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      
+                      <div class="swiper__card-pagination none">
+                        <div class="swiper__card-line active"></div>
+                        <div class="swiper__card-line"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">
+  
+                  <div class="swiper__card-box">
+    
+                    <div class="swiper__card">
+                      <ul class="swiper__card-list">
+                        <li class="swiper__card-item">№ лота: 236-612</li>
+                        <div class="swiper__like">Добавить в избранное</div>
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                          <g clip-path="url(#clip0_1_321)">
+                          <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_321">
+                          <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                      </ul>
+                      <div class="swiper__top">
+                        <img src="img/swiper2-2.png" class="swiper__img">
+                      </div>
+                      <div class="swiper__center">
+                        <h4 class="swiper__title">
+                          3-комнатные апартаменты
+                        </h4>
+                        <h6 class="swiper__subtitle">
+                          Madinat Jumeirah Living,  Дубай, ОАЭ
+                        </h6>
+                        <h3 class="swiper__title">
+                          2 320 000$
+                        </h3>
+                        <h5 class="swiper__title">
+                          2 спальни
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          30 м²
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          9 этаж из 12                        
+                        </h5>
+                      </div>
+                      <div class="swiper__bottom">
+                        <div class="swiper__bottom-left">
+                          <img src="img/swiper__profile-img2.png" alt="" class="swiper__profile-img">
+                          <div class="swiper__profile">
+                            <h6 class="swiper__subtitle">
+                              Агент
+                            </h6>
+                            <h5 class="swiper__profile-title">
+                              Николай Петров
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="swiper__bottom-right">
+                          <a href="#">
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                              <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                              <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      
+                      <div class="swiper__card-pagination none">
+                        <div class="swiper__card-line active"></div>
+                        <div class="swiper__card-line"></div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">
+  
+                  <div class="swiper__card-box">
+    
+                    <div class="swiper__card">
+                      <ul class="swiper__card-list">
+                        <li class="swiper__card-item">№ лота: 236-612</li>
+                        <div class="swiper__like">Добавить в избранное</div>
+                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="18.5" cy="18.5" r="18.5" fill="white"/>
+                          <g clip-path="url(#clip0_1_321)">
+                          <path d="M22.3164 10.8684C20.841 10.8684 19.425 11.5552 18.5008 12.6406C17.5765 11.5552 16.1605 10.8684 14.6851 10.8684C12.0736 10.8684 10.0216 12.9204 10.0216 15.5319C10.0216 18.7371 12.9045 21.3487 17.2713 25.3169L18.5008 26.4277L19.7303 25.3084C24.097 21.3487 26.9799 18.7371 26.9799 15.5319C26.9799 12.9204 24.928 10.8684 22.3164 10.8684ZM18.5856 24.0535L18.5008 24.1383L18.416 24.0535C14.3799 20.399 11.7174 17.9824 11.7174 15.5319C11.7174 13.8361 12.9893 12.5642 14.6851 12.5642C15.9909 12.5642 17.2628 13.4037 17.7122 14.5653H19.2978C19.7387 13.4037 21.0106 12.5642 22.3164 12.5642C24.0122 12.5642 25.2841 13.8361 25.2841 15.5319C25.2841 17.9824 22.6217 20.399 18.5856 24.0535Z" fill="#22211E"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_1_321">
+                          <rect width="20.35" height="20.35" fill="white" transform="translate(8.32532 8.32495)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>                            
+                      </ul>
+                      <div class="swiper__top">
+                        <img src="img/swiper2-3.png" class="swiper__img">
+                      </div>
+                      <div class="swiper__center">
+                        <h4 class="swiper__title">
+                          3-комнатные апартаменты
+                        </h4>
+                        <h6 class="swiper__subtitle">
+                          Madinat Jumeirah Living,  Дубай, ОАЭ
+                        </h6>
+                        <h3 class="swiper__title">
+                          2 320 000$
+                        </h3>
+                        <h5 class="swiper__title">
+                          2 спальни
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          30 м²
+                          <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2" r="2" fill="#525252"/>
+                          </svg>
+                          9 этаж из 12                        
+                        </h5>
+                      </div>
+                      <div class="swiper__bottom">
+                        <div class="swiper__bottom-left">
+                          <img src="img/swiper__profile-img3.png" alt="" class="swiper__profile-img">
+                          <div class="swiper__profile">
+                            <h6 class="swiper__subtitle">
+                              Агент
+                            </h6>
+                            <h5 class="swiper__profile-title">
+                              Николай Петров
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="swiper__bottom-right">
+                          <a href="#">
+    
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                              <circle cx="30" cy="30" r="30" fill="#B4A06B"/>
+                              <path d="M37.3436 32.506C36.9527 32.3105 34.9981 31.3821 34.656 31.2355C34.314 31.0889 34.0208 31.04 33.7765 31.431C33.5321 31.8219 32.7503 32.7014 32.5548 32.9458C32.3105 33.1901 32.1151 33.239 31.7241 33.0435C31.3332 32.848 30.0627 32.4571 28.5479 31.1378C27.3752 30.1116 26.5933 28.8411 26.349 28.4502C26.1047 28.0593 26.349 27.8638 26.5445 27.6684C26.7399 27.4729 26.9354 27.2286 27.1308 26.9842C27.3263 26.7399 27.3752 26.5933 27.5218 26.349C27.6684 26.1047 27.5706 25.8604 27.4729 25.6649C27.3752 25.4694 26.5933 23.5637 26.2513 22.7819C25.9092 22.0489 25.616 22.1466 25.3717 22.0978H24.6387C24.3944 22.0978 23.9546 22.1955 23.6126 22.5864C23.2705 22.9773 22.2444 23.9058 22.2444 25.8115C22.2444 27.7172 23.6614 29.5252 23.8569 29.8184C24.0524 30.0627 26.6422 33.9719 30.5514 35.6333C31.4798 36.0243 32.2128 36.2686 32.7992 36.464C33.7276 36.7572 34.6072 36.7084 35.2913 36.6106C36.0243 36.5129 37.6368 35.6822 37.93 34.8026C38.272 33.9231 38.272 33.1412 38.1743 32.9946C37.9789 32.7992 37.7345 32.7014 37.3436 32.506ZM29.8673 42.5722C27.5218 42.5722 25.274 41.9369 23.2705 40.7642L22.7819 40.471L17.8954 41.7414L19.2147 37.0016L18.9215 36.5129C17.651 34.4606 16.9669 32.1151 16.9669 29.6718C16.9669 22.5864 22.7819 16.8203 29.9161 16.8203C33.2878 16.8203 36.5618 18.1397 39.005 20.5829C41.4483 23.0262 42.7676 26.2513 42.7676 29.6718C42.7676 36.7572 36.9527 42.5722 29.8673 42.5722ZM40.8619 18.7261C37.93 15.7942 34.0208 14.1816 29.8673 14.1816C21.3159 14.1816 14.3282 21.1205 14.3282 29.6718C14.3282 32.4083 15.0612 35.047 16.3806 37.3925L14.1816 45.4063L22.3909 43.2563C24.6387 44.4779 27.2286 45.162 29.8184 45.162C38.3698 45.162 45.3575 38.2232 45.3575 29.6718C45.4063 25.5672 43.7938 21.658 40.8619 18.7261Z" fill="white"/>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                      
+                      <div class="swiper__card-pagination none">
+                        <div class="swiper__card-line active"></div>
+                        <div class="swiper__card-line"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+             
+             
+             
+              
+            </div>     
+            <div class="swiper-pagination2">
+            </div>
+        </div>
+        <div class="container developers__inner mobile">
+          <button class="developers__descr-btn">Смотреть все</button>
+        </div>
+      </div>
+    
+          
+        
+    </section>
+
+    <section class="catalog2" id="catalog">
+     
+
+        <img src="img/catalog2__back.png" alt="" class="catalog__back none">
+        <img src="img/catalog2__back-mobile.png" alt="" class="catalog__back mobile">
+  
+      <div class="container">
+        <h3 class="catalog__title">
+          Скачайте каталог<br/>
+          всех новостроек Дубая
+        </h3>
+        <h5 class="catalog__subtitle">
+          128 объектов ценой от 100 000$ в едином pdf-файле 
+        </h5>
+        <form action="" class="catalog__form">
+          <input type="name" name="name" class="catalog__form-input" placeholder="Ваше имя">
+          <div class="phone__box">
+  
+            <input type="text"  name="phone" class="catalog__form-input" placeholder="+7 (999) 999-99-99">
+            <div class="catalog__form-error">
+              Укажите корректный номер телефона
+            </div>
+          </div>
+          <input type="button" value="Скачать"  class="catalog__form-btn">
+          <div class="catalog__form-error">
+            Укажите корректный номер телефона
+          </div>
+        </form>
+        <p class="catalog__text">
+          Заполняя форму, вы соглашаетесь с условиями <br class="mobile"/><a href="#">политики конфиденциальности</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <a href="/" class="logo">
+            <img src="img/footer__logo.svg" alt="" />
+          </a>
+          <a href="tel:+74991234545" class="footer__phone"
+            >+7 (499) 123-45-45</a
+          >
+          <div class="footer__soc">
+            <a href="#" class="footer__soc-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_294_1205)">
+                  <mask
+                    id="mask0_294_1205"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1205)">
+                    <path
+                      d="M35 17.5C35 7.83501 27.165 0 17.5 0C7.83501 0 0 7.83501 0 17.5C0 27.165 7.83501 35 17.5 35C27.165 35 35 27.165 35 17.5Z"
+                      fill="#B4A06B"
+                    />
+                    <path
+                      d="M25.3391 9.63331C23.4629 7.70197 20.8695 6.65356 18.2208 6.65356C12.5924 6.65356 8.06765 11.2335 8.12285 16.8067C8.12285 18.5725 8.61948 20.2831 9.44717 21.8281L8.01245 27.0702L13.365 25.6907C14.8549 26.5184 16.5103 26.9047 18.1656 26.9047C23.7388 26.9047 28.2636 22.3248 28.2636 16.7515C28.2636 14.0477 27.2152 11.5095 25.3391 9.63331ZM18.2208 25.1941C16.731 25.1941 15.2411 24.8078 13.972 24.0353L13.6408 23.8698L10.4404 24.6975L11.2681 21.5522L11.0474 21.2212C8.61948 17.3034 9.7782 12.1164 13.7513 9.6885C17.7242 7.26055 22.856 8.41931 25.2839 12.3923C27.7118 16.3653 26.5531 21.497 22.58 23.9249C21.3109 24.7527 19.7658 25.1941 18.2208 25.1941ZM23.0767 19.0691L22.4697 18.7932C22.4697 18.7932 21.5868 18.407 21.035 18.131C20.9799 18.131 20.9246 18.0759 20.8695 18.0759C20.7039 18.0759 20.5936 18.131 20.4832 18.1862C20.4832 18.1862 20.4281 18.2414 19.6556 19.1242C19.6003 19.2347 19.49 19.2898 19.3796 19.2898H19.3244C19.2692 19.2898 19.1589 19.2347 19.1036 19.1795L18.8278 19.0691C18.2208 18.7932 17.6691 18.4621 17.2276 18.0207C17.1172 17.9103 16.9517 17.7999 16.8413 17.6896C16.455 17.3034 16.0688 16.8619 15.7929 16.3653L15.7377 16.2549C15.6825 16.1998 15.6825 16.1445 15.6274 16.0342C15.6274 15.9238 15.6274 15.8135 15.6825 15.7583C15.6825 15.7583 15.9032 15.4824 16.0688 15.3169C16.1792 15.2064 16.2343 15.041 16.3448 14.9306C16.455 14.765 16.5103 14.5443 16.455 14.3788C16.3999 14.1028 15.7377 12.613 15.5721 12.282C15.4618 12.1164 15.3514 12.0612 15.1859 12.006H15.0203C14.91 12.006 14.7445 12.006 14.5789 12.006C14.4686 12.006 14.3582 12.0612 14.2478 12.0612L14.1927 12.1164C14.0822 12.1716 13.972 12.282 13.8615 12.3371C13.7513 12.4475 13.696 12.5578 13.5857 12.6682C13.1994 13.1648 12.9786 13.7719 12.9786 14.3788C12.9786 14.8202 13.0891 15.2617 13.2546 15.6479L13.3098 15.8135C13.8064 16.8619 14.4686 17.7999 15.3514 18.6277L15.5721 18.8484C15.7377 19.014 15.9032 19.1242 16.0136 19.2898C17.1724 20.2831 18.4967 21.0005 19.9865 21.3867C20.1521 21.4419 20.3728 21.4419 20.5384 21.497C20.7039 21.497 20.9246 21.497 21.0902 21.497C21.3661 21.497 21.6971 21.3867 21.9179 21.2763C22.0835 21.166 22.1938 21.166 22.3041 21.0556L22.4145 20.9452C22.5249 20.8349 22.6353 20.7797 22.7455 20.6693C22.856 20.559 22.9663 20.4486 23.0215 20.3383C23.1319 20.1176 23.1871 19.8416 23.2422 19.5657C23.2422 19.4554 23.2422 19.2898 23.2422 19.1795C23.2422 19.1795 23.1871 19.1242 23.0767 19.0691Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1205">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="footer__soc-link">
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_294_1212)">
+                  <mask
+                    id="mask0_294_1212"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1212)">
+                    <path
+                      d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 0C7.83562 0 0 7.83562 0 17.5C0 27.1644 7.83562 35 17.5 35C27.1644 35 35 27.1644 35 17.5C35 7.83562 27.1644 0 17.5 0ZM26.0954 11.989L23.2225 25.5223C23.011 26.4819 22.4394 26.7152 21.6416 26.2631L17.2666 23.0402L15.1579 25.0731C14.9537 25.3356 14.6373 25.5034 14.2829 25.5034C14.28 25.5034 14.2785 25.5034 14.2756 25.5034L14.5863 21.0496L22.6946 13.7259C23.0446 13.4152 22.6159 13.2387 22.1506 13.5494L12.1334 19.8581L7.81666 18.5106C6.88334 18.2146 6.85709 17.5773 8.01354 17.1194L24.8806 10.6181C25.6652 10.3323 26.3477 10.8048 26.094 11.9904L26.0954 11.989Z"
+                      fill="#B4A06B"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1212">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <p class="footer__bottom-text none">© Homeliga, 2023</p>
+        </div>
+        <div class="footer__centerL">
+          <ul class="footer__centerL-list">
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link"> Услуги </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Покупка недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Продажа недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Аренда недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Элитная недвижимость в Дубае
+              </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text none">
+            Dubai, Business Bay, Bay Square, building 07, office 504
+          </p>
+        </div>
+        <div class="footer__centerR">
+          <ul class="footer__centerR-list">
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link">
+                Каталог недвижимости
+              </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link"> Купить недвижимость </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link"> Снять недвижимости </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link">
+                Вторичная недвижимость
+              </a>
+            </li>
+            <li class="footer__centerR-item none">
+              <a href="#" class="footer__centerR-link"> Комплексы </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text none">
+            Предоставленная информация не является публичной офертой
+          </p>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__right-list">
+            <li class="footer__centerR-item mobile">
+              <a href="#" class="footer__centerR-link"> Комплексы </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#districts" class="footer__right-link"> Районы </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#developers" class="footer__right-link"> Застройщики </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#blog" class="footer__right-link"> Блог о Дубае </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#about" class="footer__right-link"> Об агентстве </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#" class="footer__right-link"> Контакты </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text mobile">© Homeliga, 2023</p>
+          <p class="footer__bottom-text mobile">
+            Dubai, Business Bay, Bay Square, building 07, office 504
+          </p>
+          <p class="footer__bottom-text mobile">
+            Предоставленная информация не является<br />
+            публичной офертой
+          </p>
+          <a href="#">
+            <p class="footer__bottom-text">Политика конфиденциальности</p>
+          </a>
+        </div>
+      </div>
+      <div class="container footer__inner ipad">
+        <div class="footer__left">
+          <a href="/" class="logo">
+            <img src="img/footer__logo.svg" alt="" />
+          </a>
+          <a href="tel:+74991234545" class="footer__phone"
+            >+7 (499) 123-45-45</a
+          >
+          <div class="footer__soc">
+            <a href="#" class="footer__soc-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_294_1205)">
+                  <mask
+                    id="mask0_294_1205"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1205)">
+                    <path
+                      d="M35 17.5C35 7.83501 27.165 0 17.5 0C7.83501 0 0 7.83501 0 17.5C0 27.165 7.83501 35 17.5 35C27.165 35 35 27.165 35 17.5Z"
+                      fill="#B4A06B"
+                    />
+                    <path
+                      d="M25.3391 9.63331C23.4629 7.70197 20.8695 6.65356 18.2208 6.65356C12.5924 6.65356 8.06765 11.2335 8.12285 16.8067C8.12285 18.5725 8.61948 20.2831 9.44717 21.8281L8.01245 27.0702L13.365 25.6907C14.8549 26.5184 16.5103 26.9047 18.1656 26.9047C23.7388 26.9047 28.2636 22.3248 28.2636 16.7515C28.2636 14.0477 27.2152 11.5095 25.3391 9.63331ZM18.2208 25.1941C16.731 25.1941 15.2411 24.8078 13.972 24.0353L13.6408 23.8698L10.4404 24.6975L11.2681 21.5522L11.0474 21.2212C8.61948 17.3034 9.7782 12.1164 13.7513 9.6885C17.7242 7.26055 22.856 8.41931 25.2839 12.3923C27.7118 16.3653 26.5531 21.497 22.58 23.9249C21.3109 24.7527 19.7658 25.1941 18.2208 25.1941ZM23.0767 19.0691L22.4697 18.7932C22.4697 18.7932 21.5868 18.407 21.035 18.131C20.9799 18.131 20.9246 18.0759 20.8695 18.0759C20.7039 18.0759 20.5936 18.131 20.4832 18.1862C20.4832 18.1862 20.4281 18.2414 19.6556 19.1242C19.6003 19.2347 19.49 19.2898 19.3796 19.2898H19.3244C19.2692 19.2898 19.1589 19.2347 19.1036 19.1795L18.8278 19.0691C18.2208 18.7932 17.6691 18.4621 17.2276 18.0207C17.1172 17.9103 16.9517 17.7999 16.8413 17.6896C16.455 17.3034 16.0688 16.8619 15.7929 16.3653L15.7377 16.2549C15.6825 16.1998 15.6825 16.1445 15.6274 16.0342C15.6274 15.9238 15.6274 15.8135 15.6825 15.7583C15.6825 15.7583 15.9032 15.4824 16.0688 15.3169C16.1792 15.2064 16.2343 15.041 16.3448 14.9306C16.455 14.765 16.5103 14.5443 16.455 14.3788C16.3999 14.1028 15.7377 12.613 15.5721 12.282C15.4618 12.1164 15.3514 12.0612 15.1859 12.006H15.0203C14.91 12.006 14.7445 12.006 14.5789 12.006C14.4686 12.006 14.3582 12.0612 14.2478 12.0612L14.1927 12.1164C14.0822 12.1716 13.972 12.282 13.8615 12.3371C13.7513 12.4475 13.696 12.5578 13.5857 12.6682C13.1994 13.1648 12.9786 13.7719 12.9786 14.3788C12.9786 14.8202 13.0891 15.2617 13.2546 15.6479L13.3098 15.8135C13.8064 16.8619 14.4686 17.7999 15.3514 18.6277L15.5721 18.8484C15.7377 19.014 15.9032 19.1242 16.0136 19.2898C17.1724 20.2831 18.4967 21.0005 19.9865 21.3867C20.1521 21.4419 20.3728 21.4419 20.5384 21.497C20.7039 21.497 20.9246 21.497 21.0902 21.497C21.3661 21.497 21.6971 21.3867 21.9179 21.2763C22.0835 21.166 22.1938 21.166 22.3041 21.0556L22.4145 20.9452C22.5249 20.8349 22.6353 20.7797 22.7455 20.6693C22.856 20.559 22.9663 20.4486 23.0215 20.3383C23.1319 20.1176 23.1871 19.8416 23.2422 19.5657C23.2422 19.4554 23.2422 19.2898 23.2422 19.1795C23.2422 19.1795 23.1871 19.1242 23.0767 19.0691Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1205">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="footer__soc-link">
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_294_1212)">
+                  <mask
+                    id="mask0_294_1212"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1212)">
+                    <path
+                      d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 0C7.83562 0 0 7.83562 0 17.5C0 27.1644 7.83562 35 17.5 35C27.1644 35 35 27.1644 35 17.5C35 7.83562 27.1644 0 17.5 0ZM26.0954 11.989L23.2225 25.5223C23.011 26.4819 22.4394 26.7152 21.6416 26.2631L17.2666 23.0402L15.1579 25.0731C14.9537 25.3356 14.6373 25.5034 14.2829 25.5034C14.28 25.5034 14.2785 25.5034 14.2756 25.5034L14.5863 21.0496L22.6946 13.7259C23.0446 13.4152 22.6159 13.2387 22.1506 13.5494L12.1334 19.8581L7.81666 18.5106C6.88334 18.2146 6.85709 17.5773 8.01354 17.1194L24.8806 10.6181C25.6652 10.3323 26.3477 10.8048 26.094 11.9904L26.0954 11.989Z"
+                      fill="#B4A06B"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1212">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <p class="footer__bottom-text none">© Homeliga, 2023</p>
+        </div>
+        <div class="footer__centerL">
+          <ul class="footer__centerL-list">
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link"> Услуги </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Покупка недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Продажа недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Аренда недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Элитная недвижимость в Дубае
+              </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text none">
+            Dubai, Business Bay, Bay Square, building 07, office 504
+          </p>
+        </div>
+        <div class="footer__centerR">
+          <ul class="footer__centerR-list">
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link">
+                Каталог недвижимости
+              </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link"> Купить недвижимость </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link"> Снять недвижимости </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link">
+                Вторичная недвижимость
+              </a>
+            </li>
+            <li class="footer__centerR-item none">
+              <a href="#" class="footer__centerR-link"> Комплексы </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text none">
+            Предоставленная информация не является публичной офертой
+          </p>
+        </div>
+        <div class="footer__right L">
+          <p class="footer__bottom-text mobile">
+            Dubai, Business Bay, Bay Square, building 07, office 504
+          </p>
+          <p class="footer__bottom-text mobile">© Homeliga, 2023</p>
+        </div>
+        <div class="footer__right C">
+          <ul class="footer__right-list">
+            <li class="footer__centerR-item mobile">
+              <a href="#" class="footer__centerR-link"> Комплексы </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#districts" class="footer__right-link"> Районы </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#developers" class="footer__right-link"> Застройщики </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text mobile">
+            Предоставленная информация не является публичной офертой
+          </p>
+        </div>
+        <div class="footer__right R">
+          <ul class="footer__right-list">
+            <li class="footer__right-item">
+              <a href="#blog" class="footer__right-link"> Блог о Дубае </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#about" class="footer__right-link"> Об агентстве </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#" class="footer__right-link"> Контакты </a>
+            </li>
+          </ul>
+          <a href="#">
+            <p class="footer__bottom-text">Политика конфиденциальности</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.1.3/imask.min.js"
+      integrity="sha512-54QZ6V8x2x5v5+8JNy98/rP4Ui3CSNlv8KLVS5tTQJCx/Ag4jgUlVUqe54TJ3QLJYSVwt5xPbINvxX7A9XHdHQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
