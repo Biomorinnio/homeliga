@@ -2434,6 +2434,56 @@ h5.swiper__title {
 .header.other-pages .header__top {
   align-items: center;
 }
+.catalog__title-box{
+  display: flex;
+}
+
+.catalog__title-box img{
+  margin-bottom: -65px;
+  margin-top: 26px;
+  margin-left: -15px;
+}
+
+.catalog .zoom__inner{
+  display: flex;
+  
+  padding-bottom: 55px;
+}
+
+.zoom__left{
+  margin-top: 30px;
+}
+
+.zoom__right{
+  position: relative;
+  margin-left: -105px;
+}
+
+.zoom__right-text{
+  position: absolute;
+  right: 80px;
+  bottom: 145px;
+}
+
+.zoom__right-title{
+  color: var(--Grey-BG, #F3F3F3);
+
+font-size: 18px;
+
+font-weight: 600;
+line-height: 130%; /* 23.4px */
+}
+
+.zoom__right-subtitle{
+  color: var(--Grey, #858585);
+
+font-size: 14px;
+
+font-weight: 400;
+line-height: 160%; /* 22.4px */
+}
+
+
 
 @media (max-width: 1679px) {
   .header__top-list {
