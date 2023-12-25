@@ -13,9 +13,9 @@ var swiper = new Swiper(".mySwiper1.mobile", {
   },
   breakpoints: {
     // when window width is >= 320px
-   768:{
-    slidesPerView: 2,
-   },
+    768: {
+      slidesPerView: 2,
+    },
     1180: {
       slidesPerView: 3,
       spaceBetween: 30,
@@ -27,7 +27,7 @@ var swiper = new Swiper(".mySwiper1.mobile", {
 
 var swiperFirst = new Swiper(".mySwiper1.none", {
   loop: true,
- 
+
   allowTouchMove: false,
   slidesPerView: 1,
   spaceBetween: 20,
@@ -41,31 +41,27 @@ var swiperFirst = new Swiper(".mySwiper1.none", {
   },
   breakpoints: {
     // when window width is >= 320px
-    768:{
+    768: {
       slidesPerView: 2,
-     },
+    },
     1180: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
   },
-
 });
 
-swiperFirst.on('slideChange', function () {
+swiperFirst.on("slideChange", function () {
   var slides = swiperFirst.slides;
   var activeIndex = swiperFirst.activeIndex;
-  for(let i of slides) i.classList.remove('visible');
-  console.log(activeIndex)
+  for (let i of slides) i.classList.remove("visible");
+  console.log(activeIndex);
   if (activeIndex >= 0 && activeIndex < slides.length - 2) {
     slides[activeIndex].classList.add("visible");
     slides[activeIndex + 1].classList.add("visible");
     slides[activeIndex + 2].classList.add("visible");
   }
- 
-  
 });
-
 
 var swiper2 = new Swiper(".mySwiper2.mobile", {
   loop: true,
@@ -82,10 +78,9 @@ var swiper2 = new Swiper(".mySwiper2.mobile", {
   },
   breakpoints: {
     // when window width is >= 320px
-    768:{
+    768: {
       slidesPerView: 2,
-      
-     },
+    },
     1180: {
       slidesPerView: 3,
       spaceBetween: 30,
@@ -110,9 +105,9 @@ var swiperSecond = new Swiper(".mySwiper2.none", {
   },
   breakpoints: {
     // when window width is >= 320px
-    768:{
+    768: {
       slidesPerView: 2,
-     },
+    },
     1180: {
       slidesPerView: 3,
       spaceBetween: 30,
@@ -120,23 +115,18 @@ var swiperSecond = new Swiper(".mySwiper2.none", {
   },
 });
 
-swiperSecond.on('slideChange', function () {
+swiperSecond.on("slideChange", function () {
   var slides = swiperSecond.slides;
   var activeIndex = swiperSecond.activeIndex;
-  for(let i of slides) i.classList.remove('visible')
+  for (let i of slides) i.classList.remove("visible");
   if (activeIndex >= 0 && activeIndex < slides.length - 2) {
     slides[activeIndex].classList.add("visible");
     slides[activeIndex + 1].classList.add("visible");
     slides[activeIndex + 2].classList.add("visible");
   }
- 
-  
 });
 
-
-
 var swiper3 = new Swiper(".mySwiper3", {
-  
   slidesPerView: 1,
   spaceBetween: 20,
   navigation: {
@@ -148,18 +138,16 @@ var swiper3 = new Swiper(".mySwiper3", {
     clickable: true,
   },
   breakpoints: {
-    
     1180: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
-    768:{
+    768: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
   },
 });
-
 
 var swiper1 = new Swiper(".mySwiper", {
   loop: true,
@@ -171,7 +159,6 @@ var swiper1 = new Swiper(".mySwiper", {
     clickable: true,
   },
   breakpoints: {
-    
     768: {
       slidesPerView: 1.8,
     },
@@ -195,14 +182,8 @@ var swiper5 = new Swiper(".mySwiper5", {
       slidesPerView: 2,
       spaceBetween: 30,
     },
-    
-   
-
-    
   },
 });
-
-
 
 var swiper6 = new Swiper(".mySwiper6", {
   loop: true,
@@ -216,7 +197,6 @@ var swiper6 = new Swiper(".mySwiper6", {
 });
 
 var swiper7 = new Swiper(".mySwiper7", {
-
   slidesPerView: 1,
   spaceBetween: 20,
 
@@ -227,55 +207,48 @@ var swiper7 = new Swiper(".mySwiper7", {
 });
 
 let scrollY;
-function openedPopup(){
+function openedPopup() {
   scrollY = window.scrollY;
   document.body.style.top = `-${window.scrollY}px`;
-  document.body.style.position = 'fixed';
-  document.body.style.width = '100%';
+  document.body.style.position = "fixed";
+  document.body.style.width = "100%";
 }
 
-function closedPopup(){
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
+function closedPopup() {
+  document.body.style.position = "";
+  document.body.style.top = "";
+  document.body.style.width = "";
   window.scrollTo(0, scrollY);
 }
-
 
 const burgerOpen = document.querySelectorAll(".header__burger");
 const burgerClose = document.querySelector(".burger__menu-close");
 const burgerMenu = document.querySelector(".burger__menu");
 
-
-
-for(let i of burgerOpen){
-
+for (let i of burgerOpen) {
   i.addEventListener("click", () => {
     burgerMenu.classList.add("active");
-    
-      shadow.classList.add('active')
-    
-    document.querySelector('.shadow').style.background = 'unset';
-   
+
+    shadow.classList.add("active");
+
+    document.querySelector(".shadow").style.background = "unset";
+
     openedPopup();
     if (window.matchMedia("(max-width: 814px)").matches) {
-      document.querySelector('.widget').style.opacity = '0';
-
-
+      document.querySelector(".widget").style.opacity = "0";
     }
   });
 }
 burgerClose.addEventListener("click", () => {
   burgerMenu.classList.remove("active");
-  document.querySelector('.shadow').classList.remove('active')
+  document.querySelector(".shadow").classList.remove("active");
   closedPopup();
   if (window.matchMedia("(max-width: 1180px)").matches) {
-    document.querySelector('.shadow').style.background = 'rgba(34,33,30,.7)';
+    document.querySelector(".shadow").style.background = "rgba(34,33,30,.7)";
   }
-  
+
   if (window.matchMedia("(max-width: 814px)").matches) {
-    document.querySelector('.widget').style.opacity = '1'
-    
+    document.querySelector(".widget").style.opacity = "1";
   }
 });
 
@@ -308,7 +281,6 @@ const filterSearchList = document.querySelector(".filter__search-list");
 for (let i = 0; i < switchLang.length; i++) {
   switchLang[i].addEventListener("click", () => {
     switchList[i].classList.toggle("active");
-   
   });
 }
 
@@ -318,22 +290,29 @@ shadow.addEventListener("click", () => {
   filterAppsList.classList.remove("active");
   filterBedList.classList.remove("active");
   filterPriceList.classList.remove("active");
-  burgerMenu.classList.remove('active')
+  burgerMenu.classList.remove("active");
   filterSearchList.classList.remove("active");
   filterValList.classList.remove("active");
   filterValListM.classList.remove("active");
   shadow.classList.remove("active");
-  document.querySelectorAll('.filter__price3.filter__choice')[0].classList.remove('active')
-  document.querySelector('.filter__apps2.filter__choice.mobile').classList.remove('active')
-  document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active');
-  document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.remove('active');
+  document
+    .querySelectorAll(".filter__price3.filter__choice")[0]
+    .classList.remove("active");
+  document
+    .querySelector(".filter__apps2.filter__choice.mobile")
+    .classList.remove("active");
+  document
+    .querySelector(".filter__search-list.filter__choice.mobile")
+    .classList.remove("active");
+  document
+    .querySelector(".filter__search-list .filter__search-list.filter__choice")
+    .classList.remove("active");
 
   closedPopup();
 
   if (window.matchMedia("(max-width: 1180px)").matches) {
-    document.querySelector('.shadow').style.background = 'rgba(34,33,30,.7)';
+    document.querySelector(".shadow").style.background = "rgba(34,33,30,.7)";
   }
-  
 });
 
 for (let i = 0; i < filterBtns.length; i++) {
@@ -351,13 +330,13 @@ filterApps.addEventListener("click", () => {
   shadow.classList.toggle("active");
   filterAppsList.classList.toggle("active");
   filterAppsListM.classList.add("active");
-  document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.remove('active');
+  document
+    .querySelector(".filter__search-list .filter__search-list.filter__choice")
+    .classList.remove("active");
 
   if (window.matchMedia("(max-width: 1180px)").matches) {
-  
     openedPopup();
   }
-  
 });
 
 filterBed.addEventListener("click", () => {
@@ -365,8 +344,9 @@ filterBed.addEventListener("click", () => {
   filterPriceList.classList.remove("active");
   shadow.classList.toggle("active");
   filterBedList.classList.toggle("active");
-  document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.remove('active');
-
+  document
+    .querySelector(".filter__search-list .filter__search-list.filter__choice")
+    .classList.remove("active");
 });
 
 filterPrice.addEventListener("click", () => {
@@ -374,10 +354,11 @@ filterPrice.addEventListener("click", () => {
   filterBedList.classList.remove("active");
   filterValList.classList.remove("active");
   shadow.classList.toggle("active");
-  document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.remove('active');
+  document
+    .querySelector(".filter__search-list .filter__search-list.filter__choice")
+    .classList.remove("active");
 
   filterPriceList.classList.toggle("active");
-
 });
 filterVal.addEventListener("click", () => {
   filterValList.classList.toggle("active");
@@ -393,44 +374,51 @@ filterValM.addEventListener("click", () => {
 
   openedPopup();
 });
-for(let i = 0; i < filterSearch.length; i++){
-
+for (let i = 0; i < filterSearch.length; i++) {
   filterSearch[i].addEventListener("input", () => {
-    
-    if(i==0) filterSearch[i+1].value = filterSearch[i].value;
-    else filterSearch[i-1].value = filterSearch[i].value;
+    if (i == 0) filterSearch[i + 1].value = filterSearch[i].value;
+    else filterSearch[i - 1].value = filterSearch[i].value;
     if (window.matchMedia("(min-width: 1181px)").matches) {
-     
-      document.querySelector('.filter__search-list .filter__search-list.filter__choice').classList.add('active');
+      document
+        .querySelector(
+          ".filter__search-list .filter__search-list.filter__choice"
+        )
+        .classList.add("active");
       if (!shadow.classList.contains("active")) {
         shadow.classList.add("active");
       }
       filterSearchList.classList.add("active");
     }
     if (window.matchMedia("(max-width: 1180px)").matches) {
-     
-      document.querySelector('.filter__search-list.filter__choice.mobile .filter__list-box').classList.add('unactive')
-      document.querySelector('.filter__search-list.filter__choice.mobile .filter__list-box2').classList.remove('unactive')
-      console.log(  document.querySelector('.filter__search-list.filter__choice.mobile .filter__list-box2'))
+      document
+        .querySelector(
+          ".filter__search-list.filter__choice.mobile .filter__list-box"
+        )
+        .classList.add("unactive");
+      document
+        .querySelector(
+          ".filter__search-list.filter__choice.mobile .filter__list-box2"
+        )
+        .classList.remove("unactive");
+      console.log(
+        document.querySelector(
+          ".filter__search-list.filter__choice.mobile .filter__list-box2"
+        )
+      );
     }
 
-   
     filterAppsList.classList.remove("active");
     filterPriceList.classList.remove("active");
     filterBedList.classList.remove("active");
-   
-   
   });
 }
 
-
-document.querySelector('.close').addEventListener("click", function (e) {
-  document.querySelector('.modal').classList.remove('active')
-})
-document.querySelector('.modal-btn').addEventListener("click", function (e) {
-  document.querySelector('.modal').classList.remove('active')
-})
-
+document.querySelector(".close").addEventListener("click", function (e) {
+  document.querySelector(".modal").classList.remove("active");
+});
+document.querySelector(".modal-btn").addEventListener("click", function (e) {
+  document.querySelector(".modal").classList.remove("active");
+});
 
 const swiperLikes = document.querySelectorAll(
   ".apartaments .swiper__card-list svg"
@@ -459,10 +447,6 @@ for (let i = 0; i < swiperLikes.length; i++) {
   });
 }
 
-
-
-
-
 const bedMobile = document.querySelectorAll(".filter__bed1-item");
 
 for (let i = 0; i < bedMobile.length; i++) {
@@ -474,38 +458,33 @@ for (let i = 0; i < bedMobile.length; i++) {
 document.querySelector(".filter__price3 svg").addEventListener("click", () => {
   filterValListM.classList.remove("active");
   shadow.classList.remove("active");
-  
-  
+
   closedPopup();
 });
 document.querySelector(".filter__apps2 svg").addEventListener("click", () => {
   filterAppsListM.classList.remove("active");
   shadow.classList.remove("active");
 
- closedPopup();
-  
+  closedPopup();
 });
 document.querySelector(".filter__apps-btn2").addEventListener("click", () => {
   filterAppsListM.classList.remove("active");
   shadow.classList.remove("active");
 
- closedPopup();
-
+  closedPopup();
 });
 
-document.querySelectorAll(".filter__apps-btn2")[1].addEventListener("click", () => {
-  document.querySelector('body').classList.remove('active');
-  document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active');
-  shadow.classList.remove('active')
+document
+  .querySelectorAll(".filter__apps-btn2")[1]
+  .addEventListener("click", () => {
+    document.querySelector("body").classList.remove("active");
+    document
+      .querySelector(".filter__search-list.filter__choice.mobile")
+      .classList.remove("active");
+    shadow.classList.remove("active");
 
-  
- closedPopup();
-})  
-
-
-
-
-
+    closedPopup();
+  });
 
 var imageUrls = [
   'url("img/about__swiper-2.png")',
@@ -520,29 +499,22 @@ var imageNumber = imageUrls.length;
 
 function imagePop(id) {
   document.getElementById("imagePopId").style.display = "block";
- 
 
   var imageName = document.getElementById(id + "-image").style.backgroundImage;
-  
+
   var imageIndex = 0;
-  
+
   imageIndex = imageUrls.indexOf(imageName);
- 
 
-
-  if(imageIndex == -1){
+  if (imageIndex == -1) {
     document.getElementsByClassName("imageContain")[0].style.backgroundImage =
-    imageUrls[0];
-  }
-  else{
-
+      imageUrls[0];
+  } else {
     document.getElementsByClassName("imageContain")[0].style.backgroundImage =
       imageUrls[imageIndex];
   }
 
-
-    openedPopup();
-  
+  openedPopup();
 }
 
 function imageChange(id) {
@@ -591,151 +563,147 @@ function imageMoveRight() {
 function imagePopNone() {
   document.getElementsByClassName("imagePop")[0].style.display = "none";
 
- closedPopup();;
-
-
+  closedPopup();
 }
 
-window.addEventListener('scroll', function() {
-
-  if(pageYOffset >= 500){
-    this.document.querySelector('.header.fixed').classList.add('active');
-    
+window.addEventListener("scroll", function () {
+  if (pageYOffset >= 500) {
+    this.document.querySelector(".header.fixed").classList.add("active");
+  } else {
+    this.document.querySelector(".header.fixed").classList.remove("active");
   }
-  else{
-    this.document.querySelector('.header.fixed').classList.remove('active');
-
-  }
- 
 });
 
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
   smoothLink.addEventListener("click", function (e) {
     e.preventDefault();
-    
-    const id = smoothLink.getAttribute("href");
-    let yOffset; 
-    if(!document.querySelector('.header').classList.contains('fixed')) yOffset = -240; 
-    else  yOffset = -140; 
-  
-    
-    const y = document.getElementById(id.split('#').join(''))?.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
-    window.scrollTo({top: y, behavior: 'smooth'});
+    const id = smoothLink.getAttribute("href");
+    let yOffset;
+    if (!document.querySelector(".header").classList.contains("fixed"))
+      yOffset = -240;
+    else yOffset = -140;
+
+    const y =
+      document.getElementById(id.split("#").join(""))?.getBoundingClientRect()
+        .top +
+      window.pageYOffset +
+      yOffset;
+
+    window.scrollTo({ top: y, behavior: "smooth" });
   });
 }
 
-
-setTimeout(()=>{
-  document.querySelector('.speech-bubble').classList.add('appear')
+setTimeout(() => {
+  document.querySelector(".speech-bubble").classList.add("appear");
 }, 20000);
 
-document.querySelector('.widget__img').addEventListener('click', (e)=>{
-
-  if(e.target == document.querySelector('.widget__speech-close')){
-    
-    document.querySelector('.speech-bubble').classList.remove('appear')
+document.querySelector(".widget__img").addEventListener("click", (e) => {
+  if (e.target == document.querySelector(".widget__speech-close")) {
+    document.querySelector(".speech-bubble").classList.remove("appear");
+  } else {
+    document.querySelector(".widget__img").classList.remove("active");
+    document.querySelector(".widget__form").classList.add("active");
   }
-  else{
-    document.querySelector('.widget__img').classList.remove('active');
-    document.querySelector('.widget__form').classList.add('active');
-  }
-  
-})
+});
 
-document.querySelector('.widget__close').addEventListener('click', ()=>{
-  document.querySelector('.widget__img').classList.add('active');
-  document.querySelector('.widget__form').classList.remove('active');
-})
+document.querySelector(".widget__close").addEventListener("click", () => {
+  document.querySelector(".widget__img").classList.add("active");
+  document.querySelector(".widget__form").classList.remove("active");
+});
 
 if (window.matchMedia("(max-width: 1180px)").matches) {
-  document.querySelector('.filter__search-box').addEventListener('click', ()=>{
-    document.querySelector('.filter__search-list.filter__choice.mobile').classList.add('active');
-    
-    openedPopup();
-    
-    document.querySelector('body').classList.add('active')
-  })
+  document
+    .querySelector(".filter__search-box")
+    .addEventListener("click", () => {
+      document
+        .querySelector(".filter__search-list.filter__choice.mobile")
+        .classList.add("active");
 
-  
+      openedPopup();
+
+      document.querySelector("body").classList.add("active");
+    });
 }
 
-const radioBtns = document.querySelectorAll('.filter__price3.dekstop input') 
-const radioBtnsMobile = document.querySelectorAll('.filter__price3.mob input') 
+const radioBtns = document.querySelectorAll(".filter__price3.dekstop input");
+const radioBtnsMobile = document.querySelectorAll(".filter__price3.mob input");
 
-
-for(let i of radioBtns){
-  i.addEventListener('click', ()=>{
-    for(let i = 0; i < radioBtns.length; i++) radioBtns[i].checked = false
+for (let i of radioBtns) {
+  i.addEventListener("click", () => {
+    for (let i = 0; i < radioBtns.length; i++) radioBtns[i].checked = false;
     i.checked = true;
-  })
+  });
 }
 
-for(let i of radioBtnsMobile){
-  i.addEventListener('click', ()=>{
-    for(let i = 0; i < radioBtnsMobile.length; i++) radioBtnsMobile[i].checked = false
+for (let i of radioBtnsMobile) {
+  i.addEventListener("click", () => {
+    for (let i = 0; i < radioBtnsMobile.length; i++)
+      radioBtnsMobile[i].checked = false;
     i.checked = true;
-  })
+  });
 }
 
-const openPriceIpad = document.querySelectorAll('.filter__price2-item.l')[1];
+const openPriceIpad = document.querySelectorAll(".filter__price2-item.l")[1];
 
-openPriceIpad.addEventListener('click', ()=>{
-  document.querySelectorAll('.filter__price3.filter__choice')[0].classList.add('active')
-  shadow.classList.add('active')
+openPriceIpad.addEventListener("click", () => {
+  document
+    .querySelectorAll(".filter__price3.filter__choice")[0]
+    .classList.add("active");
+  shadow.classList.add("active");
 
   scrollY = window.scrollY;
   document.body.style.top = `-${window.scrollY}px`;
-  document.body.style.position = 'fixed';
-  document.body.style.width = '100%';
-})
+  document.body.style.position = "fixed";
+  document.body.style.width = "100%";
+});
 
-document.querySelector('.filter__list-close').addEventListener('click', ()=>{
-  document.querySelector('body').classList.remove('active');
-  document.querySelector('.filter__search-list.filter__choice.mobile').classList.remove('active');
-  shadow.classList.remove('active')
+document.querySelector(".filter__list-close").addEventListener("click", () => {
+  document.querySelector("body").classList.remove("active");
+  document
+    .querySelector(".filter__search-list.filter__choice.mobile")
+    .classList.remove("active");
+  shadow.classList.remove("active");
 
-  
- closedPopup();
-})
+  closedPopup();
+});
 
-document.querySelectorAll('.filter__search-list.filter__choice .filter__apps-item2.l button')[0].addEventListener('click', ()=>{
-    document.querySelector('.filter__list-box').classList.remove('unactive')
-    document.querySelector('.filter__list-box2').classList.add('unactive')
-    for(let i of filterSearch) i.value = ''
-})
-
+document
+  .querySelectorAll(
+    ".filter__search-list.filter__choice .filter__apps-item2.l button"
+  )[0]
+  .addEventListener("click", () => {
+    document.querySelector(".filter__list-box").classList.remove("unactive");
+    document.querySelector(".filter__list-box2").classList.add("unactive");
+    for (let i of filterSearch) i.value = "";
+  });
 
 const phoneMask = document.getElementsByName("phone");
 const sumbitBtn = document.querySelectorAll(".catalog__form-btn");
 let number;
 
-const phoneInputs = document.querySelectorAll('.phone__box .catalog__form-input')
+const phoneInputs = document.querySelectorAll(
+  ".phone__box .catalog__form-input"
+);
 
 var maskOptions = {
-    mask: '+{0}(000)000-00-00',
-    lazy: false
-}
+  mask: "+{0}(000)000-00-00",
+  lazy: false,
+};
 var mask = new IMask(phoneMask[0], maskOptions);
 var mask = new IMask(phoneMask[1], maskOptions);
 
-for (let i = 0; i < phoneMask.length; i++){
-  phoneMask[i].addEventListener("input", (e) =>{
-
-    if(phoneMask[i].value.length > 0) phoneInputs[i].classList.add('active')
-    else phoneInputs[i].classList.remove('active')
-  })
+for (let i = 0; i < phoneMask.length; i++) {
+  phoneMask[i].addEventListener("input", (e) => {
+    if (phoneMask[i].value.length > 0) phoneInputs[i].classList.add("active");
+    else phoneInputs[i].classList.remove("active");
+  });
 }
 
 for (let j = 0; j < sumbitBtn.length; j++) {
   sumbitBtn[j].addEventListener("click", () => {
-
-
-    document.querySelector('.modal').classList.add('active')
- 
-  
-
+    document.querySelector(".modal").classList.add("active");
 
     if (
       phoneMask[j].value
