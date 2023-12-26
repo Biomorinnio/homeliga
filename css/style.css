@@ -6401,6 +6401,12 @@ body.overflow {
   opacity: 1 !important;
 }
 
+.swiper-button-next3{
+  margin-right: -30px;
+}
+.swiper-button-prev3{
+  margin-right: -30px;
+}
 
 }
 
@@ -6416,6 +6422,7 @@ body.overflow {
 .mySwiper3.mobile, .container.developers__inner.mobile, .developers__descr-btn.mobile{
   display: block !important;
 }
+
 
 /* .blog.swiper-button-disabled{
   opacity: 0.4 !important;
