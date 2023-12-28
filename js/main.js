@@ -310,6 +310,12 @@ shadow.addEventListener("click", () => {
 
   closedPopup();
 
+  document.querySelector('.filter__apps-item svg').classList.remove('active');
+  document.querySelector('.filter__bed-item svg').classList.remove('active')
+  document.querySelector('.filter__price-item.spec svg').classList.remove('active')
+  document.querySelector('.filter__price2-list .filter__price2-item.spec svg').classList.remove('active')
+  document.querySelector('.filter__price2-item.l svg').classList.remove('active')
+
   if (window.matchMedia("(max-width: 1180px)").matches) {
     document.querySelector(".shadow").style.background = "rgba(34,33,30,.7)";
   }
@@ -325,6 +331,11 @@ for (let i = 0; i < filterBtns.length; i++) {
 }
 
 filterApps.addEventListener("click", () => {
+  document.querySelector('.filter__apps-item svg').classList.toggle('active')
+  document.querySelector('.filter__bed-item svg').classList.remove('active')
+  document.querySelector('.filter__price-item.spec svg').classList.remove('active')
+  document.querySelector('.filter__price2-list .filter__price2-item.spec svg').classList.remove('active')
+
   filterBedList.classList.remove("active");
   filterPriceList.classList.remove("active");
   shadow.classList.toggle("active");
@@ -344,6 +355,12 @@ filterBed.addEventListener("click", () => {
   filterPriceList.classList.remove("active");
   shadow.classList.toggle("active");
   filterBedList.classList.toggle("active");
+
+  document.querySelector('.filter__bed-item svg').classList.toggle('active')
+  document.querySelector('.filter__apps-item svg').classList.remove('active')
+  document.querySelector('.filter__price-item.spec svg').classList.remove('active')
+  document.querySelector('.filter__price2-list .filter__price2-item.spec svg').classList.remove('active')
+
   document
     .querySelector(".filter__search-list .filter__search-list.filter__choice")
     .classList.remove("active");
@@ -353,6 +370,12 @@ filterPrice.addEventListener("click", () => {
   filterAppsList.classList.remove("active");
   filterBedList.classList.remove("active");
   filterValList.classList.remove("active");
+
+  document.querySelector('.filter__apps-item svg').classList.remove('active')
+  document.querySelector('.filter__bed-item svg').classList.remove('active')
+  document.querySelector('.filter__price2-list .filter__price2-item.spec svg').classList.remove('active')
+  document.querySelector('.filter__price-item.spec svg').classList.toggle('active')
+
   shadow.classList.toggle("active");
   document
     .querySelector(".filter__search-list .filter__search-list.filter__choice")
@@ -362,6 +385,7 @@ filterPrice.addEventListener("click", () => {
 });
 filterVal.addEventListener("click", () => {
   filterValList.classList.toggle("active");
+  document.querySelector('.filter__price2-list .filter__price2-item.spec svg').classList.toggle('active')
 
   if (window.matchMedia("(max-width: 830px)").matches) {
     filterValListM.classList.toggle("active");
@@ -371,6 +395,8 @@ filterVal.addEventListener("click", () => {
 filterValM.addEventListener("click", () => {
   filterValListM.classList.toggle("active");
   shadow.classList.add("active");
+
+  document.querySelector('.filter__price2-item.l svg').classList.add('active')
 
   openedPopup();
 });
@@ -400,18 +426,27 @@ for (let i = 0; i < filterSearch.length; i++) {
           ".filter__search-list.filter__choice.mobile .filter__list-box2"
         )
         .classList.remove("unactive");
-      console.log(
-        document.querySelector(
-          ".filter__search-list.filter__choice.mobile .filter__list-box2"
-        )
-      );
+     
     }
 
     filterAppsList.classList.remove("active");
     filterPriceList.classList.remove("active");
     filterBedList.classList.remove("active");
+
+    document.querySelector('.filter__apps-item svg').classList.remove('active')
+    document.querySelector('.filter__bed-item svg').classList.remove('active')
+    document.querySelector('.filter__price-item.spec svg').classList.remove('active')
   });
 }
+
+document.querySelector('.filter__search-box').addEventListener('click', ()=>{
+  filterAppsList.classList.remove("active");
+  filterPriceList.classList.remove("active");
+  filterBedList.classList.remove("active");
+  document.querySelector('.filter__apps-item svg').classList.remove('active')
+  document.querySelector('.filter__bed-item svg').classList.remove('active')
+  document.querySelector('.filter__price-item.spec svg').classList.remove('active')
+})
 
 document.querySelector(".close").addEventListener("click", function (e) {
   document.querySelector(".modal").classList.remove("active");
@@ -459,17 +494,24 @@ document.querySelector(".filter__price3 svg").addEventListener("click", () => {
   filterValListM.classList.remove("active");
   shadow.classList.remove("active");
 
+  document.querySelector('.filter__price2-item.l svg').classList.remove('active')
+
   closedPopup();
 });
 document.querySelector(".filter__apps2 svg").addEventListener("click", () => {
   filterAppsListM.classList.remove("active");
   shadow.classList.remove("active");
 
+  document.querySelector('.filter__apps-item svg').classList.remove('active')
+
   closedPopup();
 });
 document.querySelector(".filter__apps-btn2").addEventListener("click", () => {
   filterAppsListM.classList.remove("active");
   shadow.classList.remove("active");
+
+  document.querySelector('.filter__apps-item svg').classList.remove('active')
+
 
   closedPopup();
 });
@@ -484,6 +526,7 @@ document
     shadow.classList.remove("active");
 
     closedPopup();
+    filterSearch[0].disabled = false
   });
 
 var imageUrls = [
@@ -597,10 +640,11 @@ for (let smoothLink of smoothLinks) {
 
 setTimeout(() => {
   document.querySelector(".speech-bubble").classList.add("appear");
-}, 20000);
+}, 0000);
 
 document.querySelector(".widget__img").addEventListener("click", (e) => {
-  if (e.target == document.querySelector(".widget__speech-close")) {
+  console.log(e.target)
+  if (e.target == document.querySelector(".widget__speech-close") || e.target == document.querySelector(".speech-bubble__close")) {
     document.querySelector(".speech-bubble").classList.remove("appear");
   } else {
     document.querySelector(".widget__img").classList.remove("active");
@@ -614,17 +658,15 @@ document.querySelector(".widget__close").addEventListener("click", () => {
 });
 
 if (window.matchMedia("(max-width: 1180px)").matches) {
-  document
-    .querySelector(".filter__search-box")
-    .addEventListener("click", () => {
-      document
-        .querySelector(".filter__search-list.filter__choice.mobile")
-        .classList.add("active");
+  document.querySelector(".filter__search-box").addEventListener("click", () => {
+  document.querySelector(".filter__search-list.filter__choice.mobile").classList.add("active");
 
-      openedPopup();
+  openedPopup();
 
-      document.querySelector("body").classList.add("active");
-    });
+  filterSearch[0].disabled = true
+  
+  document.querySelector("body").classList.add("active");
+  });
 }
 
 const radioBtns = document.querySelectorAll(".filter__price3.dekstop input");
@@ -653,6 +695,8 @@ openPriceIpad.addEventListener("click", () => {
     .classList.add("active");
   shadow.classList.add("active");
 
+
+
   scrollY = window.scrollY;
   document.body.style.top = `-${window.scrollY}px`;
   document.body.style.position = "fixed";
@@ -661,6 +705,7 @@ openPriceIpad.addEventListener("click", () => {
 
 document.querySelector(".filter__list-close").addEventListener("click", () => {
   document.querySelector("body").classList.remove("active");
+  filterSearch[0].disabled = false
   document
     .querySelector(".filter__search-list.filter__choice.mobile")
     .classList.remove("active");
@@ -669,14 +714,21 @@ document.querySelector(".filter__list-close").addEventListener("click", () => {
   closedPopup();
 });
 
+document.querySelector('.filter__apps-item2.l .filter__apps-btn1').addEventListener('click', ()=>{
+  for(let i of  document.querySelectorAll('.filter__apps2.filter__choice.mobile li input')) i.checked = false
+ 
+})
+
 document
   .querySelectorAll(
     ".filter__search-list.filter__choice .filter__apps-item2.l button"
   )[0]
   .addEventListener("click", () => {
-    document.querySelector(".filter__list-box").classList.remove("unactive");
-    document.querySelector(".filter__list-box2").classList.add("unactive");
-    for (let i of filterSearch) i.value = "";
+    for(let i of document.querySelectorAll(".filter__list-box .custom-checkbox")) i.checked = false;
+    for(let i of document.querySelectorAll(".filter__list-box2 .custom-checkbox")) i.checked = false;
+    // document.querySelector(".filter__list-box").classList.remove("unactive");
+    // document.querySelector(".filter__list-box2").classList.add("unactive");
+    // for (let i of filterSearch) i.value = "";
   });
 
 const phoneMask = document.getElementsByName("phone");
@@ -686,6 +738,8 @@ let number;
 const phoneInputs = document.querySelectorAll(
   ".phone__box .catalog__form-input"
 );
+
+
 
 var maskOptions = {
   mask: "+{0}(000)000-00-00",

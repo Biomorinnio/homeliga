@@ -127,12 +127,14 @@ h2 {
   transition: 0.5s all ease;
 }
 
-.widget__speech-close {
+.speech-bubble__close {
   position: absolute;
   top: -20px;
   cursor: pointer;
   right: 23px;
   z-index: 999;
+  width: 30px;
+  height: 40px;
 }
 
 .speech-bubble.appear {
@@ -670,6 +672,10 @@ hr {
 
   font-weight: 300;
 }
+
+.filter__apps-item{
+  border-radius: 8px 0px 0px 8px;
+}
 .filter__apps,
 .filter__bed,
 .filter__price {
@@ -741,7 +747,7 @@ ul.filter__price li {
 }
 
 .filter__search-btn {
-  padding: 20px 44px;
+  padding: 22.315px 44px;
   color: var(--White, #fff);
   font-size: 16px;
   font-weight: 500;
@@ -794,6 +800,15 @@ ul.filter__price li {
   -o-transform: rotateX(0deg);
   -ms-transform: rotateX(0deg);
   transform: rotateX(0deg);
+}
+
+.filter__uls li svg{
+ 
+  transition: .3s all ease;
+}
+
+.filter__uls li svg.active{
+  transform: rotate(180deg);
 }
 
 .filter__bed-item2:nth-child(6) {
@@ -921,6 +936,7 @@ input[type="number"] {
   border-radius: 8px;
   border: 1px solid var(--Stroke, #c9c9c9);
   background: var(--White, #fff);
+  left: -5px;
 }
 .filter__price3 li {
   border: none;
@@ -2810,6 +2826,10 @@ font-weight: 400;
 line-height: 160%; /* 22.4px */
 }
 
+.mySwiper5, .mySwiper3{
+  border-radius: 20px;
+}
+
 
 
 @media (max-width: 1679px) {
@@ -3023,7 +3043,7 @@ line-height: 160%; /* 22.4px */
     line-height: 47.2px;
   }
   .filter__search-btn {
-    padding: 20px 51px;
+    padding: 22.3px 51px;
   }
   .click2 {
     right: 5%;
@@ -5457,7 +5477,7 @@ line-height: 160%; /* 22.4px */
     letter-spacing: -0.28px;
   }
   .catalog__subtitle {
-    margin: 30px 0px;
+    margin: 27px 0px;
     color: var(--Grey-BG, #f3f3f3);
     max-width: 259px;
     font-size: 16px;
@@ -5791,7 +5811,7 @@ line-height: 160%; /* 22.4px */
     display: none !important;
   }
   .apartaments .swiper__card-list svg {
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 0;
   }
   .swiper__top {
@@ -6125,7 +6145,7 @@ line-height: 160%; /* 22.4px */
   }
   .swiper__card-list {
     left: 14px;
-    top: 14px;
+    top: 10px;
   }
   .swiper__card {
     height: 350px;
