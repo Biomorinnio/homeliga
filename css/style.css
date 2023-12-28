@@ -1414,23 +1414,15 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
 }
 
 .mySwiper1 .swiper-slide {
-  box-shadow: 0px 20px 50px 0px rgba(34, 30, 31, 0.1);
   margin-bottom: 10px;
   border-radius: 20px;
   position: relative;
   z-index: 555;
 }
 
-.mySwiper1,
-.mySwiper2 {
-  overflow: visible !important;
-}
 
-.mySwiper1 .swiper-slide,
-.mySwiper2 .swiper-slide {
-  opacity: 0;
-  transition: 0.2s all ease;
-}
+
+
 .mySwiper1 .swiper-slide .swiper__card,
 .mySwiper1 .swiper-slide .swiper__img {
   cursor: unset;
@@ -1440,15 +1432,15 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
   cursor: pointer;
 }
 
-.swiper-slide.visible {
-  opacity: 1;
-}
+
 
 .swiper__text-box {
   display: flex;
   flex-direction: column;
   padding: 12px 20px;
   gap: 5px;
+  background: #f3f3f3;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .apartaments {
@@ -1459,8 +1451,7 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
   border-radius: 20px;
   cursor: unset;
   border-radius: 20px;
-  background: var(--White, #fff);
-  box-shadow: 0px 20px 50px 0px rgba(34, 30, 31, 0.1);
+  background: #f3f3f3;
   overflow: unset;
 }
 .swiper__top {
