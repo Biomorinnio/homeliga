@@ -1429,7 +1429,7 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
 .mySwiper1 .swiper-slide,
 .mySwiper2 .swiper-slide {
   opacity: 0;
-  transition: 0.8s all ease;
+  transition: 0.2s all ease;
 }
 .mySwiper1 .swiper-slide .swiper__card,
 .mySwiper1 .swiper-slide .swiper__img {
