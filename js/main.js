@@ -658,12 +658,15 @@ document.querySelector(".widget__close").addEventListener("click", () => {
 });
 
 if (window.matchMedia("(max-width: 1180px)").matches) {
+  // filterSearch[0].disabled = true
+  filterSearch[0].readOnly = true
   document.querySelector(".filter__search-box").addEventListener("click", () => {
   document.querySelector(".filter__search-list.filter__choice.mobile").classList.add("active");
 
   openedPopup();
 
-  filterSearch[0].disabled = true
+
+  console.log(filterSearch[0])
   
   document.querySelector("body").classList.add("active");
   });

@@ -2184,8 +2184,8 @@ h5.swiper__title {
 }
 
 .footer .container {
-  padding: 358px 20px 79px;
-  max-width: 1158px;
+  padding: 370px 70px 79px 20px;
+  max-width: 1222px;
 
   display: flex;
   color: white;
@@ -2890,7 +2890,7 @@ line-height: 160%; /* 22.4px */
     max-width: 102px;
   }
   .catalog__back {
-    width: 1388px;
+    width: 1480px;
     height: 460px;
     object-fit: cover;
     border-radius: 30px;
@@ -2939,7 +2939,7 @@ line-height: 160%; /* 22.4px */
     width: unset;
   }
   .footer .container {
-    padding: 370px 80px 79px;
+    padding: 370px 70px 79px 20px;
   }
   .footer__right {
     margin-right: 45px;
@@ -3143,7 +3143,7 @@ line-height: 160%; /* 22.4px */
     min-width: 240px;
   }
   .footer .container {
-    padding: 378px 65px 80px 54px;
+    padding: 362px 95px 80px 87px;
   }
   .services {
     margin-top: 113px;
