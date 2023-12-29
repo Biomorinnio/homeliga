@@ -2184,7 +2184,7 @@ h5.swiper__title {
 }
 
 .footer .container {
-  padding: 370px 70px 79px 20px;
+  padding: 361px 99px 79px 26px;
   max-width: 1222px;
 
   display: flex;
@@ -2939,7 +2939,7 @@ line-height: 160%; /* 22.4px */
     width: unset;
   }
   .footer .container {
-    padding: 370px 70px 79px 20px;
+    padding: 361px 99px 79px 26px;
   }
   .footer__right {
     margin-right: 45px;
