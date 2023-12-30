@@ -3387,7 +3387,9 @@ line-height: 160%; /* 22.4px */
 }
 
 @media (max-width: 1180px) {
-
+  .apartaments .swiper__card-list .swiper__card-item{
+    margin-top: -10px;
+  }
   .close1 {
     top: 10px;
     right: 10px;
@@ -5807,12 +5809,9 @@ line-height: 160%; /* 22.4px */
   .mySwiper1 {
     padding-bottom: 0 !important;
   }
-  .apartaments .swiper__card-item {
-    display: none !important;
-  }
+
   .apartaments .swiper__card-list svg {
-    margin-left: 10px;
-    margin-right: 0;
+    margin-right: 20px;
   }
   .swiper__top {
     max-height: unset;
@@ -6145,7 +6144,7 @@ line-height: 160%; /* 22.4px */
   }
   .swiper__card-list {
     left: 14px;
-    top: 10px;
+    top: 20px;
   }
   .swiper__card {
     height: 350px;
@@ -6432,6 +6431,9 @@ body.overflow {
 }
 .mySwiper3.mobile, .container.developers__inner.mobile, .developers__descr-btn.mobile{
   display: block !important;
+}
+.apartaments .swiper__card-list .swiper__card-item{
+  margin-top: -10px;
 }
 
 
