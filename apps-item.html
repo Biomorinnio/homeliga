@@ -303,7 +303,7 @@
         <svg class="navgiation__breadcrumbs" xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
             <circle cx="2.00269" cy="2.5" r="2" fill="#858585"/>
         </svg>
-        <p class="navigation__text">3-комнатные апартаменты в Madinat Jumeirah Living <s class="none">(236-612)</s> </p>
+        <p class="navigation__text">3-комнатные апартаменты в Madinat Jumeirah Living <f class="none">(236-612)</f> </p>
        
       </div>
     </section>
@@ -386,23 +386,28 @@
                 <p class="preview__features-text">23 200 USD за м²</p>
                 <ul class="preview__features-list">
                   <li class="preview__features-item">
-                    <p class="preview__item-descr preview__item-text">Площадь м² ........................................</p>
+                    <p class="preview__item-descr preview__item-text">Площадь м²</p>
+                    <div></div>
                     <p class="preview__item-content preview__item-text">120</p>
                   </li>
                   <li class="preview__features-item">
-                    <p class="preview__item-descr preview__item-text">Кол-во спален ........................................</p>
+                    <p class="preview__item-descr preview__item-text">Кол-во спален</p>
+                    <div></div>
                     <p class="preview__item-content preview__item-text">3</p>
                   </li>
                   <li class="preview__features-item">
-                    <p class="preview__item-descr preview__item-text">Этаж .........................................................</p>
+                    <p class="preview__item-descr preview__item-text">Этаж</p>
+                    <div></div>
                     <p class="preview__item-content preview__item-text">6</p>
                   </li>
                   <li class="preview__features-item">
-                    <p class="preview__item-descr preview__item-text">План оплаты ..................................</p>
+                    <p class="preview__item-descr preview__item-text">План оплаты</p>
+                    <div></div>
                     <p class="preview__item-content preview__item-text">60/40</p>
                   </li>
                   <li class="preview__features-item">
-                    <p class="preview__item-descr preview__item-text">Год сдачи .........................................</p>
+                    <p class="preview__item-descr preview__item-text">Год сдачи</p>
+                    <div></div>
                     <p class="preview__item-content preview__item-text">2028</p>
                   </li>
                 </ul>
@@ -434,15 +439,15 @@
                   </ul>
               </div>
             </div>
-            <div class="preview__about">
+            <div class="preview__about none">
               <h3 class="preview__bottom-title">Описание</h3>
               <p class="preview__text">Инвесторы со всего мира выбирают недвижимость в Дубае как один из самых надежных и выгодных вариантов вложения средств. ОАЭ входят в топ максимально безопасных стран планеты, это государство со стабильной политической ситуацией</p>
               <p class="preview__bottom-btn">Показать еще</p>
             </div>
           </div>
-          <form class="preview__bottom-form">
+          <form class="preview__bottom-form none">
             <div class="preview__form-broker">
-              <img src="img/preview__form.png" alt="" class="preview__form-img">
+              <img src="img/preview__form.jpg" alt="" class="preview__form-img">
               <div class="preview__form-box swiper__profile">
                 <h6 class="preview__form-subtitle swiper__subtitle">
                   Агент
@@ -468,6 +473,44 @@
               <input type="button" value="Скачать презентацию"  class="preview__form-btn">
             </div>
           </form>
+          <form class="preview__bottom-form mobile">
+            <div class="preview__form-broker">
+              <div class="preview__form-main">
+
+                <img src="img/preview__form.jpg" alt="" class="preview__form-img">
+                <div class="preview__form-box swiper__profile">
+                  <h6 class="preview__form-subtitle swiper__subtitle">
+                    Агент
+                  </h6>
+                  <h5 class="preview__form-title swiper__profile-title">
+                    Александра Иванова
+                  </h5>
+                </div>
+              </div>
+  
+                <a href="tel:+74951234567" class="preview__form-number">+7 (495) 123-45-67</a>
+                <p class="preview__form-text">
+                  Позвоните мне, отвечу на вопросы
+                  или скачайте презентацию объекта
+                </p>
+              
+            </div>
+            <div class="preview__form-user">
+              <input type="name" name="name" class="preview__form-input catalog__form-input" placeholder="Ваше имя">
+              <div class="phone__box">
+                <input type="text"  name="phone" class="preview__form-input catalog__form-input" placeholder="+_(___)___-____">
+                <div class="catalog__form-error">
+                  Укажите корректный номер телефона
+                </div>
+              </div>
+              <input type="button" value="Скачать презентацию"  class="preview__form-btn">
+            </div>
+          </form>
+          <div class="preview__about mobile">
+            <h3 class="preview__bottom-title">Описание</h3>
+            <p class="preview__text">Инвесторы со всего мира выбирают недвижимость в Дубае как один из самых надежных и выгодных вариантов вложения средств. ОАЭ входят в топ максимально безопасных стран планеты, это государство со стабильной политической ситуацией</p>
+            <p class="preview__bottom-btn">Показать еще</p>
+          </div>
         </div>
       </div>
     </section>
@@ -481,10 +524,9 @@
     <section class="catalog zoom" >
      
 
-      <img src="img/zoom__back.png" alt="" class="catalog__back none">
-      <img src="img/catalog__back-mobile.png" alt="" class="catalog__back mobile">
+    <img src="img/zoom__back.png" alt="" class="catalog__back none">
 
-    <div class="container zoom__inner">
+    <div class="container zoom__inner none">
       <div class="zoom__left">
         <div class="catalog__title-box">
           <h3 class="catalog__title">
@@ -517,8 +559,36 @@
           <span class="zoom__right-subtitle">Брокер</span>
           <h4 class="zoom__right-title">Александр <br/> Иванов</h4>
         </div>
-        <img src="img/zoom-img.png" alt="">
+        <img src="img/zoom-img.png" alt="" class="none">
       </div>
+    </div>
+    <div class="container zoom__inner mobile">
+      <div class="zoom__left">
+        <h3 class="catalog__title">
+            Оставьте <br/> заявку
+            на показ объекта в Zoom 
+        </h3>
+    
+        <h5 class="catalog__subtitle">
+          <img src="img/zoom-img__mobile.png" alt="">
+          Организуем встречу в удобное время 
+        </h5>
+      
+       
+      </div>
+    
+        <form action="" class="catalog__form zoom__form">
+          <input type="name" name="name" class="catalog__form-input" placeholder="Ваше имя">
+          <div class="phone__box">
+  
+            <input type="text"  name="phone" class="catalog__form-input" placeholder="+_(___)___-____">
+            <div class="catalog__form-error">
+              Укажите корректный номер телефона
+            </div>
+          </div>
+          <input type="button" value="Записаться на Zoom-показ"  class="catalog__form-btn">
+        </form>
+   
     </div>
     </section>
 
@@ -1975,6 +2045,7 @@
      
 
         <img src="img/catalog2__back.png" alt="" class="catalog__back none">
+        <img src="img/catalog__back-ipad.png" alt="" class="catalog__back ipad">
         <img src="img/catalog2__back-mobile.png" alt="" class="catalog__back mobile">
   
       <div class="container">
