@@ -2441,7 +2441,19 @@ h5.swiper__title {
 .header.other-pages .header__top {
   align-items: center;
 }
-
+.preview__center{
+  max-height: 496px;
+}
+.preview__center-img{
+  width: 100%;
+  height: 100%;
+}
+.preview__center-right .preview__center-img{
+  max-height: 243px;
+}
+.preview__center-left{
+  max-width: 570px;
+}
 .navigation{
   margin: 30px 0px 48px;
 }
@@ -2547,6 +2559,9 @@ line-height: 160%; /* 22.4px */
 
 .preview__left-img{
   border-radius: 20px 0px 0px 20px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .preview__rightT-img{
@@ -4854,7 +4869,13 @@ line-height: 160%; /* 22.4px */
   }
 
 /*/ Страница квартиры /*/
+.swiper-preview.mobile, .preview__top-right, .preview__advantages.mobile{
+  display: none !important;
+}
+.preview__center-img{
+  width: 100%;
 
+}
 .header.other-pages{
   position: relative;
   padding-bottom: 8px;
@@ -5035,6 +5056,22 @@ padding: 15px 0;
 
 .catalog{
   margin-bottom: 80px;
+}
+
+.navigation__inner.none{
+  display: flex !important;
+}
+.navigation__inner.mobile{
+  display: none !important;
+}
+
+.preview__title f.none{
+  display: unset !important;
+  margin-left: -6px;
+}
+
+.preview__title k{
+  display:  none !important;
 }
 
 }
@@ -6438,6 +6475,214 @@ padding: 15px 0;
     right: 5px;
     bottom: 5px;
   }
+
+
+
+  /*/ Страница квартиры /*/
+  .swiper-preview.mobile, .preview__top-right.mobile, .preview__advantages.mobile{
+    display: block !important;
+  }
+  .header.other-pages{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .header .container{
+    padding-bottom: 13px;
+  }
+  .preview__title br{
+    display: none;
+  }
+  .preview .preview__top-text{
+    font-size: 12px;
+  }
+  .preview__top-left{
+    margin-top: 5px;
+  }
+  .swiper-preview.mobile, .preview__about.mobile .preview__bottom-title{
+    display: block !important;
+    position: relative;
+
+  }
+  .preview__bottom-title{
+    font-size: 24px;
+  }
+  .swiper-preview img{
+   height: 350px;
+    object-fit: cover;
+  }
+
+  .swiper-preview img{
+    width: 100%;
+  }
+  .navigation__inner.mobile{
+    display: flex !important;
+    gap: 8px;
+  }
+  .navigation__inner.none, .preview__title f.none, .preview__features .preview__bottom-title{
+    display: none !important;
+  }
+  .navigation__text:last-child{
+    color: var(--Grey, #858585);
+
+font-size: 12px;
+font-weight: 400;
+
+  }
+  .preview__title{
+    font-weight: 600 ;
+  }
+  .preview__title k.mobile{
+    display: unset !important;
+  }
+
+  .preview__top-btn, .preview__top-right, .preview__advantages{
+    display: none;
+  }
+  .preview__top-text{
+    font-size: 12px;
+  }
+  .preview__bottom-form.mobile{
+    flex-direction: column;
+  }
+  .preview__center{
+    display: none;
+  }
+  .preview__top-right.mobile  {
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    display: flex !important;
+    margin-top: 21px;
+  }
+  .swiper-pagination__preview{
+    position: absolute;
+    bottom: 34px !important;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+    z-index:55;
+  }
+  .swiper-pagination__preview .swiper-pagination-bullet{
+    background: rgba(255, 255, 255, 0.30) !important;
+    width: 36px !important;
+  }
+  .swiper-pagination__preview .swiper-pagination-bullet{
+    margin-right: 10px !important;
+    margin-left: 0px !important;
+  }
+  .swiper-pagination__preview .swiper-pagination-bullet-active{
+    background: var(--White, #FFF) !important;
+  }
+  .preview__bottom{
+    margin-top: 25px;
+  }
+  .preview__features-text{
+    margin: 0px 0px 28px;
+  }
+  .preview__top-box .preview__top-text.preview__top-lot{
+    font-size: 14px;
+  }
+  .preview__top-text.preview__top-update{
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+  .preview__top-text.preview__top-update br.mobile{
+    display: none !important;
+  }
+  .preview__top-update svg{
+    margin: 0;
+  }
+  .preview__top-text{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .preview__price-text{
+    font-size: 28px;
+  }
+  .preview__bottom-row, .preview__features{
+    width: 100%;
+  }
+  .preview__form-user{
+    min-width: unset;
+  }
+  .preview__form-number{
+    font-size: 18px;
+  }
+  .preview__text{
+    font-size: 14px;
+  }
+  .preview__bottom-form.mobile{
+    padding: 30px;
+  }
+  .swiper__profile .swiper__subtitle{
+    margin-top: -1px;
+  }
+  .preview__form-user{
+    margin-top: 25px;
+  }
+  .preview__form-user .catalog__form-input{
+    padding: 22px 20px;
+  }
+  .preview__about{
+    margin-top: 32px;
+  }
+  .preview__advantages{
+    margin-top: 27px;
+  }
+  .preview__advantages-item{
+    gap: 29px;
+  }
+  .preview__advantages-title{
+    font-size: 18px;
+  }
+  .preview__advantages-subtitle{
+    font-size: 14px;
+  }
+  .catalog.zoom{
+    padding: 0 20px;
+  }
+  .zoom__inner.mobile{
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .catalog__title{
+    max-width: 218px;
+    font-size: 20px;
+    position: relative;
+  }
+  .catalog.zoom .catalog__title::before{
+    position: absolute;
+    right: -95px;
+    bottom: -28px;
+    content: '';
+    width: 106px;
+   
+    height: 106px;
+    background-image: url('../img/zoom-img__mobile.png');
+  }
+  .catalog__title br, .zoom__left .catalog__subtitle img{
+    display: none;
+  }
+  .zoom__left, .zoom__left .catalog__subtitle{
+    max-width: unset;
+  }
+  .zoom__left .catalog__subtitle{
+    margin-top: 17px;
+font-size: 14px;
+
+font-weight: 400;
+line-height: 150%; /* 21px */
+letter-spacing: -0.14px;
+  }
+  .zoom__inner .catalog__form{
+    margin-top: 19px;
+  }
+
 }
 
 @media (max-width: 450px) {
@@ -6447,6 +6692,10 @@ padding: 15px 0;
   .filter__bed1-item:last-of-type {
     width: 100%;
   }
+  .swiper-preview img{
+    height: 260px;
+     object-fit: cover;
+   }
 }
 @media (max-width: 375px) {
   .filter__bed1-list {

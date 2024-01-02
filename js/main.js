@@ -206,6 +206,14 @@ var swiper7 = new Swiper(".mySwiper7", {
   },
 });
 
+var swiperPreview = new Swiper(".swiper-preview", {
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination__preview",
+    clickable: true,
+  },
+})
+
 let scrollY;
 function openedPopup() {
   scrollY = window.scrollY;
