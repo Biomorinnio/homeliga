@@ -6650,7 +6650,7 @@ font-weight: 400;
     flex-direction: column;
     padding: 40px 20px;
   }
-  .catalog__title{
+  .catalog.zoom .catalog__title{
     max-width: 218px;
     font-size: 20px;
     position: relative;
