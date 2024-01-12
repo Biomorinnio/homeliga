@@ -2437,7 +2437,9 @@ h5.swiper__title {
   border-radius: 20px;
 }
 
-Ст
+
+
+
 .mySwiper5, .mySwiper3{
   border-radius: 20px;
 }
@@ -4425,6 +4427,7 @@ h5.swiper__title {
 }
 
 @media (max-width: 768px) {
+
   .swiper__card:hover .swiper__front img {
     transform: unset;
   }
@@ -4435,11 +4438,7 @@ h5.swiper__title {
   .catalog2 {
     z-index: 1;
   }
-  .swiper__text-box,
-  .apartaments .swiper__card {
-    box-shadow: 0px 20px 50px 0px rgba(34, 30, 31, 0.1);
-    border: none;
-  }
+
   .swiper__front {
     border-radius: 20px;
   }
