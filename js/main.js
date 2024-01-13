@@ -648,7 +648,7 @@ for (let smoothLink of smoothLinks) {
 
 setTimeout(() => {
   document.querySelector(".speech-bubble").classList.add("appear");
-}, 0000);
+}, 20000);
 
 document.querySelector(".widget__img").addEventListener("click", (e) => {
   console.log(e.target)
