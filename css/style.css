@@ -1473,6 +1473,9 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
 .swiper__top {
   max-height: 200px;
 }
+.swiper__card-link{
+  display: block;
+}
 .swiper__img {
   cursor: pointer;
   width: 100%;

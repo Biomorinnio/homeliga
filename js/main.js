@@ -28,7 +28,7 @@ var swiper = new Swiper(".mySwiper1.mobile", {
 var swiperFirst = new Swiper(".mySwiper1.none", {
   loop: true,
 
-  allowTouchMove: false,
+  allowTouchMove: true,
   slidesPerView: 1,
   spaceBetween: 20,
   navigation: {
@@ -93,7 +93,7 @@ var swiper2 = new Swiper(".mySwiper2.mobile", {
 var swiperSecond = new Swiper(".mySwiper2.none", {
   loop: true,
   slidesPerView: 1,
-  allowTouchMove: false,
+  allowTouchMove: true,
   spaceBetween: 20,
   navigation: {
     nextEl: ".swiper-button-next2",
@@ -232,13 +232,23 @@ function closedPopup() {
 const burgerOpen = document.querySelectorAll(".header__burger");
 const burgerClose = document.querySelector(".burger__menu-close");
 const burgerMenu = document.querySelector(".burger__menu");
+const burgerLinks = document.querySelectorAll('.header__top-link');
+
+for(let i of burgerLinks){
+  i.addEventListener('click', ()=>{
+    burgerMenu.classList.remove('active');
+    shadow.classList.remove('active')
+    closedPopup()
+  })
+}
 
 for (let i of burgerOpen) {
   i.addEventListener("click", () => {
     burgerMenu.classList.add("active");
 
-    shadow.classList.add("active");
-
+    if (window.matchMedia("(min-width: 769px)").matches) {
+      shadow.classList.add("active");
+    }
     document.querySelector(".shadow").style.background = "unset";
 
     openedPopup();
@@ -649,6 +659,8 @@ for (let smoothLink of smoothLinks) {
 setTimeout(() => {
   document.querySelector(".speech-bubble").classList.add("appear");
 }, 20000);
+
+
 
 document.querySelector(".widget__img").addEventListener("click", (e) => {
   console.log(e.target)

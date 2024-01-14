@@ -36,7 +36,7 @@
 }
 
 .preview {
-  margin-bottom: 60px;
+  margin-bottom: 48px;
 }
 
 .preview__title {
@@ -151,7 +151,7 @@ g {
 .preview__bottom-title {
   color: var(--Dark, #2e2f36);
   font-size: 28px;
-  margin-bottom: 18px;
+  margin-bottom: 13px;
   font-weight: 600;
   line-height: 150%; /* 42px */
 }
@@ -359,6 +359,22 @@ g {
   line-height: 160%; /* 22.4px */
 }
 
+.location{
+  margin-bottom: 36.5px;
+}
+
+.location__title{
+  color: var(--Dark, #2E2F36);
+  font-size: 28px;
+  font-weight: 600 !important;
+  line-height: 150%; /* 42px */
+  margin-bottom: 18px;
+}
+
+.location iframe{
+  border-radius: 20px;
+}
+
 .catalog__title-box {
   display: flex;
 }
@@ -421,8 +437,16 @@ g {
   .preview__form-user {
     min-width: 270px;
   }
+  .location{
+    margin-bottom: 51.5px;
+  }
+  .location iframe{
+    width: 100%;
+    max-height: 450px;
+  }
   .zoom__left {
     margin-top: 55px;
+    min-width: 615px;
   }
   .zoom__right {
     margin-left: -189px;
@@ -440,9 +464,7 @@ g {
   .zoom__form .catalog__form-btn {
     max-width: 158px;
   }
-  .zoom__left {
-    min-width: 610px;
-  }
+  
   .zoom {
     margin-bottom: 47px;
   }
@@ -579,6 +601,23 @@ g {
     margin-top: 10px;
   }
 
+  .preview{
+    margin-bottom: 27px;
+  }
+
+  .location iframe{
+    max-height: 380px;
+  }
+
+  .location{
+    margin-bottom: 76.5px;
+  }
+
+  .apartaments{
+    margin-bottom: 86px;
+  }
+
+
   .zoom__inner.mobile {
     display: flex !important;
     justify-content: space-between;
@@ -640,6 +679,11 @@ g {
 
   .catalog {
     margin-bottom: 80px;
+  }
+
+  
+  .catalog__form{
+    margin-bottom: 27px;
   }
 
   .navigation__inner.none {
@@ -819,6 +863,18 @@ g {
   .preview__advantages-subtitle {
     font-size: 14px;
   }
+  .preview{
+    margin-bottom: 32px;
+  }
+  .location__title{
+    font-size: 24px !important;
+  }
+  .location iframe{
+    max-height: 360px;
+  }
+  .location{
+    margin-bottom: 65.5px;
+  }
   .catalog.zoom {
     padding: 0 20px;
   }
@@ -826,8 +882,11 @@ g {
     flex-direction: column;
     padding: 40px 20px;
   }
+  .catalog, .apartaments{
+    margin-bottom: 56px;
+  }
   .catalog.zoom .catalog__title {
-    max-width: 218px;
+    max-width: 220px;
     font-size: 20px;
     position: relative;
   }
@@ -860,4 +919,19 @@ g {
   .zoom__inner .catalog__form {
     margin-top: 19px;
   }
+  .header.other-pages{
+    padding-bottom: 1px;
+    padding-top: 0px;
+  }
+  .developers{
+    margin-bottom: 64px;
+  }
+  
+}
+
+@media(max-width: 480px){
+  .swiper-preview img {
+    height: 260px;
+    object-fit: cover;
+}
 }
