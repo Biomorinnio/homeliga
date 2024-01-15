@@ -430,6 +430,17 @@ g {
   margin-left: -8px;
 }
 
+.preview__top-like{
+  transition: .3s all ease;
+}
+
+.preview__top-like.clicked > circle{
+  fill: var(--Sand, #b4a06b);
+}
+.preview__top-like.clicked > g path{
+  fill: #fff;
+}
+
 @media (max-width: 1440px) {
   .preview__center-img {
     width: 100%;

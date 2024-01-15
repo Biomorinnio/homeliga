@@ -302,7 +302,7 @@ for (let i = 0; i < switchLang.length; i++) {
   });
 }
 
-shadow.addEventListener("click", () => {
+shadow?.addEventListener("click", () => {
   switchList[0].classList.remove("active");
   switchList[1]?.classList.remove("active");
   filterAppsList.classList.remove("active");
