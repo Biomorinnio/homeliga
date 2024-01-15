@@ -57,7 +57,27 @@
             </svg>
             <span class="header__top-title">Меню</span>
 
-           
+            <ul class="header__top-switch">
+              <li class="header__switch-item">
+                <img class="header__switch-icon" src="img/ru.svg" alt="">
+                  
+                RU
+                <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.5 6L0.468912 0.749999L6.53109 0.75L3.5 6Z" fill="white"/>
+                </svg>
+                          
+                </li>
+                <ul class="header__top-switch2">
+                  <li class="header__switch-item2 active">
+                    <img src="img/ru.svg" alt="">
+                    RU
+                  </li>
+                  <li class="header__switch-item2">
+                    <img src="img/eng.svg" alt="">
+                    ENG
+                  </li>
+                </ul>
+            </ul>
           </div>
           <a class="header__top-logo" href="index.html">
             <img src="img/header__logo.svg" alt="" class="header__logo-img" />
@@ -299,15 +319,15 @@
 
     <section class="navigation">
       <div class="container navigation__inner none">
-        <p class="navigation__text">Новостройки</p>
+        <p class="navigation__text"><a href="#">Новостройки</a> </p>
         <svg class="navgiation__breadcrumbs" xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
             <circle cx="2.00269" cy="2.5" r="2" fill="#858585"/>
         </svg>
-        <p class="navigation__text">Madinat Jumeirah Living</p>
+        <p class="navigation__text"><a href="#">Madinat Jumeirah Living</a> </p>
         <svg class="navgiation__breadcrumbs" xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
             <circle cx="2.00269" cy="2.5" r="2" fill="#858585"/>
         </svg>
-        <p class="navigation__text">Jadeel</p>
+        <p class="navigation__text"><a href="#">Jadeel</a> </p>
         <svg class="navgiation__breadcrumbs" xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
             <circle cx="2.00269" cy="2.5" r="2" fill="#858585"/>
         </svg>
@@ -315,10 +335,12 @@
        
       </div>
       <div class="container navigation__inner mobile">
+        <a href="#">
         <svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M4.79079 0.244078C5.06974 0.569515 5.06974 1.09715 4.79079 1.42259L1.72444 5L4.79079 8.57741C5.06974 8.90285 5.06974 9.43049 4.79079 9.75592C4.51184 10.0814 4.05958 10.0814 3.78064 9.75592L0.209209 5.58926C-0.0697365 5.26382 -0.0697365 4.73618 0.209209 4.41074L3.78064 0.244078C4.05958 -0.0813592 4.51184 -0.0813592 4.79079 0.244078Z" fill="#858585"/>
         </svg>          
-        <p class="navigation__text">К поиску</p>
+        <p class="navigation__text">К поиску </p>
+        </a>
       </div>
     </section>
 
@@ -326,7 +348,7 @@
       <div class="container">
         <h2 class="preview__title">
           3-ком<k class="mobile">.</k> <f class="none">натные</f> апартаменты<br/>
-          в <g>Madinat Jumeirah Living</g> <f class="none">(236-612)</f> 
+          в <g><a href="#">Madinat Jumeirah Living</a></g> <f class="none">(236-612)</f> 
         </h2>
         <div class="preview__top">
           <div class="preview__top-left">
@@ -344,13 +366,13 @@
               В избранное
             </button>
             <span class="preview__top-text">
-              Застройщик <g>Meraas</g> 
+              Застройщик <g><a href="#">Meraas</a> </g> 
             </span>
             <span class="preview__top-text">
-              Район <g>Umm Suqeim</g> 
+              Район <g><a href="#">Umm Suqeim</a></g> 
             </span>
             <span class="preview__top-text">
-              ЖК <g>Jadeel</g> 
+              ЖК <g><a href="#">Jadeel</a></g> 
             </span>
 
           </div>
@@ -2244,7 +2266,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container footer__inner">
         <div class="footer__left">
           <a href="/" class="logo">

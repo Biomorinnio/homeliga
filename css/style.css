@@ -464,6 +464,7 @@ hr {
   border-radius: 15px;
   border: 1px rgba(200.81, 200.81, 200.81, 0.2) solid;
   padding: 6px 14px;
+  cursor: pointer;
 }
 
 .header__switch-icon {

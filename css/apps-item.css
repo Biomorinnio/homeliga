@@ -28,13 +28,21 @@
 .navigation__text {
   color: var(--Grey, #858585);
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
+  transition: .3s all ease;
+}
+
+.navigation__text:hover{
+  color: #2e2f36;
 }
 
 .navigation__text:last-child {
   color: var(--Dark, #2e2f36);
+  cursor: unset;
 }
+
+
 
 .preview {
   margin-bottom: 48px;
@@ -48,6 +56,8 @@
   font-weight: 600;
   line-height: 130%; /* 41.6px */
 }
+
+
 
 g {
   color: var(--Sand, #b4a06b);
@@ -79,6 +89,26 @@ g {
 
   font-weight: 600;
   line-height: 160%; /* 22.4px */
+}
+
+.preview__top-btn.clicked{
+  background: var(--Sand, #b4a06b);
+  border: 1px solid transparent;
+  color: var(--White, #fff);
+}
+
+.preview__top-btn.clicked svg path{
+  fill: #fff;
+}
+
+.preview__top-btn:hover{
+  background: var(--Sand, #b4a06b);
+  border: 1px solid transparent;
+  color: var(--White, #fff);
+}
+
+.preview__top-btn:hover > svg path{
+  fill: #fff;
 }
 
 .preview__top-text {
@@ -428,7 +458,7 @@ g {
 
 .preview__title f.none {
   display: unset !important;
-  margin-left: -8px;
+  margin-left: 0px;
 }
 
 .preview__top-like{
@@ -485,10 +515,7 @@ g {
 @media (max-width: 1180px) {
   /*/ Страница квартиры /*/
   
-.preview__title f.none {
 
-    margin-left: -6px;
-  }
   .swiper-preview.mobile,
   .preview__top-right,
   .preview__advantages.mobile {
@@ -744,6 +771,11 @@ g {
   }
   .navigation__inner.mobile {
     display: flex !important;
+    gap: 8px;
+  }
+  .navigation__inner.mobile a{
+    display: flex;
+    align-items: center;
     gap: 8px;
   }
   .navigation__inner.none,

@@ -348,7 +348,7 @@ for (let i = 0; i < filterBtns.length; i++) {
   });
 }
 
-filterApps.addEventListener("click", () => {
+filterApps?.addEventListener("click", () => {
   document.querySelector('.filter__apps-item svg').classList.toggle('active')
   document.querySelector('.filter__bed-item svg').classList.remove('active')
   document.querySelector('.filter__price-item.spec svg').classList.remove('active')
@@ -368,7 +368,7 @@ filterApps.addEventListener("click", () => {
   }
 });
 
-filterBed.addEventListener("click", () => {
+filterBed?.addEventListener("click", () => {
   filterAppsList.classList.remove("active");
   filterPriceList.classList.remove("active");
   shadow.classList.toggle("active");
@@ -384,7 +384,7 @@ filterBed.addEventListener("click", () => {
     .classList.remove("active");
 });
 
-filterPrice.addEventListener("click", () => {
+filterPrice?.addEventListener("click", () => {
   filterAppsList.classList.remove("active");
   filterBedList.classList.remove("active");
   filterValList.classList.remove("active");
@@ -401,7 +401,7 @@ filterPrice.addEventListener("click", () => {
 
   filterPriceList.classList.toggle("active");
 });
-filterVal.addEventListener("click", () => {
+filterVal?.addEventListener("click", () => {
   filterValList.classList.toggle("active");
   document.querySelector('.filter__price2-list .filter__price2-item.spec svg').classList.toggle('active')
 
@@ -410,7 +410,7 @@ filterVal.addEventListener("click", () => {
   }
 });
 
-filterValM.addEventListener("click", () => {
+filterValM?.addEventListener("click", () => {
   filterValListM.classList.toggle("active");
   shadow.classList.add("active");
 
@@ -419,7 +419,7 @@ filterValM.addEventListener("click", () => {
   openedPopup();
 });
 for (let i = 0; i < filterSearch.length; i++) {
-  filterSearch[i].addEventListener("input", () => {
+  filterSearch[i]?.addEventListener("input", () => {
     if (i == 0) filterSearch[i + 1].value = filterSearch[i].value;
     else filterSearch[i - 1].value = filterSearch[i].value;
     if (window.matchMedia("(min-width: 1181px)").matches) {
@@ -457,7 +457,7 @@ for (let i = 0; i < filterSearch.length; i++) {
   });
 }
 
-document.querySelector('.filter__search-box').addEventListener('click', ()=>{
+document.querySelector('.filter__search-box')?.addEventListener('click', ()=>{
   filterAppsList.classList.remove("active");
   filterPriceList.classList.remove("active");
   filterBedList.classList.remove("active");
@@ -466,10 +466,10 @@ document.querySelector('.filter__search-box').addEventListener('click', ()=>{
   document.querySelector('.filter__price-item.spec svg').classList.remove('active')
 })
 
-document.querySelector(".close").addEventListener("click", function (e) {
+document.querySelector(".close")?.addEventListener("click", function (e) {
   document.querySelector(".modal").classList.remove("active");
 });
-document.querySelector(".modal-btn").addEventListener("click", function (e) {
+document.querySelector(".modal-btn")?.addEventListener("click", function (e) {
   document.querySelector(".modal").classList.remove("active");
 });
 
@@ -480,17 +480,17 @@ const swiperLikesBox = document.querySelectorAll(".swiper__like");
 
 if (!window.matchMedia("(max-width: 768px)").matches) {
   for (let i = 0; i < swiperLikes.length; i++) {
-    swiperLikes[i].addEventListener("mouseover", () => {
+    swiperLikes[i]?.addEventListener("mouseover", () => {
       swiperLikesBox[i].classList.add("active");
     });
-    swiperLikes[i].addEventListener("mouseout", () => {
+    swiperLikes[i]?.addEventListener("mouseout", () => {
       swiperLikesBox[i].classList.remove("active");
     });
   }
 }
 
 for (let i = 0; i < swiperLikes.length; i++) {
-  swiperLikes[i].addEventListener("click", () => {
+  swiperLikes[i]?.addEventListener("click", () => {
     swiperLikes[i].classList.toggle("clicked");
     if (swiperLikes[i].classList.contains("clicked")) {
       swiperLikesBox[i].innerHTML = "Убрать из избранного";
@@ -508,7 +508,7 @@ for (let i = 0; i < bedMobile.length; i++) {
   });
 }
 
-document.querySelector(".filter__price3 svg").addEventListener("click", () => {
+document.querySelector(".filter__price3 svg")?.addEventListener("click", () => {
   filterValListM.classList.remove("active");
   shadow.classList.remove("active");
 
@@ -516,7 +516,7 @@ document.querySelector(".filter__price3 svg").addEventListener("click", () => {
 
   closedPopup();
 });
-document.querySelector(".filter__apps2 svg").addEventListener("click", () => {
+document.querySelector(".filter__apps2 svg")?.addEventListener("click", () => {
   filterAppsListM.classList.remove("active");
   shadow.classList.remove("active");
 
@@ -524,7 +524,7 @@ document.querySelector(".filter__apps2 svg").addEventListener("click", () => {
 
   closedPopup();
 });
-document.querySelector(".filter__apps-btn2").addEventListener("click", () => {
+document.querySelector(".filter__apps-btn2")?.addEventListener("click", () => {
   filterAppsListM.classList.remove("active");
   shadow.classList.remove("active");
 
@@ -536,7 +536,7 @@ document.querySelector(".filter__apps-btn2").addEventListener("click", () => {
 
 document
   .querySelectorAll(".filter__apps-btn2")[1]
-  .addEventListener("click", () => {
+  ?.addEventListener("click", () => {
     document.querySelector("body").classList.remove("active");
     document
       .querySelector(".filter__search-list.filter__choice.mobile")
@@ -627,17 +627,17 @@ function imagePopNone() {
   closedPopup();
 }
 
-window.addEventListener("scroll", function () {
+window?.addEventListener("scroll", function () {
   if (pageYOffset >= 500) {
-    this.document.querySelector(".header.fixed").classList.add("active");
+    this.document.querySelector(".header.fixed")?.classList.add("active");
   } else {
-    this.document.querySelector(".header.fixed").classList.remove("active");
+    this.document.querySelector(".header.fixed")?.classList.remove("active");
   }
 });
 
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
-  smoothLink.addEventListener("click", function (e) {
+  smoothLink?.addEventListener("click", function (e) {
     e.preventDefault();
 
     const id = smoothLink.getAttribute("href");
@@ -656,13 +656,11 @@ for (let smoothLink of smoothLinks) {
   });
 }
 
-setTimeout(() => {
-  document.querySelector(".speech-bubble").classList.add("appear");
-}, 20000);
 
 
 
-document.querySelector(".widget__img").addEventListener("click", (e) => {
+
+document.querySelector(".widget__img")?.addEventListener("click", (e) => {
   console.log(e.target)
   if (e.target == document.querySelector(".widget__speech-close") || e.target == document.querySelector(".speech-bubble__close")) {
     document.querySelector(".speech-bubble").classList.remove("appear");
@@ -672,38 +670,24 @@ document.querySelector(".widget__img").addEventListener("click", (e) => {
   }
 });
 
-document.querySelector(".widget__close").addEventListener("click", () => {
+document.querySelector(".widget__close")?.addEventListener("click", () => {
   document.querySelector(".widget__img").classList.add("active");
   document.querySelector(".widget__form").classList.remove("active");
 });
 
-if (window.matchMedia("(max-width: 1180px)").matches) {
-  // filterSearch[0].disabled = true
-  filterSearch[0].readOnly = true
-  document.querySelector(".filter__search-box").addEventListener("click", () => {
-  document.querySelector(".filter__search-list.filter__choice.mobile").classList.add("active");
-
-  openedPopup();
-
-
-  console.log(filterSearch[0])
-  
-  document.querySelector("body").classList.add("active");
-  });
-}
 
 const radioBtns = document.querySelectorAll(".filter__price3.dekstop input");
 const radioBtnsMobile = document.querySelectorAll(".filter__price3.mob input");
 
 for (let i of radioBtns) {
-  i.addEventListener("click", () => {
+  i?.addEventListener("click", () => {
     for (let i = 0; i < radioBtns.length; i++) radioBtns[i].checked = false;
     i.checked = true;
   });
 }
 
 for (let i of radioBtnsMobile) {
-  i.addEventListener("click", () => {
+  i?.addEventListener("click", () => {
     for (let i = 0; i < radioBtnsMobile.length; i++)
       radioBtnsMobile[i].checked = false;
     i.checked = true;
@@ -712,7 +696,7 @@ for (let i of radioBtnsMobile) {
 
 const openPriceIpad = document.querySelectorAll(".filter__price2-item.l")[1];
 
-openPriceIpad.addEventListener("click", () => {
+openPriceIpad?.addEventListener("click", () => {
   document
     .querySelectorAll(".filter__price3.filter__choice")[0]
     .classList.add("active");
@@ -726,7 +710,7 @@ openPriceIpad.addEventListener("click", () => {
   document.body.style.width = "100%";
 });
 
-document.querySelector(".filter__list-close").addEventListener("click", () => {
+document.querySelector(".filter__list-close")?.addEventListener("click", () => {
   document.querySelector("body").classList.remove("active");
   filterSearch[0].disabled = false
   document
@@ -737,7 +721,7 @@ document.querySelector(".filter__list-close").addEventListener("click", () => {
   closedPopup();
 });
 
-document.querySelector('.filter__apps-item2.l .filter__apps-btn1').addEventListener('click', ()=>{
+document.querySelector('.filter__apps-item2.l .filter__apps-btn1')?.addEventListener('click', ()=>{
   for(let i of  document.querySelectorAll('.filter__apps2.filter__choice.mobile li input')) i.checked = false
  
 })
@@ -746,7 +730,7 @@ document
   .querySelectorAll(
     ".filter__search-list.filter__choice .filter__apps-item2.l button"
   )[0]
-  .addEventListener("click", () => {
+  ?.addEventListener("click", () => {
     for(let i of document.querySelectorAll(".filter__list-box .custom-checkbox")) i.checked = false;
     for(let i of document.querySelectorAll(".filter__list-box2 .custom-checkbox")) i.checked = false;
     // document.querySelector(".filter__list-box").classList.remove("unactive");
@@ -772,14 +756,18 @@ var mask = new IMask(phoneMask[0], maskOptions);
 var mask = new IMask(phoneMask[1], maskOptions);
 
 for (let i = 0; i < phoneMask.length; i++) {
-  phoneMask[i].addEventListener("input", (e) => {
+  phoneMask[i]?.addEventListener("input", (e) => {
     if (phoneMask[i].value.length > 0) phoneInputs[i].classList.add("active");
     else phoneInputs[i].classList.remove("active");
   });
 }
 
+document.querySelector('.preview__top-btn').addEventListener('click', ()=>{
+  document.querySelector('.preview__top-btn').classList.toggle('clicked')
+})
+
 for (let j = 0; j < sumbitBtn.length; j++) {
-  sumbitBtn[j].addEventListener("click", () => {
+  sumbitBtn[j]?.addEventListener("click", () => {
     document.querySelector(".modal").classList.add("active");
 
     if (
@@ -822,5 +810,25 @@ for (let j = 0; j < sumbitBtn.length; j++) {
         [j].classList.remove("error");
       phoneMask[j].classList.remove("error");
     }
+  });
+}
+
+setTimeout(() => {
+  document.querySelector(".speech-bubble")?.classList.add("appear");
+}, 20000);
+
+
+if (window.matchMedia("(max-width: 1180px)").matches) {
+  // filterSearch[0].disabled = true
+  filterSearch[0].readOnly = true
+  document.querySelector(".filter__search-box")?.addEventListener("click", () => {
+  document.querySelector(".filter__search-list.filter__choice.mobile").classList.add("active");
+
+  openedPopup();
+
+
+  console.log(filterSearch[0])
+  
+  document.querySelector("body").classList.add("active");
   });
 }
