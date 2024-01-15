@@ -29,6 +29,7 @@
   color: var(--Grey, #858585);
   font-size: 12px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .navigation__text:last-child {
