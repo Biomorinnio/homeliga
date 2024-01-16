@@ -73,7 +73,7 @@ var swiper2 = new Swiper(".mySwiper2.mobile", {
     prevEl: ".swiper-button-prev2",
   },
   pagination: {
-    el: ".swiper-pagination2",
+    el: ".swiper-pagination2.mobile",
     clickable: true,
   },
   breakpoints: {
@@ -556,6 +556,7 @@ var imageUrls = [
   'url("img/about__swiper-2.png")',
 ];
 
+
 var imageNumber = imageUrls.length;
 
 function imagePop(id) {
@@ -563,9 +564,12 @@ function imagePop(id) {
 
   var imageName = document.getElementById(id + "-image").style.backgroundImage;
 
+
+
   var imageIndex = 0;
 
   imageIndex = imageUrls.indexOf(imageName);
+
 
   if (imageIndex == -1) {
     document.getElementsByClassName("imageContain")[0].style.backgroundImage =
@@ -762,8 +766,12 @@ for (let i = 0; i < phoneMask.length; i++) {
   });
 }
 
-document.querySelector('.preview__top-btn').addEventListener('click', ()=>{
-  document.querySelector('.preview__top-btn').classList.toggle('clicked')
+document.querySelector('.preview__top-btn')?.addEventListener('click', ()=>{
+  document.querySelector('.preview__top-btn')?.classList.toggle('clicked')
+}) 
+
+document.querySelector('.preview__top-like')?.addEventListener('click', ()=>{
+  document.querySelector('.preview__top-like')?.classList.toggle('clicked')
 })
 
 for (let j = 0; j < sumbitBtn.length; j++) {
