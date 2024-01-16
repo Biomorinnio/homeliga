@@ -8,6 +8,7 @@
 .preview__center-img {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 .preview__center-right .preview__center-img {
   max-height: 243px;
