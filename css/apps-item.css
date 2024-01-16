@@ -430,6 +430,7 @@ g {
 .zoom__left {
   margin-top: 50px;
   z-index: 9;
+  min-width: 630px;
 }
 
 .zoom__right {
