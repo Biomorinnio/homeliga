@@ -463,7 +463,6 @@ hr {
   align-items: center;
   border-radius: 15px;
   border: 1px rgba(200.81, 200.81, 200.81, 0.2) solid;
-  padding: 6px 14px;
   cursor: pointer;
 }
 
@@ -475,7 +474,7 @@ hr {
   align-items: center;
   gap: 4px;
   color: white;
-
+  padding: 6px 14px;
   font-size: 12px;
   cursor: pointer;
   font-weight: 400;
@@ -483,7 +482,7 @@ hr {
 
 .header__top-switch2 {
   position: absolute;
-  padding: 10px 15px;
+ 
   border-radius: 8px;
   background: var(--White, #fff);
   -webkit-box-shadow: 0px 10px 30px rgba(34, 30, 31, 0.05);
@@ -494,7 +493,6 @@ hr {
 
   display: flex;
   flex-direction: column;
-  gap: 13px;
   left: 0px;
   top: 35px;
   -webkit-transform: rotateX(-90deg);
@@ -539,6 +537,16 @@ hr {
   font-size: 12px;
   cursor: pointer;
   font-weight: 400;
+  padding: 0px 15px;
+}
+
+.header__switch-item2:first-of-type{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.header__switch-item2:nth-of-type(2){
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .header__top-click {
