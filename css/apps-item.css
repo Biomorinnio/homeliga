@@ -525,6 +525,9 @@ gap: 10px;
 .preview__top-like.clicked > circle{
   fill: var(--Sand, #b4a06b);
 }
+.preview__top-like.clicked > circle{
+  stroke: var(--Sand, #b4a06b);
+}
 .preview__top-like.clicked > g path{
   fill: #fff;
 }
