@@ -782,20 +782,27 @@ const checkValues = document.querySelectorAll('.preview__price-item input');
 const textValues = document.querySelectorAll('.preview__price-item label');
 
 textValue?.addEventListener('click', ()=>{
-  console.log(31)
+
   listValues.classList.toggle('active')
   listValuesMobile.classList.toggle('active')
   shadow.classList.toggle('active')
+  if (window.matchMedia("(max-width: 768px)").matches){
+    openedPopup()
+  }
 })
 
 for(let i = 0; i < checkValues.length; i++){
   checkValues[i]?.addEventListener('click', ()=>{
     for(let i of checkValues) i.checked = false;
     checkValues[i].checked = true;
+
     listValues.classList.remove('active');
     listValuesMobile.classList.remove('active')
     shadow.classList.remove('active')
     document.querySelector('.preview__price-item span').textContent = textValues[i].textContent;
+    if (window.matchMedia("(max-width: 768px)").matches){
+      closedPopup()
+    }
   })
 }
 
@@ -803,12 +810,18 @@ document.querySelector('.preview__price-abs svg')?.addEventListener('click', ()=
   listValues.classList.remove('active');
   listValuesMobile.classList.remove('active')
   shadow.classList.remove('active');
+     if (window.matchMedia("(max-width: 768px)").matches){
+      closedPopup()
+    }
 })
 
 shadow.addEventListener('click', ()=>{
   listValues.classList.remove('active');
   listValuesMobile.classList.remove('active')
   shadow.classList.remove('active');
+     if (window.matchMedia("(max-width: 768px)").matches){
+      closedPopup()
+    }
 })
 
 for (let j = 0; j < sumbitBtn.length; j++) {
