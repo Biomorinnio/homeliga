@@ -242,7 +242,50 @@ g {
 .preview__price-abs {
   position: absolute;
   visibility: hidden;
-  opacity: 0;
+  opacity: 0; 
+  top: 30px;
+  z-index: 55;
+
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  -o-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+
+  transition: .3s all ease;
+
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 8px;
+border: 1px solid var(--Stroke, #C9C9C9);
+background: var(--White, #FFF);
+}
+
+.preview__price-abs.active{
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  
+}
+
+.preview__price-abs li{
+font-size: 14px;
+font-weight: 400;
+display: flex;
+align-items: center;
+gap: 10px;
 }
 
 .preview__features-text {
@@ -528,7 +571,13 @@ g {
 
 @media (max-width: 1180px) {
   /*/ Страница квартиры /*/
-  
+  .shadow{
+    background: none;
+    z-index: 5;
+  }
+  .shadow.active{
+    z-index: 5;
+  }
 
   .swiper-preview.mobile,
   .preview__top-right,
@@ -665,6 +714,12 @@ g {
     margin-bottom: 27px;
   }
 
+  .preview__price-item label{
+    flex-direction: row;
+    justify-content: unset;
+    gap: 10px;
+  }
+
   .location iframe{
     max-height: 380px;
   }
@@ -760,6 +815,9 @@ g {
   .preview__title f:first-of-type.none {
     display: unset !important;
     margin-left: -5px;
+  }
+  .preview__price-abs.mobile{
+    display: none !important;
   }
 }
 
@@ -1003,7 +1061,36 @@ g {
   .developers{
     margin-bottom: 64px;
   }
-  
+  .shadow.active{
+    background: rgba(34, 33, 30, 0.7);
+    z-index: 5;
+  }
+  .preview__price-abs{
+    display: none;
+  }
+  .preview__price-abs.mobile{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    top: unset;
+    display: flex !important;
+    padding: 20px;
+  }
+  .preview__price-abs svg{
+    align-self: flex-end;
+    margin-bottom: 12px;
+  }
+  .preview__price-abs .preview__price-item{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #C9C9C9;
+  }
+  .preview__price-item label{
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: unset;
+  }
+
 }
 
 @media(max-width: 480px){

@@ -32,6 +32,11 @@
   </head>
   <body>
 
+    
+    <div class="shadow">
+
+    </div>
+
     <section class="imagePop" id="imagePopId">
 
 
@@ -423,6 +428,7 @@
         <p class="navigation__text">К поиску </p>
         </a>
       </div>
+    
     </section>
 
     <section class="preview">
@@ -540,15 +546,26 @@
                     <p class="preview__price-text">2 320 000</p>
                     <ul class="preview__price-list">
                       <li class="preview__price-item">
-                        USD
+                        <span>USD</span>
                         <svg class="preview__price-icon" width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M3.5 5.8252L0.468912 0.560259L6.53109 0.560259L3.5 5.8252Z" fill="#2E2F36"/>
                         </svg>
                    
                       </li>
                       <ul class="preview__price-list preview__price-abs">
-                        <li class="preview__price-item">USD</li>
-                        <li class="preview__price-item">RUB</li>
+                        <li class="preview__price-item">
+                          <input type="checkbox" class="custom-checkbox" id="RUB"  value="yes">
+                          <label for="RUB">RUB</label>
+                        </li>
+                        <li class="preview__price-item">
+                          <input type="checkbox" class="custom-checkbox" id="AED"  value="yes">
+                          <label for="AED">AED</label>
+                        </li>
+                        <li class="preview__price-item">
+                          <input type="checkbox" class="custom-checkbox" id="USD"  value="yes" checked>
+                          <label for="USD">USD</label>
+                        </li>
+                   
                       </ul>
                     </ul>
                   </div>
@@ -709,6 +726,25 @@
         </div>
         </div>
       </div>
+
+      <ul class="preview__price-list preview__price-abs mobile">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M12 1.20857L10.7914 0L6 4.79143L1.20857 0L0 1.20857L4.79143 6L0 10.7914L1.20857 12L6 7.20857L10.7914 12L12 10.7914L7.20857 6L12 1.20857Z" fill="#22211E"/>
+        </svg>
+        <li class="preview__price-item">
+          <input type="checkbox" class="custom-checkbox" id="RUB1"  value="yes">
+          <label for="RUB1">RUB</label>
+        </li>
+        <li class="preview__price-item">
+          <input type="checkbox" class="custom-checkbox" id="AED1"  value="yes">
+          <label for="AED1">AED</label>
+        </li>
+        <li class="preview__price-item">
+          <input type="checkbox" class="custom-checkbox" id="USD1"  value="yes" checked>
+          <label for="USD1">USD</label>
+        </li>
+   
+      </ul>
     </section>
 
     <section class="location">
