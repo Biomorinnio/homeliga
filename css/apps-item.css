@@ -96,6 +96,10 @@ g {
   line-height: 160%; /* 22.4px */
 }
 
+.preview__top-btn svg path{
+  transition: .3s all ease;
+}
+
 .preview__top-btn.clicked{
   background: var(--Sand, #b4a06b);
   border: 1px solid transparent;
