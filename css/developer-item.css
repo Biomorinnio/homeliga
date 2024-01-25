@@ -166,7 +166,7 @@
 .developers__cards {
   display: grid;
   grid-template-columns: repeat(3, 31.5%);
-  max-height: 820px;
+  max-height: 908px;
   overflow: hidden;
   gap: 30px;
   transition: max-height 1s ease-in-out;
@@ -273,6 +273,9 @@
   }
   .footer .container{
     padding: 369px 95px 80px 87px;
+  }
+  .developers__cards{
+    max-height: 824px;
   }
 }
 
@@ -413,5 +416,128 @@
 
     font-size: 12px;
     font-weight: 400;
+  }
+  .header__phone{
+    margin-top: -8px;
+  }
+  .developer__item-title{
+    font-size: 32px;
+  }
+  .navigation{
+    margin-bottom: 90px;
+  }
+  .developer__item-list{
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    gap: 24px 16px;
+  }
+  .developer__item-text{
+    margin-top: 17px;
+    margin-bottom: 22px;
+  }
+  .developer__item-img{
+    height: 620px;
+  }
+  .developer__item-link{
+    margin-top: 28px;
+    max-width: unset;
+    width: 100%;
+  }
+  .developer__item-btn{
+    width: 100%;
+  }
+  .rewards{
+    margin-top: 123px;
+    margin-bottom: 47px;
+  }
+  .rewards__list.none{
+    display: grid !important;
+    grid-template-columns: repeat(2, 48%);
+    gap: 20px;
+  }
+  .rewards__item-imgs{
+    min-width: 158px;
+    min-height: 98px;
+  }
+  .rewards__item-img:first-of-type{
+    width: 154px;
+  }
+  .rewards__item-imgs{
+    margin-bottom: 14px;
+  }
+  .rewards__item-title{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .rewards__item-text{
+    font-size: 11px;
+  }
+  .swiper-rewards.mobile{
+    display: none !important;
+  }
+  .container.developers__inner.none{
+    display: none !important;
+  }
+  .mySwiper1.mobile{
+    display: block !important;
+  }
+  .developers .developers__descr-btn.mobile{
+    display: none !important;
+  }
+  .developers .developers__descr{
+    margin-bottom: 18px;
+  }
+  .mySwiper1 {
+    padding-bottom: 26px !important;
+  }
+  .developers__card{
+    padding: 0 20px;
+  }
+  .mySwiper1 .swiper-pagination{
+    bottom: 4px !important;
+  }
+  .developers{
+    margin-bottom:  63px;
+  }
+  .catalog .container{
+    padding-top: 60px;
+  }
+  .catalog__back.none{
+    display: none !important;
+  }
+  .catalog__subtitle{
+    margin: 23px 0px 34px;
+  }
+  .catalog{
+    margin-bottom: 58px;
+  }
+  .about__developer-title{
+    margin-bottom: 24px;
+  }
+  .about__developer-text{
+    font-size: 14px;
+  }
+  .about__developer-text:first-of-type{
+    margin-bottom: 27px;
+  }
+  .about__developer{
+    margin-bottom: 51px;
+  }
+  .districts .developers__descr{
+    margin-bottom: 20px;
+  }
+  .districts {
+    margin-bottom: 69px;
+  }
+  .catalog2 .container{
+    padding-top: 50px;
+    padding-bottom: 249px;
+  }
+  .footer__inner.ipad{
+    display: none !important;
+  }
+  .footer__inner {
+    padding-top: 60px !important;
   }
 }
