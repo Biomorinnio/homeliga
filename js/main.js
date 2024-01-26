@@ -468,9 +468,13 @@ document.querySelector('.filter__search-box')?.addEventListener('click', ()=>{
 
 document.querySelector(".close")?.addEventListener("click", function (e) {
   document.querySelector(".modal").classList.remove("active");
+  closedPopup();
+  shadow.classList.remove('active')
 });
 document.querySelector(".modal-btn")?.addEventListener("click", function (e) {
   document.querySelector(".modal").classList.remove("active");
+  closedPopup();
+  shadow.classList.remove('active')
 });
 
 const swiperLikes = document.querySelectorAll(
