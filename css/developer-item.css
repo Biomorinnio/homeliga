@@ -524,6 +524,9 @@ letter-spacing: -0.24px;
   .modal .catalog__form-input{
     min-width: 280px;
   }
+  .modal .catalog__title{
+    line-height: 130%;
+  }
   .modal .catalog__title, .modal .catalog__subtitle{
     text-align: center;
   max-width: unset;
