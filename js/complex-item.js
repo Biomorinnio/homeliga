@@ -26,6 +26,14 @@ var swiperFeatures = new Swiper(".swiper-features", {
   
   
   document.querySelector('.developer__item .developer__item-btn').addEventListener('click', ()=>{
+    document.getElementById('openModal-welcome').classList.add('active');
+    shadow.classList.add('active')
+    openedPopup()
+  })
+
+  const paymentBtns = document.querySelectorAll('.payment__button')
+
+  for(let i of paymentBtns) i.addEventListener('click', ()=>{
     document.getElementById('openModal').classList.add('active');
     shadow.classList.add('active')
     openedPopup()

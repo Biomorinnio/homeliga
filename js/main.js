@@ -822,6 +822,7 @@ document.querySelector('.preview__price-abs svg')?.addEventListener('click', ()=
 shadow.addEventListener('click', ()=>{
   listValues.classList.remove('active');
   listValuesMobile.classList.remove('active')
+  document.getElementById('openModal-welcome').classList.remove('active')
   shadow.classList.remove('active');
      if (window.matchMedia("(max-width: 768px)").matches){
       closedPopup()

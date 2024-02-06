@@ -2,6 +2,15 @@
   margin-left: -461px;
 }
 
+.modal__content-img{
+  margin-top: -25px;
+
+}
+
+.modal-body{
+  border-radius: 20px;
+}
+
 .developer__item-text {
   max-width: 520px;
 }
@@ -365,6 +374,14 @@ td {
   }
 }
 @media (max-width: 768px) {
+  .payment__button.none{
+    display: block !important;
+    width: 100%;
+  }
+  .payment__article{
+    flex-direction: column;
+    gap:30px;
+  }
   .developer__item-title br {
     display: block !important;
   }
