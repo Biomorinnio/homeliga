@@ -1,15 +1,12 @@
-.modal__content{
-  margin-left: -461px;
+.modal__content {
+  margin-left: -420px;
 }
 
-
-
-.modal__content-img{
+.modal__content-img {
   margin-top: -25px;
-
 }
 
-.modal-body{
+.modal-body {
   border-radius: 20px;
 }
 
@@ -52,7 +49,6 @@ h2 {
 
 .features__item:nth-child(4) .swiper-features__img {
   margin-left: -70px;
-
 }
 
 .swiper-features .swiper-slie {
@@ -292,10 +288,10 @@ td {
   }
 }
 @media (max-width: 1180px) {
-  #openModal .modal__content{
+  #openModal .modal__content {
     margin-left: 0px;
   }
-  
+
   .developer__item-text {
     max-width: 400px;
   }
@@ -368,22 +364,22 @@ td {
   .developer__item-title br {
     display: none !important;
   }
-  .modal__content{
+  .modal__content {
     margin-left: -461px;
     margin-top: -176px;
   }
-  .modal__content-img.mobile{
-    margin-right: -34px;
+  .modal__content-img.mobile {
+    margin-right: -18px;
   }
 }
 @media (max-width: 768px) {
-  .payment__button.none{
+  .payment__button.none {
     display: block !important;
     width: 100%;
   }
-  .payment__article{
+  .payment__article {
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
   }
   .developer__item-title br {
     display: block !important;
@@ -402,15 +398,16 @@ td {
     margin-top: 65px;
     margin-bottom: 50px;
   }
-  .container.developers__inner.none{
+  .container.developers__inner.none {
     display: block !important;
   }
-  .container.developers__inner.none .developers__descr,  .container.developers__inner.none .developers__descr-btn.mobile{
+  .container.developers__inner.none .developers__descr,
+  .container.developers__inner.none .developers__descr-btn.mobile {
     display: none !important;
   }
   .swiper-pagination2.mobile {
     bottom: -630px !important;
-}
+  }
   .mySwiper2 {
     padding-top: 15px !important;
   }
@@ -439,7 +436,7 @@ td {
   }
   .payment__list {
     display: grid;
-    grid-template-columns:repeat(2, 48.1%);
+    grid-template-columns: repeat(2, 48.1%);
 
     gap: 20px;
   }
@@ -447,12 +444,11 @@ td {
     min-width: 161px;
     min-height: 121px;
     width: 100%;
-    
   }
-  .payment__item:last-child{
+  .payment__item:last-child {
     grid-column: span 2;
   }
- 
+
   .payment__article {
     margin: 26px 0px 25px;
   }
@@ -462,7 +458,7 @@ td {
   .payment__item-title m {
     font-size: 24px;
   }
- 
+
   th,
   td {
     font-size: 12px;
@@ -521,7 +517,6 @@ td {
     margin-top: 59px;
     margin-bottom: 59px;
   }
- 
 
   .location__title {
     font-size: 29px !important;
@@ -537,14 +532,11 @@ td {
   }
   .developers .developers__descr-btn {
     margin-top: 24px;
+  }
+  .developers {
+    margin-bottom: 62px;
+  }
+  .developer__item-img {
+    height: 625px;
+  }
 }
-.developers {
-  margin-bottom: 62px;
-}
-.developer__item-img {
-  height: 625px;
-}
-
-
-}
-
