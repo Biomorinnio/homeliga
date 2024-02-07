@@ -450,7 +450,7 @@ td {
   }
 
   .payment__article {
-    margin: 25px 0px 28px;
+    margin: 25px 0px 32px;
   }
   .payment__item-title {
     font-size: 39px;
@@ -476,6 +476,9 @@ td {
   .payment__article,
   .payment__list {
     padding: 0 20px;
+  }
+  .payment__list{
+    margin-bottom: 4px;
   }
   .payment__btn {
     margin-top: 15px;
