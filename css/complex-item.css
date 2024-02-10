@@ -102,7 +102,7 @@ h2 {
   margin-top: -100px;
   z-index: 3;
 }
-.swiper-pagination.features .swiper-pagination-bullet {
+.swiper-pagination.features .swiper-pagination-bullet, .swiper-pagination7 .swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.3) !important;
   width: 34px !important;
   border-radius: unset;
@@ -112,7 +112,7 @@ h2 {
   margin-right: 10px !important;
   margin-left: 0px !important;
 }
-.swiper-pagination.features .swiper-pagination-bullet-active {
+.swiper-pagination.features .swiper-pagination-bullet-active, .swiper-pagination7 .swiper-pagination-bullet {
   background: var(--White, #fff) !important;
 }
 
@@ -296,6 +296,18 @@ td {
   }
 }
 @media (max-width: 1180px) {
+  .mySwiper2.mobile{
+    padding-bottom: 37px !important;
+  }
+  .mySwiper7 .swiper-slide{
+    border-radius: 20px ;
+  }
+  .apartaments .swiper-pagination2{
+ 
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
   .features__item:nth-child(4){
     margin-left: unset;
     max-width: unset;
@@ -312,7 +324,7 @@ td {
   }
   .apartaments {
     margin-top: 152px;
-    margin-bottom: 81px;
+    margin-bottom: 71px;
   }
   .mySwiper2 {
     padding-top: 37px !important;
@@ -320,10 +332,7 @@ td {
   .container.developers__inner {
     position: relative;
   }
-  .swiper-pagination2.mobile {
-    bottom: -589px !important;
-    display: flex !important;
-  }
+ 
   .features__list {
     margin-top: 40px;
   }
@@ -410,15 +419,8 @@ td {
     margin-top: 65px;
     margin-bottom: 50px;
   }
-  .container.developers__inner.none {
-    display: block !important;
-  }
-  .container.developers__inner.none .developers__descr,
-  .container.developers__inner.none .developers__descr-btn.mobile {
-    display: none !important;
-  }
-  .swiper-pagination2.mobile {
-    bottom: -630px !important;
+  .mySwiper2.mobile{
+    padding-bottom: 59px !important;
   }
   .mySwiper2 {
     padding-top: 15px !important;

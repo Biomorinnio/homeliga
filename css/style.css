@@ -2979,6 +2979,8 @@ h5.swiper__title {
 }
 
 @media (max-width: 1180px) {
+  
+ 
   .apartaments .swiper__card-list .swiper__card-item{
     margin-top: -10px;
   }

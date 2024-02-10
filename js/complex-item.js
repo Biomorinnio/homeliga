@@ -68,12 +68,89 @@ var swiperFeatures = new Swiper(".swiper-features", {
   var imageUrls = [
     'url("img/preview-1.png")',
     'url("img/preview-2.jpg")',
-    'url("img/preview-3.png")'
+    'url("img/preview-3.jpg")'
   ];
+
+  function imagePop(id, number) {
+
+    let slidesUrl = []
+    if(number == 1){
+      slidesUrl = [
+        "img/preview-1.png",
+        "img/preview-2.jpg",
+        "img/preview-3.jpg"
+      ];
+      imageUrls = [
+        'url("img/preview-1.png")',
+        'url("img/preview-2.jpg")',
+        'url("img/preview-3.jpg")'
+      ];
+    }
+    else if(number == 2){
+      imageUrls = [
+        'url("img/preview-2.jpg")',
+        'url("img/preview-1.png")',
+        'url("img/preview-3.jpg")'
+      ];
+      slidesUrl = [
+        "img/preview-2.jpg",
+        "img/preview-1.png",
+        "img/preview-3.jpg"
+      ];
+    }
+    else{
+      imageUrls = [
+        'url("img/preview-3.jpg")',
+        'url("img/preview-2.jpg")',
+        'url("img/preview-1.png")'
+      ];
+      slidesUrl = [
+        "img/preview-3.jpg",
+        "img/preview-2.jpg",
+        "img/preview-1.png"
+      ];
+    } 
+     
+    let slidesImg = document.querySelectorAll('.swiper-slide__img')
+    let slidesBackImgs = document.querySelectorAll('.mySwiper7 .swiper-slide')
+   
+    for(let i = 0; i < slidesImg.length; i++ ){
+      slidesImg[i].src = slidesUrl[i] 
+      
+      slidesBackImgs[i].style.backgroundImage = imageUrls[i];
+      document.getElementById('imageContainId').style.backgroundImage = imageUrls[0]
+      console.log(slidesBackImgs[i].style.backgroundImage)
+    }
+  
+
+    document.getElementById("imagePopId").style.display = "block";
+  
+    var imageName = document.getElementById(id + "-image").style.backgroundImage;
+
+  
+    var imageIndex = 0;
+  
+    imageIndex = imageUrls.indexOf(imageName);
+    console.log(imageIndex)
+
+    
+  
+    if (imageIndex == -1) {
+      document.getElementsByClassName("imageContain")[0].style.backgroundImage =
+        imageUrls[0];
+    } else {
+      document.getElementsByClassName("imageContain")[0].style.backgroundImage =
+        imageUrls[imageIndex];
+    }
+
+    
+ 
+  
+    openedPopup();
+  }
 
   function imageChange(id) {
     var imageName = document.getElementById(id).style.backgroundImage;
-    console.log(id)
     var imageIndex = 0;
   
     imageIndex = imageUrls.indexOf(imageName);
