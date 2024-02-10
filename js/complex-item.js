@@ -64,3 +64,23 @@ var swiperFeatures = new Swiper(".swiper-features", {
     else tableScrollBtn.textContent = 'Свернуть'
 
   })
+
+  var imageUrls = [
+    'url("img/preview-1.png")',
+    'url("img/preview-2.jpg")',
+    'url("img/preview-3.png")'
+  ];
+
+  function imageChange(id) {
+    var imageName = document.getElementById(id).style.backgroundImage;
+    console.log(id)
+    var imageIndex = 0;
+  
+    imageIndex = imageUrls.indexOf(imageName);
+  
+    if (imageIndex >= imageNumber - 1) imageIndex = 0;
+    else imageIndex++;
+  
+    document.getElementById(id).style.backgroundImage = imageUrls[imageIndex];
+  }
+  

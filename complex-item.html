@@ -79,7 +79,7 @@
           </div>
         </div>
       </div>
-      </div>
+    </div>
 
     <div id="openModal-plan" class="modal">
     <div class="modal-dialog">
@@ -125,7 +125,73 @@
     </div>
     </div>
 
+    <section class="imagePop" id="imagePopId">
+
+
+      <div class="click1" onclick="imageMoveLeft();">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5 32.2501L25.75 33.9999L12.5 20.75L25.75 7.5L27.5 9.25003L16.0001 20.75L27.5 32.2501Z" fill="white"/>
+          </svg>
+          
+      </div>
+      <div class="click2" onclick="imageMoveRight();">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 7.74994L14.25 6.00006L27.5 19.25L14.25 32.5L12.5 30.75L23.9999 19.25L12.5 7.74994Z" fill="white"/>
+          </svg>
+          
+      </div>
   
+      <div class="close1" onclick="imagePopNone();">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_205_3081)">
+          <path d="M38 12.82L35.18 10L24 21.18L12.82 10L10 12.82L21.18 24L10 35.18L12.82 38L24 26.82L35.18 38L38 35.18L26.82 24L38 12.82Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_205_3081">
+          <rect width="48" height="48" rx="24" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>        
+      </div>
+  
+        
+  
+      <section class="imagePopUnder" onclick="imagePopNone();">
+      </section>
+  
+      
+  
+      <section class="imageContain" id="imageContainId" onclick="imageChange(id)">
+      
+        <div class="swiper mySwiper7 mobile"> 
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"  id="model-1-image" style="background-image: url(img/preview-1.png)">
+                <div class="swiper-slide__box">
+  
+                  <img src="img/preview-1.png" alt="" class="swiper-slide__img" >
+                </div>
+              </div>
+              <div class="swiper-slide" id="model-2-image" style="background-image: url(img/preview-2.jpg)">
+                <div class="swiper-slide__box">
+  
+                  <img src="img/preview-2.png" alt="" class="swiper-slide__img"  >
+                </div>
+              </div>
+              <div class="swiper-slide" id="model-3-image" style="background-image: url(img/preview-3.png)" >
+                <div class="swiper-slide__box">
+  
+                  <img src="img/preview-3.png" alt="" class="swiper-slide__img" >
+                </div>
+              </div> 
+           
+             
+          </div>     
+        </div>
+        <div class="swiper-pagination7 mobile">
+        </div>
+      </section>
+  
+    </section>
    
     <header class="header">
         <div class="container">
@@ -1410,9 +1476,35 @@
     <section class="features">
         <div class="container">
             <h2 class="features__title">Особенности комплекса</h2>
+          
+            
             <ul class="features__list none">
                 <li class="features__item">
-                    <img src="img/preview-1.png" alt="" class="swiper-features__img">
+                  <div class="swiper-features">
+             
+                    <div class="swiper-wrapper">
+                      
+                      <div class="swiper-slide">
+                        <img src="img/preview-1.png" alt="" class="swiper-features__img" class="model-1" onclick="imagePop('model-1')">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-2.jpg" alt="" class="swiper-features__img" class="model-2" onclick="imagePop('model-2')">
+                        
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-3.jpg" alt="" class="swiper-features__img" class="model-3" onclick="imagePop('model-3')">
+
+                      </div>
+                    
+                    </div>
+                   
+                    
+                    
+                    <div class="swiper-button-prev features"></div>
+                    <div class="swiper-button-next features"></div>
+                    <div class="swiper-pagination features"></div>
+      
+                  </div>
                 </li>
                 <li class="features__item">
                     <h3 class="features__item-title">Первое преимущество</h3>
@@ -1424,10 +1516,58 @@
                     <p class="features__item-text">Главное преимущество района это создание экологически чистого сообщества. Для автомобилей есть парковочные места, а сам район ориентирован на пешеходное времяпрепровождение. Сообщество наполнено растительностью, протекает извилистый канал и есть доступ к комфортному пляжу.</p>
                 </li>
                 <li class="features__item">
-                  <img src="img/preview-2.jpg" alt="" class="swiper-features__img">
+                  <div class="swiper-features">
+             
+                    <div class="swiper-wrapper">
+                      
+                      <div class="swiper-slide">
+                        <img src="img/preview-2.jpg" alt="" class="swiper-features__img" class="model-1" onclick="imagePop('model-2')">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-1.png" alt="" class="swiper-features__img" class="model-2" onclick="imagePop('model-1')">
+                        
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-3.jpg" alt="" class="swiper-features__img" class="model-3" onclick="imagePop('model-3')">
+
+                      </div>
+                    
+                    </div>
+                   
+                    
+                    
+                    <div class="swiper-button-prev features"></div>
+                    <div class="swiper-button-next features"></div>
+                    <div class="swiper-pagination features"></div>
+      
+                  </div>
                 </li>
                 <li class="features__item">
-                  <img src="img/preview-3.jpg" alt="" class="swiper-features__img">
+                  <div class="swiper-features">
+             
+                    <div class="swiper-wrapper">
+                      
+                      <div class="swiper-slide">
+                        <img src="img/preview-3.jpg" alt="" class="swiper-features__img" class="model-1" onclick="imagePop('model-3')">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-2.jpg" alt="" class="swiper-features__img" class="model-2" onclick="imagePop('model-2')">
+                        
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-1.png" alt="" class="swiper-features__img" class="model-3" onclick="imagePop('model-1')">
+
+                      </div>
+                    
+                    </div>
+                   
+                    
+                    
+                    <div class="swiper-button-prev features"></div>
+                    <div class="swiper-button-next features"></div>
+                    <div class="swiper-pagination features"></div>
+      
+                  </div>
                 </li>
                 <li class="features__item">
                     <h3 class="features__item-title">Третье преимущество</h3>
@@ -1436,14 +1576,62 @@
             </ul>
             <ul class="features__list mobile">
                 <li class="features__item">
-                  <img src="img/preview-1.png" alt="" class="swiper-features__img">
+                   <div class="swiper-features">
+             
+                    <div class="swiper-wrapper">
+                      
+                      <div class="swiper-slide">
+                        <img src="img/preview-1.png" alt="" class="swiper-features__img" class="model-1" onclick="imagePop('model-1')">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-2.jpg" alt="" class="swiper-features__img" class="model-2" onclick="imagePop('model-2')">
+                        
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-3.jpg" alt="" class="swiper-features__img" class="model-3" onclick="imagePop('model-3')">
+
+                      </div>
+                    
+                    </div>
+                   
+                    
+                    
+                    <div class="swiper-button-prev features"></div>
+                    <div class="swiper-button-next features"></div>
+                    <div class="swiper-pagination features"></div>
+      
+                  </div>
                 </li>
                 <li class="features__item">
                     <h3 class="features__item-title">Первое преимущество</h3>
                     <p class="features__item-text">Главное преимущество района это создание экологически чистого сообщества. Для автомобилей есть парковочные места, а сам район ориентирован на пешеходное времяпрепровождение. Сообщество наполнено растительностью, протекает извилистый канал и есть доступ к комфортному пляжу.</p>
                 </li>
                 <li class="features__item">
-                  <img src="img/preview-2.jpg" alt="" class="swiper-features__img">
+                   <div class="swiper-features">
+             
+                    <div class="swiper-wrapper">
+                      
+                      <div class="swiper-slide">
+                        <img src="img/preview-2.jpg" alt="" class="swiper-features__img" class="model-1" onclick="imagePop('model-2')">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-1.png" alt="" class="swiper-features__img" class="model-2" onclick="imagePop('model-1')">
+                        
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-3.jpg" alt="" class="swiper-features__img" class="model-3" onclick="imagePop('model-3')">
+
+                      </div>
+                    
+                    </div>
+                   
+                    
+                    
+                    <div class="swiper-button-prev features"></div>
+                    <div class="swiper-button-next features"></div>
+                    <div class="swiper-pagination features"></div>
+      
+                  </div>
                 </li>
                 <li class="features__item">
                     <h3 class="features__item-title">Второе преимущество</h3>
@@ -1451,7 +1639,31 @@
                 </li>
                
                 <li class="features__item">
-                  <img src="img/preview-3.jpg" alt="" class="swiper-features__img">
+                   <div class="swiper-features">
+             
+                    <div class="swiper-wrapper">
+                      
+                      <div class="swiper-slide">
+                        <img src="img/preview-3.jpg" alt="" class="swiper-features__img" class="model-1" onclick="imagePop('model-3')">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-1.png" alt="" class="swiper-features__img" class="model-2" onclick="imagePop('model-1')">
+                        
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/preview-2.jpg" alt="" class="swiper-features__img" class="model-3" onclick="imagePop('model-2')">
+
+                      </div>
+                    
+                    </div>
+                   
+                    
+                    
+                    <div class="swiper-button-prev features"></div>
+                    <div class="swiper-button-next features"></div>
+                    <div class="swiper-pagination features"></div>
+      
+                  </div>
                 </li>
                 <li class="features__item">
                     <h3 class="features__item-title">Третье преимущество</h3>
