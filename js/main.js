@@ -272,6 +272,18 @@ burgerClose.addEventListener("click", () => {
 
 const shadow = document.querySelector(".shadow");
 
+for(let i of document.querySelectorAll('.header__phone-icon')){
+
+  i.addEventListener('click', (event)=>{
+    console.log(i)
+    event.stopPropagation();
+    i.classList.add('timeActive')
+    setTimeout(()=>{
+      i.classList.remove('timeActive')
+    }, 1500)
+  })
+}
+
 const switchLang = document.querySelectorAll(".header__switch-item");
 const switchList = document.querySelectorAll(".header__top-switch2");
 

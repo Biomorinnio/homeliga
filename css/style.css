@@ -4471,6 +4471,17 @@ h5.swiper__title {
   .header__phone-text.ipad {
     display: none !important;
   }
+  .header__phone:hover > .header__phone-text {
+    color: white;
+  }
+  .header__phone:hover > .header__phone-icon g path {
+    fill: white;
+  }
+ 
+  .header__phone-icon.timeActive g path{
+  
+    fill: #b4a06b !important;
+  }
   .header__top-switch.mobile {
     display: none !important;
   }
@@ -4915,13 +4926,13 @@ h5.swiper__title {
     min-width: 340px;
 
     font-size: 12px;
-
+color: #858585;
     font-weight: 400;
     line-height: 160%; /* 19.2px */
   }
   .swiper__title {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 150%; /* 30px */
   }
   .swiper-pagination,
@@ -5852,7 +5863,11 @@ h5.swiper__title {
   .header .container{
     padding-bottom: 13px;
   }
-
+  .catalog__subtitle,
+  .catalog2 .catalog__subtitle {
+    margin-top: 18px;
+    margin-bottom: 25px;
+  }
 
 }
 

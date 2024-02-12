@@ -373,6 +373,7 @@ td {
   .features__item-text {
     max-width: unset;
     margin-bottom: 42px;
+    line-height: 165%;
   }
   .catalog {
     margin-top: 140px;
@@ -434,8 +435,13 @@ td {
   .developer__item-title br {
     display: block !important;
   }
+  .developer__list-subtitle{
+    font-weight: 300;
+  }
   .developer__item-text {
     max-width: 322px;
+    line-height: 155%;
+    font-weight: 300;
   }
   .developer__item-list {
     gap: 20px 16px;
@@ -467,6 +473,7 @@ td {
   .features__item-title {
     font-size: 20px;
     margin-bottom: 8px;
+    font-weight: 800;
   }
   .features__item-text {
     font-size: 14px;
