@@ -479,7 +479,7 @@ td {
   }
   .payment__list {
     display: grid;
-    grid-template-columns: repeat(2, 48.1%);
+    grid-template-columns: repeat(2, 47%);
 
     gap: 20px;
   }
