@@ -7,6 +7,42 @@ var swiperFeatures = new Swiper(".swiper-features", {
       el: ".swiper-pagination.features",
       clickable: true,
     },
+    navigation: {
+      nextEl: ".swiper-button-next.features",
+      prevEl: ".swiper-button-prev.features",
+    },
+ 
+  });
+  
+var swiperFeatures2 = new Swiper(".swiper-features2", {
+    slidesPerView: 1,
+    allowTouchMove: true,
+    spaceBetween: 20,
+   
+    pagination: {
+      el: ".swiper-pagination.features",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next.features2",
+      prevEl: ".swiper-button-prev.features2",
+    },
+ 
+  });
+  
+var swiperFeatures3 = new Swiper(".swiper-features3", {
+    slidesPerView: 1,
+    allowTouchMove: true,
+    spaceBetween: 20,
+   
+    pagination: {
+      el: ".swiper-pagination.features",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next.features3",
+      prevEl: ".swiper-button-prev.features3",
+    },
  
   });
   

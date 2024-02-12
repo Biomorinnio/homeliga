@@ -1299,7 +1299,15 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
 .swiper-button-next3:hover > svg path,
 .swiper-button-prev3:hover > svg path,
 .swiper-button-next5:hover > svg path,
-.swiper-button-prev5:hover > svg path {
+.swiper-button-prev5:hover > svg path,
+.swiper-button-next.features:hover > svg path,
+.swiper-button-prev.features:hover > svg path,
+.swiper-button-next.features2:hover > svg path,
+.swiper-button-prev.features2:hover > svg path,
+.swiper-button-next.features3:hover > svg path,
+.swiper-button-prev.features3:hover > svg path
+
+ {
   fill: var(--Dark, #2e2f36);
 }
 .swiper-button-prev,

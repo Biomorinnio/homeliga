@@ -45,6 +45,7 @@ h2 {
 
 .features__item {
   min-width: 570px;
+  position: relative;
 }
 
 .features__item:nth-child(4) {
@@ -52,11 +53,13 @@ h2 {
   max-width: 570px;
 }
 
-.swiper-features .swiper-slie {
+.swiper-features .swiper-slide, .swiper-features2 .swiper-slide, .swiper-features3 .swiper-slide {
   border-radius: 20px;
 }
 
-.swiper-features {
+.swiper-features,
+.swiper-features2,
+.swiper-features3{
   overflow: hidden;
   position: relative;
 }
@@ -251,6 +254,32 @@ td {
 .developers .developers__descr-btn {
   margin-top: 0px;
 }
+
+.features__item:hover > .swiper-button-next.features,
+.features__item:hover > .swiper-button-prev.features,
+.features__item:hover > .swiper-button-next.features2,
+.features__item:hover > .swiper-button-prev.features2,
+.features__item:hover > .swiper-button-next.features3,
+.features__item:hover > .swiper-button-prev.features3 {
+  opacity: 1 !important;
+}
+
+.swiper-button-next.features,
+.swiper-button-next.features2,
+.swiper-button-next.features3
+{
+  margin-right: -55px;
+}
+
+.swiper-button-prev.features,
+.swiper-button-prev.features2,
+.swiper-button-prev.features3
+
+{
+  margin-left: -55px;
+}
+
+
 
 @media (max-width: 1440px) {
   .mySwiper2 {
