@@ -25,49 +25,94 @@
   cursor: unset;
 }
 
-.favorites{
-    margin-bottom: 100px;
+h3.swiper__title {
+  margin: 20px 0;
 }
 
-.favorites__inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+.favorites {
+  margin-bottom: 93px;
 }
 
-.favorites__btn{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 11px 18px;
-    border-radius: 8px;
+.favorites__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.favorites__list{
-    margin: 42px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 31.7%);
-    gap: 30px;
+.favorites__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
-.favorites__pagination{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
+.favorites__list {
+  margin: 42px 0 75px;
+  display: grid;
+  grid-template-columns: repeat(3, 31.7%);
+  gap: 43px 30px;
 }
 
-.favorites__pagination-number{
-    padding: 9px 10px;
+.swiper__card {
+  height: unset;
 }
 
-.favorites__pagination-text:first-of-type svg{
-    transform: rotate(180deg);
+.favorites__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.favorites__pagination-text.unactive{
-    color: #C9C9C9;
+.favorites__pagination-number {
+  padding: 9px 10px;
+  font-weight: 500;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.favorites__pagination-number.active {
+  color: #b4a06b;
+  cursor: unset;
+}
+
+.favorites__pagination-number:hover {
+  color: #b4a06b;
+}
+
+.favorites__pagination-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.favorites__pagination-text:first-of-type {
+  margin-right: 15px;
+}
+.favorites__pagination-text:last-of-type {
+  margin-left: 8px;
+}
+
+.favorites__pagination-text:first-of-type svg {
+  transform: rotate(180deg);
+}
+
+.favorites__pagination-text.unactive {
+  color: #c9c9c9;
+  cursor: unset;
+}
+.favorites__pagination-text.unactive svg path {
+  fill: #c9c9c9;
+}
+.header.other-pages {
+  padding-top: 18px;
+  padding-bottom: 11px;
+}
+.swiper__img {
+  max-height: 197px;
 }
 
 @media (max-width: 1180px) {
