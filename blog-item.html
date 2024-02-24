@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/blog-item.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+
+
+    <title>Homeliga</title>
+  </head>
+  <body>
+
+    
+    <div class="shadow">
+
+    </div>
+
+   
+    <header class="header other-pages">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__top-left">
+            <svg
+              class="header__burger"
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+            >
+              <rect
+                width="34"
+                height="34"
+                rx="5"
+                fill="white"
+                fill-opacity="0.1"
+              />
+              <rect x="8" y="11" width="18" height="2" rx="1" fill="white" />
+              <rect x="8" y="16" width="18" height="2" rx="1" fill="white" />
+              <rect x="8" y="21" width="18" height="2" rx="1" fill="white" />
+            </svg>
+            <span class="header__top-title">Меню</span>
+
+            <ul class="header__top-switch">
+              <li class="header__switch-item">
+                <img class="header__switch-icon" src="img/ru.svg" alt="">
+                  
+                RU
+                <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.5 6L0.468912 0.749999L6.53109 0.75L3.5 6Z" fill="white"/>
+                </svg>
+                          
+                </li>
+                <ul class="header__top-switch2">
+                  <li class="header__switch-item2 active">
+                    <img src="img/ru.svg" alt="">
+                    RU
+                  </li>
+                  <li class="header__switch-item2">
+                    <img src="img/eng.svg" alt="">
+                    ENG
+                  </li>
+                </ul>
+            </ul>
+          </div>
+          <a class="header__top-logo" href="index.html">
+            <img src="img/header__logo.svg" alt="" class="header__logo-img" />
+          </a>
+          <div class="header__top-right">
+            <ul class="header__top-switch mobile">
+              <li class="header__switch-item">
+                <img class="header__switch-icon" src="img/ru.svg" alt="" />
+
+                RU
+                <svg
+                  width="7"
+                  height="6"
+                  viewBox="0 0 7 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.5 6L0.468912 0.749999L6.53109 0.75L3.5 6Z"
+                    fill="white"
+                  />
+                </svg>
+              </li>
+              <ul class="header__top-switch2">
+                <li class="header__switch-item2 active">
+                  <img src="img/ru.svg" alt="" />
+                  RU
+                </li>
+                <li class="header__switch-item2">
+                  <img src="img/eng.svg" alt="" />
+                  ENG
+                </li>
+              </ul>
+            </ul>
+            <a href="tel:+74991234545" class="header__phone">
+              <p class="header__phone-text">+7 (499) 123-45-45</p>
+              <svg
+                class="header__phone-icon"
+                width="12"
+                height="20"
+                viewBox="0 0 12 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_569_5170)">
+                  <path
+                    d="M9.14286 0.833252H2.85714C1.55679 0.833252 0.5 1.95409 0.5 3.33325V16.6666C0.5 18.0458 1.55679 19.1666 2.85714 19.1666H9.14286C10.4432 19.1666 11.5 18.0458 11.5 16.6666V3.33325C11.5 1.95409 10.4432 0.833252 9.14286 0.833252ZM7.57143 17.4999H4.42857V16.6666H7.57143V17.4999ZM10.125 14.9999H1.875V3.33325H10.125V14.9999Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_569_5170">
+                    <rect width="12" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+           
+          </div>
+        </div>
+      </div>
+      <div class="burger__menu mobile">
+        <svg
+          class="burger__menu-close"
+          width="30"
+          height="30"
+          viewBox="0 0 30 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_508_4194)">
+            <path
+              d="M23.75 8.0125L21.9875 6.25L15 13.2375L8.0125 6.25L6.25 8.0125L13.2375 15L6.25 21.9875L8.0125 23.75L15 16.7625L21.9875 23.75L23.75 21.9875L16.7625 15L23.75 8.0125Z"
+              fill="#858585"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_508_4194">
+              <rect width="30" height="30" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+
+        <img src="img/header__logo.svg" alt="" class="header__logo" />
+        <!-- <div class="burger__menu-box">
+          <ul class="header__top-switch">
+            <li class="header__switch-item">
+              RU
+              <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 6L0.468912 0.749999L6.53109 0.75L3.5 6Z" fill="#22211E"/>
+                </svg>                          
+              </li>
+              <ul class="header__top-switch2">
+                <li class="header__switch-item2 active">
+                  <img src="img/ru.svg" alt="">
+                  RU
+                </li>
+                <li class="header__switch-item2">
+                  <img src="img/eng.svg" alt="">
+                  ENG
+                </li>
+              </ul>
+          </ul>
+          <div class="header__location">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.3588 0.391396L0.240662 4.20624L0.240662 4.70828L3.70195 6.04825L5.04192 9.50954H5.54396L9.3588 0.391396Z" fill="#727272"/>
+              </svg>
+            <p class="header__location-text">
+              Дубай
+            </p>                
+          </div>
+        </div> -->
+        <nav class="header__top-nav">
+          <ul class="header__top-list">
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Избранное</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#services" class="header__top-link">Услуги</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Комплексы</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#catalog" class="header__top-link"
+                >Каталог недвижимости</a
+              >
+            </li>
+            <li class="header__top-item">
+              <a href="#" class="header__top-link">Застройщики</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#districts" class="header__top-link">Районы</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#blog" class="header__top-link">Блог о Дубае</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#about" class="header__top-link">Об агентстве</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#footer" class="header__top-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- <button class="header__btn">
+          Проконсультироваться
+        </button> -->
+
+        <div class="burger__bottom">
+          <div class="footer__soc">
+            <a href="#" class="footer__soc-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_294_1205)">
+                  <mask
+                    id="mask0_294_1205"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1205)">
+                    <path
+                      d="M35 17.5C35 7.83501 27.165 0 17.5 0C7.83501 0 0 7.83501 0 17.5C0 27.165 7.83501 35 17.5 35C27.165 35 35 27.165 35 17.5Z"
+                      fill="#B4A06B"
+                    />
+                    <path
+                      d="M25.3391 9.63331C23.4629 7.70197 20.8695 6.65356 18.2208 6.65356C12.5924 6.65356 8.06765 11.2335 8.12285 16.8067C8.12285 18.5725 8.61948 20.2831 9.44717 21.8281L8.01245 27.0702L13.365 25.6907C14.8549 26.5184 16.5103 26.9047 18.1656 26.9047C23.7388 26.9047 28.2636 22.3248 28.2636 16.7515C28.2636 14.0477 27.2152 11.5095 25.3391 9.63331ZM18.2208 25.1941C16.731 25.1941 15.2411 24.8078 13.972 24.0353L13.6408 23.8698L10.4404 24.6975L11.2681 21.5522L11.0474 21.2212C8.61948 17.3034 9.7782 12.1164 13.7513 9.6885C17.7242 7.26055 22.856 8.41931 25.2839 12.3923C27.7118 16.3653 26.5531 21.497 22.58 23.9249C21.3109 24.7527 19.7658 25.1941 18.2208 25.1941ZM23.0767 19.0691L22.4697 18.7932C22.4697 18.7932 21.5868 18.407 21.035 18.131C20.9799 18.131 20.9246 18.0759 20.8695 18.0759C20.7039 18.0759 20.5936 18.131 20.4832 18.1862C20.4832 18.1862 20.4281 18.2414 19.6556 19.1242C19.6003 19.2347 19.49 19.2898 19.3796 19.2898H19.3244C19.2692 19.2898 19.1589 19.2347 19.1036 19.1795L18.8278 19.0691C18.2208 18.7932 17.6691 18.4621 17.2276 18.0207C17.1172 17.9103 16.9517 17.7999 16.8413 17.6896C16.455 17.3034 16.0688 16.8619 15.7929 16.3653L15.7377 16.2549C15.6825 16.1998 15.6825 16.1445 15.6274 16.0342C15.6274 15.9238 15.6274 15.8135 15.6825 15.7583C15.6825 15.7583 15.9032 15.4824 16.0688 15.3169C16.1792 15.2064 16.2343 15.041 16.3448 14.9306C16.455 14.765 16.5103 14.5443 16.455 14.3788C16.3999 14.1028 15.7377 12.613 15.5721 12.282C15.4618 12.1164 15.3514 12.0612 15.1859 12.006H15.0203C14.91 12.006 14.7445 12.006 14.5789 12.006C14.4686 12.006 14.3582 12.0612 14.2478 12.0612L14.1927 12.1164C14.0822 12.1716 13.972 12.282 13.8615 12.3371C13.7513 12.4475 13.696 12.5578 13.5857 12.6682C13.1994 13.1648 12.9786 13.7719 12.9786 14.3788C12.9786 14.8202 13.0891 15.2617 13.2546 15.6479L13.3098 15.8135C13.8064 16.8619 14.4686 17.7999 15.3514 18.6277L15.5721 18.8484C15.7377 19.014 15.9032 19.1242 16.0136 19.2898C17.1724 20.2831 18.4967 21.0005 19.9865 21.3867C20.1521 21.4419 20.3728 21.4419 20.5384 21.497C20.7039 21.497 20.9246 21.497 21.0902 21.497C21.3661 21.497 21.6971 21.3867 21.9179 21.2763C22.0835 21.166 22.1938 21.166 22.3041 21.0556L22.4145 20.9452C22.5249 20.8349 22.6353 20.7797 22.7455 20.6693C22.856 20.559 22.9663 20.4486 23.0215 20.3383C23.1319 20.1176 23.1871 19.8416 23.2422 19.5657C23.2422 19.4554 23.2422 19.2898 23.2422 19.1795C23.2422 19.1795 23.1871 19.1242 23.0767 19.0691Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1205">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="footer__soc-link">
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_294_1212)">
+                  <mask
+                    id="mask0_294_1212"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1212)">
+                    <path
+                      d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 0C7.83562 0 0 7.83562 0 17.5C0 27.1644 7.83562 35 17.5 35C27.1644 35 35 27.1644 35 17.5C35 7.83562 27.1644 0 17.5 0ZM26.0954 11.989L23.2225 25.5223C23.011 26.4819 22.4394 26.7152 21.6416 26.2631L17.2666 23.0402L15.1579 25.0731C14.9537 25.3356 14.6373 25.5034 14.2829 25.5034C14.28 25.5034 14.2785 25.5034 14.2756 25.5034L14.5863 21.0496L22.6946 13.7259C23.0446 13.4152 22.6159 13.2387 22.1506 13.5494L12.1334 19.8581L7.81666 18.5106C6.88334 18.2146 6.85709 17.5773 8.01354 17.1194L24.8806 10.6181C25.6652 10.3323 26.3477 10.8048 26.094 11.9904L26.0954 11.989Z"
+                      fill="#B4A06B"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1212">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <a href="tel:+74991234545" class="header__phone"
+            >+7 (499) 123-45-45</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+        <section class="navigation">
+            <div class="container navigation__inner none">
+                <p class="navigation__text"><a href="index.html">Главная</a> </p>
+                <svg class="navgiation__breadcrumbs" xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                    <circle cx="2.00269" cy="2.5" r="2" fill="#858585"/>
+                </svg>
+                <p class="navigation__text"><a href="#">Блог о Дубае</a> </p>
+                <svg class="navgiation__breadcrumbs" xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5" fill="none">
+                    <circle cx="2.00269" cy="2.5" r="2" fill="#2E2F36"/>
+                </svg>
+                <p class="navigation__text"><a href="#">Какая недвижимость будет популярна в Дубае?</a> </p>
+            </div>
+
+            <div class="container navigation__inner mobile">
+                <a href="#">
+                <svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.79079 0.244078C5.06974 0.569515 5.06974 1.09715 4.79079 1.42259L1.72444 5L4.79079 8.57741C5.06974 8.90285 5.06974 9.43049 4.79079 9.75592C4.51184 10.0814 4.05958 10.0814 3.78064 9.75592L0.209209 5.58926C-0.0697365 5.26382 -0.0697365 4.73618 0.209209 4.41074L3.78064 0.244078C4.05958 -0.0813592 4.51184 -0.0813592 4.79079 0.244078Z" fill="#858585"/>
+                </svg>          
+                <p class="navigation__text">К статьям</p>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="blog__item">
+            <div class="container">
+                <h2 class="blog__item-title">Какая недвижимость будет популярна в Дубае?</h2>
+                <article class="blog__item-article">
+                    <span class="blog__item-date">20 июня 2021</span>
+                    <p class="blog__item-time">
+                        <img src="img/blog__item-time.svg" alt="" class="blog__item-icon">
+                        На чтение 2 минуты
+                    </p>
+                </article>
+                <div class="blog__item-inner">
+                    <div class="blog__item-content">
+                        <div class="blog__item-box">
+                            <img src="img/blog__item-img.jpg" alt="" class="blog__item-img">
+                            <li class="swiper__card-item one">
+                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <g clip-path="url(#clip0_444_4138)">
+                                  <path d="M7 12L6.275 11.3526C3.7 9.06213 2 7.5515 2 5.69755C2 4.18692 3.21 3 4.75 3C5.62 3 6.455 3.39728 7 4.02507C7.545 3.39728 8.38 3 9.25 3C10.79 3 12 4.18692 12 5.69755C12 7.5515 10.3 9.06213 7.725 11.3575L7 12Z" fill="white"/>
+                                  </g>
+                                  <defs>
+                                  <clipPath id="clip0_444_4138">
+                                  <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                  </clipPath>
+                                  </defs>
+                                </svg>                                                          
+                                Жизнь в Дубае
+                            </li>
+                        </div>
+                        <p class="blog__item-text">
+                            Интересы инвесторов меняются в соответствии с трендами, что особенно заметно на рынке недвижимости Дубая. Несмотря на общее повышение спроса на недвижимость в ОАЭ, потенциальные покупатели предпочитают анализировать предложения застройщиков и следят за анонсами проектов.
+                        </p>
+                        <p class="blog__item-text">
+                            Специалисты утверждают, что в ближайшее время можно ожидать повышения спроса со стороны инвесторов к двум районам: Dubai Creek Harbour и Emaar Beachfront. Эксперты также отмечают, что находящийся на пике интерес к Dubai South (локация, где прежде проводилась выставка Expo 2020) и Dubai Hills останется на прежнем уровне.
+                        </p>
+                        <p class="blog__item-text">
+                            У специалистов есть все основания делать такие прогнозу. К примеру, что касается района Dubai Creek Harbour, то всего за первые полгода число транзакций здесь увеличилось больше чем на 60%. С Emaar Beachfront иная ситуация: в данном районе было анонсировано много новых проектов, которые планируют завершить к 2027 году.
+                        </p>
+                        <p class="blog__item-text">
+                            Примечательно, что новые проекты, которые анонсируются в вышеуказанных районах, как правило, распродаются в первый день после объявления продаж. Но впоследствии эти же объекты недвижимости продаются на вторичном рынке по более высокой цене ввиду своего высокого инвестиционного потенциала.
+                        </p>
+                        <p class="blog__item-text">
+                            Вы желаете купить недвижимость в Дубае? Обращайтесь к специалистам агентства Homeliga: мы поможем Вам подобрать оптимальные объекты недвижимости в соответствии с Вашими предпочтениями и бюджетом.
+                        </p>
+                    </div>
+                    <aside class="blog__item-aside">
+                        <h3 class="blog__aside-title">Последние статьи</h3>
+                        <ul class="blog__aside-list">
+                            <li class="blog__aside-item">
+                                <a href="#" class="blog__aside-link">
+                                    <h4 class="blog__aside-title">Дубай – лидер международных инвестиций</h4>
+                                    <h6 class="blog__aside-text">10 мая 2023</h6>
+                                </a>
+                            </li>
+                            <li class="blog__aside-item">
+                                <a href="#" class="blog__aside-link">
+                                    <h4 class="blog__aside-title">​В Дубае перекроют важную транспортную артерию</h4>
+                                    <h6 class="blog__aside-text">10 мая 2023</h6>
+                                </a>
+                            </li>
+                            <li class="blog__aside-item">
+                                <a href="#" class="blog__aside-link">
+                                    <h4 class="blog__aside-title">​Район Dubai Hills может обрести свою станцию метро</h4>
+                                    <h6 class="blog__aside-text">10 мая 2023</h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog" id="blog">
+        <div class="container developers__inner none">
+          <div class="developers__descr">
+            <h2 class="developers__title">Смотрите также</h2>
+            <button class="developers__descr-btn none">Смотреть все</button>
+          </div>
+    
+          <div class="swiper mySwiper3 none"> 
+                <div class="swiper-wrapper">
+                 
+      
+                    <div class="swiper-slide">
+                      
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          
+                          <ul class="swiper__card-list">
+                            <li class="swiper__card-item">01 сентября</li>
+                            <li class="swiper__card-item one">
+                              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.45711 7.45717H2.72139C2.39997 7.45717 2.14282 7.71431 2.14282 8.03574V11.55C2.14282 11.8715 2.39997 12.1286 2.72139 12.1286H4.45711C4.77854 12.1286 5.03568 11.8715 5.03568 11.55V8.03574C5.03568 7.71431 4.77854 7.45717 4.45711 7.45717ZM8.37854 6.10717H6.64282C6.32139 6.10717 6.06425 6.36431 6.06425 6.68574V11.55C6.06425 11.8715 6.32139 12.1286 6.64282 12.1286H8.37854C8.69997 12.1286 8.95711 11.8715 8.95711 11.55V6.68574C8.93568 6.36431 8.67854 6.10717 8.37854 6.10717ZM12.2785 2.89288H10.5428C10.2214 2.89288 9.96425 3.15003 9.96425 3.47145V11.55C9.96425 11.8715 10.2214 12.1286 10.5428 12.1286H12.2785C12.6 12.1286 12.8571 11.8715 12.8571 11.55V3.45003C12.8571 3.15003 12.6 2.89288 12.2785 2.89288Z" fill="white"/>
+                              </svg>                              
+                              Инвестиции
+                            </li>
+                          </ul>
+                          <div class="swiper__center">
+                            
+                            <h4 class="swiper__center-title">
+                              Дубай – лидер международных инвестиций
+                            </h4>
+                            
+                            <p class="swiper__center-text">
+                              Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                            </p>
+                            
+                          </div>
+                          
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          
+                          <ul class="swiper__card-list">
+                            <li class="swiper__card-item">01 сентября</li>
+                            <li class="swiper__card-item one">
+                              <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_444_4138)">
+                                <path d="M7 12L6.275 11.3526C3.7 9.06213 2 7.5515 2 5.69755C2 4.18692 3.21 3 4.75 3C5.62 3 6.455 3.39728 7 4.02507C7.545 3.39728 8.38 3 9.25 3C10.79 3 12 4.18692 12 5.69755C12 7.5515 10.3 9.06213 7.725 11.3575L7 12Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_444_4138">
+                                <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                              </svg>                                                          
+                              Жизнь в Дубае
+                            </li>
+                          </ul>
+                          <div class="swiper__center">
+                            
+                            <h4 class="swiper__center-title">
+                              Дубай – лидер международных инвестиций
+                            </h4>
+                            
+                            <p class="swiper__center-text">
+                              Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                            </p>
+                            
+                          </div>
+                          
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          
+                          <ul class="swiper__card-list">
+                            <li class="swiper__card-item">01 сентября</li>
+                            <li class="swiper__card-item one">
+                              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.4515 1.40485C4.4515 1.14596 4.66137 0.936096 4.92025 0.936096H5.39225C5.65113 0.936096 5.861 1.14596 5.861 1.40485V1.87429H4.4515V1.40485ZM3.28125 2.8125C3.02237 2.8125 2.8125 3.02237 2.8125 3.28125V4.21875H7.5V3.28125C7.5 3.02237 7.29013 2.8125 7.03125 2.8125H3.28125ZM7.9712 5.15625C8.21675 5.15671 8.418 5.34598 8.4375 5.58662V14.0625H7.96875C7.95332 14.0625 7.93806 14.0617 7.923 14.0603H6.08093C5.82205 14.0603 5.61218 13.8504 5.61218 13.5916V12.7635C5.61218 12.5046 5.40232 12.2947 5.14343 12.2947C4.88455 12.2947 4.67468 12.5046 4.67468 12.7635V13.5916C4.67468 13.8504 4.46482 14.0603 4.20593 14.0603H2.34375C2.08487 14.0603 1.875 13.8504 1.875 13.5916V5.625C1.875 5.36626 2.08463 5.15648 2.34333 5.15625H7.9712ZM4.21417 7.96875C4.47306 7.96875 4.68292 7.75888 4.68292 7.5V7.03125C4.68292 6.77237 4.47306 6.5625 4.21417 6.5625C3.95528 6.5625 3.74542 6.77237 3.74542 7.03125V7.5C3.74542 7.75888 3.95528 7.96875 4.21417 7.96875ZM3.74542 9.84025C3.74542 10.0992 3.95528 10.309 4.21417 10.309C4.47306 10.309 4.68292 10.0992 4.68292 9.84025V9.37151C4.68292 9.11263 4.47306 8.90276 4.21417 8.90276C3.95528 8.90276 3.74542 9.11263 3.74542 9.37151V9.84025ZM5.62546 9.84025C5.62546 10.0992 5.83533 10.309 6.09421 10.309C6.35309 10.309 6.56296 10.0992 6.56296 9.84025V9.37151C6.56296 9.11263 6.35309 8.90276 6.09421 8.90276C5.83533 8.90276 5.62546 9.11263 5.62546 9.37151V9.84025ZM5.62546 7.5C5.62546 7.75888 5.83533 7.96875 6.09421 7.96875C6.35309 7.96875 6.56296 7.75888 6.56296 7.5V7.03125C6.56296 6.77237 6.35309 6.5625 6.09421 6.5625C5.83533 6.5625 5.62546 6.77237 5.62546 7.03125V7.5ZM9.375 14.0625H12.6562C12.9151 14.0625 13.125 13.8527 13.125 13.5937V10.7812C13.125 8.60974 11.4844 6.82143 9.375 6.58824V14.0625ZM10.3125 9.84681C10.3125 9.58797 10.5224 9.37806 10.7812 9.37806H11.25C11.5088 9.37806 11.7188 9.58797 11.7188 9.84681C11.7188 10.1058 11.5088 10.3156 11.25 10.3156H10.7812C10.5224 10.3156 10.3125 10.1058 10.3125 9.84681ZM10.7812 11.2537H11.25C11.5088 11.2537 11.7188 11.4636 11.7188 11.7225C11.7188 11.9813 11.5088 12.1912 11.25 12.1912H10.7812C10.5224 12.1912 10.3125 11.9813 10.3125 11.7225C10.3125 11.4636 10.5224 11.2537 10.7812 11.2537Z" fill="white"/>
+                              </svg>                                                         
+                              Новостройки
+                            </li>
+                          </ul>
+                          <div class="swiper__center">
+                            
+                            <h4 class="swiper__center-title">
+                              Дубай – лидер международных инвестиций
+                            </h4>
+                            
+                            <p class="swiper__center-text">
+                              Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                            </p>
+                            
+                          </div>
+                          
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          
+                          <ul class="swiper__card-list">
+                            <li class="swiper__card-item">01 сентября</li>
+                            <li class="swiper__card-item one">
+                              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.45711 7.45717H2.72139C2.39997 7.45717 2.14282 7.71431 2.14282 8.03574V11.55C2.14282 11.8715 2.39997 12.1286 2.72139 12.1286H4.45711C4.77854 12.1286 5.03568 11.8715 5.03568 11.55V8.03574C5.03568 7.71431 4.77854 7.45717 4.45711 7.45717ZM8.37854 6.10717H6.64282C6.32139 6.10717 6.06425 6.36431 6.06425 6.68574V11.55C6.06425 11.8715 6.32139 12.1286 6.64282 12.1286H8.37854C8.69997 12.1286 8.95711 11.8715 8.95711 11.55V6.68574C8.93568 6.36431 8.67854 6.10717 8.37854 6.10717ZM12.2785 2.89288H10.5428C10.2214 2.89288 9.96425 3.15003 9.96425 3.47145V11.55C9.96425 11.8715 10.2214 12.1286 10.5428 12.1286H12.2785C12.6 12.1286 12.8571 11.8715 12.8571 11.55V3.45003C12.8571 3.15003 12.6 2.89288 12.2785 2.89288Z" fill="white"/>
+                              </svg>                              
+                              Инвестиции
+                            </li>
+                          </ul>
+                          <div class="swiper__center">
+                            
+                            <h4 class="swiper__center-title">
+                              Дубай – лидер международных инвестиций
+                            </h4>
+                            
+                            <p class="swiper__center-text">
+                              Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                            </p>
+                            
+                          </div>
+                          
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          
+                          <ul class="swiper__card-list">
+                            <li class="swiper__card-item">01 сентября</li>
+                            <li class="swiper__card-item one">
+                              <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_444_4138)">
+                                <path d="M7 12L6.275 11.3526C3.7 9.06213 2 7.5515 2 5.69755C2 4.18692 3.21 3 4.75 3C5.62 3 6.455 3.39728 7 4.02507C7.545 3.39728 8.38 3 9.25 3C10.79 3 12 4.18692 12 5.69755C12 7.5515 10.3 9.06213 7.725 11.3575L7 12Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_444_4138">
+                                <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                              </svg>                                                          
+                              Жизнь в Дубае
+                            </li>
+                          </ul>
+                          <div class="swiper__center">
+                            
+                            <h4 class="swiper__center-title">
+                              Дубай – лидер международных инвестиций
+                            </h4>
+                            
+                            <p class="swiper__center-text">
+                              Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                            </p>
+                            
+                          </div>
+                          
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                    <div class="swiper-slide">
+                      
+                      <div class="swiper__card-box">
+  
+                        <div class="swiper__card">
+                          
+                          <ul class="swiper__card-list">
+                            <li class="swiper__card-item">01 сентября</li>
+                            <li class="swiper__card-item one">
+                              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.4515 1.40485C4.4515 1.14596 4.66137 0.936096 4.92025 0.936096H5.39225C5.65113 0.936096 5.861 1.14596 5.861 1.40485V1.87429H4.4515V1.40485ZM3.28125 2.8125C3.02237 2.8125 2.8125 3.02237 2.8125 3.28125V4.21875H7.5V3.28125C7.5 3.02237 7.29013 2.8125 7.03125 2.8125H3.28125ZM7.9712 5.15625C8.21675 5.15671 8.418 5.34598 8.4375 5.58662V14.0625H7.96875C7.95332 14.0625 7.93806 14.0617 7.923 14.0603H6.08093C5.82205 14.0603 5.61218 13.8504 5.61218 13.5916V12.7635C5.61218 12.5046 5.40232 12.2947 5.14343 12.2947C4.88455 12.2947 4.67468 12.5046 4.67468 12.7635V13.5916C4.67468 13.8504 4.46482 14.0603 4.20593 14.0603H2.34375C2.08487 14.0603 1.875 13.8504 1.875 13.5916V5.625C1.875 5.36626 2.08463 5.15648 2.34333 5.15625H7.9712ZM4.21417 7.96875C4.47306 7.96875 4.68292 7.75888 4.68292 7.5V7.03125C4.68292 6.77237 4.47306 6.5625 4.21417 6.5625C3.95528 6.5625 3.74542 6.77237 3.74542 7.03125V7.5C3.74542 7.75888 3.95528 7.96875 4.21417 7.96875ZM3.74542 9.84025C3.74542 10.0992 3.95528 10.309 4.21417 10.309C4.47306 10.309 4.68292 10.0992 4.68292 9.84025V9.37151C4.68292 9.11263 4.47306 8.90276 4.21417 8.90276C3.95528 8.90276 3.74542 9.11263 3.74542 9.37151V9.84025ZM5.62546 9.84025C5.62546 10.0992 5.83533 10.309 6.09421 10.309C6.35309 10.309 6.56296 10.0992 6.56296 9.84025V9.37151C6.56296 9.11263 6.35309 8.90276 6.09421 8.90276C5.83533 8.90276 5.62546 9.11263 5.62546 9.37151V9.84025ZM5.62546 7.5C5.62546 7.75888 5.83533 7.96875 6.09421 7.96875C6.35309 7.96875 6.56296 7.75888 6.56296 7.5V7.03125C6.56296 6.77237 6.35309 6.5625 6.09421 6.5625C5.83533 6.5625 5.62546 6.77237 5.62546 7.03125V7.5ZM9.375 14.0625H12.6562C12.9151 14.0625 13.125 13.8527 13.125 13.5937V10.7812C13.125 8.60974 11.4844 6.82143 9.375 6.58824V14.0625ZM10.3125 9.84681C10.3125 9.58797 10.5224 9.37806 10.7812 9.37806H11.25C11.5088 9.37806 11.7188 9.58797 11.7188 9.84681C11.7188 10.1058 11.5088 10.3156 11.25 10.3156H10.7812C10.5224 10.3156 10.3125 10.1058 10.3125 9.84681ZM10.7812 11.2537H11.25C11.5088 11.2537 11.7188 11.4636 11.7188 11.7225C11.7188 11.9813 11.5088 12.1912 11.25 12.1912H10.7812C10.5224 12.1912 10.3125 11.9813 10.3125 11.7225C10.3125 11.4636 10.5224 11.2537 10.7812 11.2537Z" fill="white"/>
+                              </svg>                                                         
+                              Новостройки
+                            </li>
+                          </ul>
+                          <div class="swiper__center">
+                            
+                            <h4 class="swiper__center-title">
+                              Дубай – лидер международных инвестиций
+                            </h4>
+                            
+                            <p class="swiper__center-text">
+                              Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                            </p>
+                            
+                          </div>
+                          
+                          
+                          <div class="swiper__card-pagination none">
+                            <div class="swiper__card-line active"></div>
+                            <div class="swiper__card-line"></div>
+                          </div>
+                        </div>
+                      </div>
+                     
+                    </div>
+                   
+                   
+                   
+                   
+                    
+                </div>     
+          </div>
+                
+          <svg class="swiper-button-prev3 none" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5 32.2501L25.75 33.9999L12.5 20.75L25.75 7.5L27.5 9.25003L16.0001 20.75L27.5 32.2501Z" fill="#2E2F36"/>
+            </svg>          
+          <svg class="swiper-button-next3 none" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 7.74994L14.25 6.00006L27.5 19.25L14.25 32.5L12.5 30.75L23.9999 19.25L12.5 7.74994Z" fill="#2E2F36"/>
+          </svg>
+          <div class="swiper-pagination3 mobile">
+                  
+          </div>
+          <button class="developers__descr-btn mobile">Смотреть все</button>
+        </div>
+        <div class="container developers__inner mobile">
+          <div class="developers__descr">
+            <h2 class="developers__title">Блог о Дубае</h2>
+            <button class="developers__descr-btn ipad">Смотреть все</button>
+          </div>
+        </div>
+    
+  
+          <div class="swiper mySwiper3 mobile"> 
+            <div class="swiper-wrapper">
+                   
+        
+              <div class="swiper-slide">
+                      
+                <div class="swiper__card-box">
+  
+                  <div class="swiper__card">
+                    
+                    <ul class="swiper__card-list">
+                      <li class="swiper__card-item">01 сентября</li>
+                      <li class="swiper__card-item one">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.45711 7.45717H2.72139C2.39997 7.45717 2.14282 7.71431 2.14282 8.03574V11.55C2.14282 11.8715 2.39997 12.1286 2.72139 12.1286H4.45711C4.77854 12.1286 5.03568 11.8715 5.03568 11.55V8.03574C5.03568 7.71431 4.77854 7.45717 4.45711 7.45717ZM8.37854 6.10717H6.64282C6.32139 6.10717 6.06425 6.36431 6.06425 6.68574V11.55C6.06425 11.8715 6.32139 12.1286 6.64282 12.1286H8.37854C8.69997 12.1286 8.95711 11.8715 8.95711 11.55V6.68574C8.93568 6.36431 8.67854 6.10717 8.37854 6.10717ZM12.2785 2.89288H10.5428C10.2214 2.89288 9.96425 3.15003 9.96425 3.47145V11.55C9.96425 11.8715 10.2214 12.1286 10.5428 12.1286H12.2785C12.6 12.1286 12.8571 11.8715 12.8571 11.55V3.45003C12.8571 3.15003 12.6 2.89288 12.2785 2.89288Z" fill="white"/>
+                        </svg>                              
+                        Инвестиции
+                      </li>
+                    </ul>
+                    <div class="swiper__center">
+                      
+                      <h4 class="swiper__center-title">
+                        Дубай – лидер<br class="mobile"/> международных инвестиций
+                      </h4>
+                      
+                      <p class="swiper__center-text">
+                        Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                      </p>
+                      
+                    </div>
+                    
+                    
+                    <div class="swiper__card-pagination none">
+                      <div class="swiper__card-line active"></div>
+                      <div class="swiper__card-line"></div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="swiper-slide">
+                
+                <div class="swiper__card-box">
+  
+                  <div class="swiper__card">
+                    
+                    <ul class="swiper__card-list">
+                      <li class="swiper__card-item">01 сентября</li>
+                      <li class="swiper__card-item one">
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_444_4138)">
+                          <path d="M7 12L6.275 11.3526C3.7 9.06213 2 7.5515 2 5.69755C2 4.18692 3.21 3 4.75 3C5.62 3 6.455 3.39728 7 4.02507C7.545 3.39728 8.38 3 9.25 3C10.79 3 12 4.18692 12 5.69755C12 7.5515 10.3 9.06213 7.725 11.3575L7 12Z" fill="white"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_444_4138">
+                          <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                          </clipPath>
+                          </defs>
+                        </svg>                                                          
+                        Жизнь в Дубае
+                      </li>
+                    </ul>
+                    <div class="swiper__center">
+                      
+                      <h4 class="swiper__center-title">
+                        Дубай – лидер<br class="mobile"/> международных инвестиций
+                      </h4>
+                      
+                      <p class="swiper__center-text">
+                        Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                      </p>
+                      
+                    </div>
+                    
+                    
+                    <div class="swiper__card-pagination none">
+                      <div class="swiper__card-line active"></div>
+                      <div class="swiper__card-line"></div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="swiper-slide">
+                
+                <div class="swiper__card-box">
+  
+                  <div class="swiper__card">
+                    
+                    <ul class="swiper__card-list">
+                      <li class="swiper__card-item">01 сентября</li>
+                      <li class="swiper__card-item one">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.4515 1.40485C4.4515 1.14596 4.66137 0.936096 4.92025 0.936096H5.39225C5.65113 0.936096 5.861 1.14596 5.861 1.40485V1.87429H4.4515V1.40485ZM3.28125 2.8125C3.02237 2.8125 2.8125 3.02237 2.8125 3.28125V4.21875H7.5V3.28125C7.5 3.02237 7.29013 2.8125 7.03125 2.8125H3.28125ZM7.9712 5.15625C8.21675 5.15671 8.418 5.34598 8.4375 5.58662V14.0625H7.96875C7.95332 14.0625 7.93806 14.0617 7.923 14.0603H6.08093C5.82205 14.0603 5.61218 13.8504 5.61218 13.5916V12.7635C5.61218 12.5046 5.40232 12.2947 5.14343 12.2947C4.88455 12.2947 4.67468 12.5046 4.67468 12.7635V13.5916C4.67468 13.8504 4.46482 14.0603 4.20593 14.0603H2.34375C2.08487 14.0603 1.875 13.8504 1.875 13.5916V5.625C1.875 5.36626 2.08463 5.15648 2.34333 5.15625H7.9712ZM4.21417 7.96875C4.47306 7.96875 4.68292 7.75888 4.68292 7.5V7.03125C4.68292 6.77237 4.47306 6.5625 4.21417 6.5625C3.95528 6.5625 3.74542 6.77237 3.74542 7.03125V7.5C3.74542 7.75888 3.95528 7.96875 4.21417 7.96875ZM3.74542 9.84025C3.74542 10.0992 3.95528 10.309 4.21417 10.309C4.47306 10.309 4.68292 10.0992 4.68292 9.84025V9.37151C4.68292 9.11263 4.47306 8.90276 4.21417 8.90276C3.95528 8.90276 3.74542 9.11263 3.74542 9.37151V9.84025ZM5.62546 9.84025C5.62546 10.0992 5.83533 10.309 6.09421 10.309C6.35309 10.309 6.56296 10.0992 6.56296 9.84025V9.37151C6.56296 9.11263 6.35309 8.90276 6.09421 8.90276C5.83533 8.90276 5.62546 9.11263 5.62546 9.37151V9.84025ZM5.62546 7.5C5.62546 7.75888 5.83533 7.96875 6.09421 7.96875C6.35309 7.96875 6.56296 7.75888 6.56296 7.5V7.03125C6.56296 6.77237 6.35309 6.5625 6.09421 6.5625C5.83533 6.5625 5.62546 6.77237 5.62546 7.03125V7.5ZM9.375 14.0625H12.6562C12.9151 14.0625 13.125 13.8527 13.125 13.5937V10.7812C13.125 8.60974 11.4844 6.82143 9.375 6.58824V14.0625ZM10.3125 9.84681C10.3125 9.58797 10.5224 9.37806 10.7812 9.37806H11.25C11.5088 9.37806 11.7188 9.58797 11.7188 9.84681C11.7188 10.1058 11.5088 10.3156 11.25 10.3156H10.7812C10.5224 10.3156 10.3125 10.1058 10.3125 9.84681ZM10.7812 11.2537H11.25C11.5088 11.2537 11.7188 11.4636 11.7188 11.7225C11.7188 11.9813 11.5088 12.1912 11.25 12.1912H10.7812C10.5224 12.1912 10.3125 11.9813 10.3125 11.7225C10.3125 11.4636 10.5224 11.2537 10.7812 11.2537Z" fill="white"/>
+                        </svg>                                                         
+                        Новостройки
+                      </li>
+                    </ul>
+                    <div class="swiper__center">
+                      
+                      <h4 class="swiper__center-title">
+                        Дубай – лидер<br class="mobile"/> международных инвестиций
+                      </h4>
+                      
+                      <p class="swiper__center-text">
+                        Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                      </p>
+                      
+                    </div>
+                    
+                    
+                    <div class="swiper__card-pagination none">
+                      <div class="swiper__card-line active"></div>
+                      <div class="swiper__card-line"></div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="swiper-slide">
+                
+                <div class="swiper__card-box">
+  
+                  <div class="swiper__card">
+                    
+                    <ul class="swiper__card-list">
+                      <li class="swiper__card-item">01 сентября</li>
+                      <li class="swiper__card-item one">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.45711 7.45717H2.72139C2.39997 7.45717 2.14282 7.71431 2.14282 8.03574V11.55C2.14282 11.8715 2.39997 12.1286 2.72139 12.1286H4.45711C4.77854 12.1286 5.03568 11.8715 5.03568 11.55V8.03574C5.03568 7.71431 4.77854 7.45717 4.45711 7.45717ZM8.37854 6.10717H6.64282C6.32139 6.10717 6.06425 6.36431 6.06425 6.68574V11.55C6.06425 11.8715 6.32139 12.1286 6.64282 12.1286H8.37854C8.69997 12.1286 8.95711 11.8715 8.95711 11.55V6.68574C8.93568 6.36431 8.67854 6.10717 8.37854 6.10717ZM12.2785 2.89288H10.5428C10.2214 2.89288 9.96425 3.15003 9.96425 3.47145V11.55C9.96425 11.8715 10.2214 12.1286 10.5428 12.1286H12.2785C12.6 12.1286 12.8571 11.8715 12.8571 11.55V3.45003C12.8571 3.15003 12.6 2.89288 12.2785 2.89288Z" fill="white"/>
+                        </svg>                              
+                        Инвестиции
+                      </li>
+                    </ul>
+                    <div class="swiper__center">
+                      
+                      <h4 class="swiper__center-title">
+                        Дубай – лидер<br class="mobile"/> международных инвестиций
+                      </h4>
+                      
+                      <p class="swiper__center-text">
+                        Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                      </p>
+                      
+                    </div>
+                    
+                    
+                    <div class="swiper__card-pagination none">
+                      <div class="swiper__card-line active"></div>
+                      <div class="swiper__card-line"></div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="swiper-slide">
+                
+                <div class="swiper__card-box">
+  
+                  <div class="swiper__card">
+                    
+                    <ul class="swiper__card-list">
+                      <li class="swiper__card-item">01 сентября</li>
+                      <li class="swiper__card-item one">
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_444_4138)">
+                          <path d="M7 12L6.275 11.3526C3.7 9.06213 2 7.5515 2 5.69755C2 4.18692 3.21 3 4.75 3C5.62 3 6.455 3.39728 7 4.02507C7.545 3.39728 8.38 3 9.25 3C10.79 3 12 4.18692 12 5.69755C12 7.5515 10.3 9.06213 7.725 11.3575L7 12Z" fill="white"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_444_4138">
+                          <rect width="14" height="14" fill="white" transform="translate(0 0.5)"/>
+                          </clipPath>
+                          </defs>
+                        </svg>                                                          
+                        Жизнь в Дубае
+                      </li>
+                    </ul>
+                    <div class="swiper__center">
+                      
+                      <h4 class="swiper__center-title">
+                        Дубай – лидер<br class="mobile"/> международных инвестиций
+                      </h4>
+                      
+                      <p class="swiper__center-text">
+                        Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                      </p>
+                      
+                    </div>
+                    
+                    
+                    <div class="swiper__card-pagination none">
+                      <div class="swiper__card-line active"></div>
+                      <div class="swiper__card-line"></div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <div class="swiper-slide">
+                
+                <div class="swiper__card-box">
+  
+                  <div class="swiper__card">
+                    
+                    <ul class="swiper__card-list">
+                      <li class="swiper__card-item">01 сентября</li>
+                      <li class="swiper__card-item one">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.4515 1.40485C4.4515 1.14596 4.66137 0.936096 4.92025 0.936096H5.39225C5.65113 0.936096 5.861 1.14596 5.861 1.40485V1.87429H4.4515V1.40485ZM3.28125 2.8125C3.02237 2.8125 2.8125 3.02237 2.8125 3.28125V4.21875H7.5V3.28125C7.5 3.02237 7.29013 2.8125 7.03125 2.8125H3.28125ZM7.9712 5.15625C8.21675 5.15671 8.418 5.34598 8.4375 5.58662V14.0625H7.96875C7.95332 14.0625 7.93806 14.0617 7.923 14.0603H6.08093C5.82205 14.0603 5.61218 13.8504 5.61218 13.5916V12.7635C5.61218 12.5046 5.40232 12.2947 5.14343 12.2947C4.88455 12.2947 4.67468 12.5046 4.67468 12.7635V13.5916C4.67468 13.8504 4.46482 14.0603 4.20593 14.0603H2.34375C2.08487 14.0603 1.875 13.8504 1.875 13.5916V5.625C1.875 5.36626 2.08463 5.15648 2.34333 5.15625H7.9712ZM4.21417 7.96875C4.47306 7.96875 4.68292 7.75888 4.68292 7.5V7.03125C4.68292 6.77237 4.47306 6.5625 4.21417 6.5625C3.95528 6.5625 3.74542 6.77237 3.74542 7.03125V7.5C3.74542 7.75888 3.95528 7.96875 4.21417 7.96875ZM3.74542 9.84025C3.74542 10.0992 3.95528 10.309 4.21417 10.309C4.47306 10.309 4.68292 10.0992 4.68292 9.84025V9.37151C4.68292 9.11263 4.47306 8.90276 4.21417 8.90276C3.95528 8.90276 3.74542 9.11263 3.74542 9.37151V9.84025ZM5.62546 9.84025C5.62546 10.0992 5.83533 10.309 6.09421 10.309C6.35309 10.309 6.56296 10.0992 6.56296 9.84025V9.37151C6.56296 9.11263 6.35309 8.90276 6.09421 8.90276C5.83533 8.90276 5.62546 9.11263 5.62546 9.37151V9.84025ZM5.62546 7.5C5.62546 7.75888 5.83533 7.96875 6.09421 7.96875C6.35309 7.96875 6.56296 7.75888 6.56296 7.5V7.03125C6.56296 6.77237 6.35309 6.5625 6.09421 6.5625C5.83533 6.5625 5.62546 6.77237 5.62546 7.03125V7.5ZM9.375 14.0625H12.6562C12.9151 14.0625 13.125 13.8527 13.125 13.5937V10.7812C13.125 8.60974 11.4844 6.82143 9.375 6.58824V14.0625ZM10.3125 9.84681C10.3125 9.58797 10.5224 9.37806 10.7812 9.37806H11.25C11.5088 9.37806 11.7188 9.58797 11.7188 9.84681C11.7188 10.1058 11.5088 10.3156 11.25 10.3156H10.7812C10.5224 10.3156 10.3125 10.1058 10.3125 9.84681ZM10.7812 11.2537H11.25C11.5088 11.2537 11.7188 11.4636 11.7188 11.7225C11.7188 11.9813 11.5088 12.1912 11.25 12.1912H10.7812C10.5224 12.1912 10.3125 11.9813 10.3125 11.7225C10.3125 11.4636 10.5224 11.2537 10.7812 11.2537Z" fill="white"/>
+                        </svg>                                                         
+                        Новостройки
+                      </li>
+                    </ul>
+                    <div class="swiper__center">
+                      
+                      <h4 class="swiper__center-title">
+                        Дубай – лидер<br class="mobile"/> международных инвестиций
+                      </h4>
+                      
+                      <p class="swiper__center-text">
+                        Там, где море приветствует вас каждое утро, а девственно чистый песок встречает вас дома — на острове в престижном месте в Дубае.
+                      </p>
+                      
+                    </div>
+                    
+                    
+                    <div class="swiper__card-pagination none">
+                      <div class="swiper__card-line active"></div>
+                      <div class="swiper__card-line"></div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              
+              
+              
+              
+              
+              
+            </div>
+            <div class="swiper-pagination3">
+            </div>
+        </div>
+        <div class="container developers__inner mobile">
+          <button class="developers__descr-btn">Смотреть все</button>
+        </div>
+      </div>
+    
+          
+        
+        </section>
+  
+        <section class="catalog2" id="catalog">
+     
+
+            <img src="img/catalog2__back.png" alt="" class="catalog__back none">
+            <img src="img/catalog__back-ipad.png" alt="" class="catalog__back ipad">
+            <img src="img/catalog2__back-mobile.png" alt="" class="catalog__back mobile">
+      
+          <div class="container">
+            <h3 class="catalog__title">
+              Скачайте каталог<br/>
+              всех новостроек Дубая
+            </h3>
+            <h5 class="catalog__subtitle">
+              128 объектов ценой от 100 000$ в едином pdf-файле 
+            </h5>
+            <form action="" class="catalog__form">
+              <input type="name" name="name" class="catalog__form-input" placeholder="Ваше имя">
+              <div class="phone__box">
+      
+                <input type="text"  name="phone" class="catalog__form-input" placeholder="+7 (999) 999-99-99">
+                <div class="catalog__form-error">
+                  Укажите корректный номер телефона
+                </div>
+              </div>
+              <input type="button" value="Скачать"  class="catalog__form-btn">
+              <div class="catalog__form-error">
+                Укажите корректный номер телефона
+              </div>
+            </form>
+            <p class="catalog__text">
+              Заполняя форму, вы соглашаетесь с условиями <br class="mobile"/><a href="#">политики конфиденциальности</a>
+            </p>
+          </div>
+        </section>
+    
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <a href="/" class="logo">
+            <img src="img/footer__logo.svg" alt="" />
+          </a>
+          <a href="tel:+74991234545" class="footer__phone"
+            >+7 (499) 123-45-45</a
+          >
+          <div class="footer__soc">
+            <a href="#" class="footer__soc-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_294_1205)">
+                  <mask
+                    id="mask0_294_1205"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1205)">
+                    <path
+                      d="M35 17.5C35 7.83501 27.165 0 17.5 0C7.83501 0 0 7.83501 0 17.5C0 27.165 7.83501 35 17.5 35C27.165 35 35 27.165 35 17.5Z"
+                      fill="#B4A06B"
+                    />
+                    <path
+                      d="M25.3391 9.63331C23.4629 7.70197 20.8695 6.65356 18.2208 6.65356C12.5924 6.65356 8.06765 11.2335 8.12285 16.8067C8.12285 18.5725 8.61948 20.2831 9.44717 21.8281L8.01245 27.0702L13.365 25.6907C14.8549 26.5184 16.5103 26.9047 18.1656 26.9047C23.7388 26.9047 28.2636 22.3248 28.2636 16.7515C28.2636 14.0477 27.2152 11.5095 25.3391 9.63331ZM18.2208 25.1941C16.731 25.1941 15.2411 24.8078 13.972 24.0353L13.6408 23.8698L10.4404 24.6975L11.2681 21.5522L11.0474 21.2212C8.61948 17.3034 9.7782 12.1164 13.7513 9.6885C17.7242 7.26055 22.856 8.41931 25.2839 12.3923C27.7118 16.3653 26.5531 21.497 22.58 23.9249C21.3109 24.7527 19.7658 25.1941 18.2208 25.1941ZM23.0767 19.0691L22.4697 18.7932C22.4697 18.7932 21.5868 18.407 21.035 18.131C20.9799 18.131 20.9246 18.0759 20.8695 18.0759C20.7039 18.0759 20.5936 18.131 20.4832 18.1862C20.4832 18.1862 20.4281 18.2414 19.6556 19.1242C19.6003 19.2347 19.49 19.2898 19.3796 19.2898H19.3244C19.2692 19.2898 19.1589 19.2347 19.1036 19.1795L18.8278 19.0691C18.2208 18.7932 17.6691 18.4621 17.2276 18.0207C17.1172 17.9103 16.9517 17.7999 16.8413 17.6896C16.455 17.3034 16.0688 16.8619 15.7929 16.3653L15.7377 16.2549C15.6825 16.1998 15.6825 16.1445 15.6274 16.0342C15.6274 15.9238 15.6274 15.8135 15.6825 15.7583C15.6825 15.7583 15.9032 15.4824 16.0688 15.3169C16.1792 15.2064 16.2343 15.041 16.3448 14.9306C16.455 14.765 16.5103 14.5443 16.455 14.3788C16.3999 14.1028 15.7377 12.613 15.5721 12.282C15.4618 12.1164 15.3514 12.0612 15.1859 12.006H15.0203C14.91 12.006 14.7445 12.006 14.5789 12.006C14.4686 12.006 14.3582 12.0612 14.2478 12.0612L14.1927 12.1164C14.0822 12.1716 13.972 12.282 13.8615 12.3371C13.7513 12.4475 13.696 12.5578 13.5857 12.6682C13.1994 13.1648 12.9786 13.7719 12.9786 14.3788C12.9786 14.8202 13.0891 15.2617 13.2546 15.6479L13.3098 15.8135C13.8064 16.8619 14.4686 17.7999 15.3514 18.6277L15.5721 18.8484C15.7377 19.014 15.9032 19.1242 16.0136 19.2898C17.1724 20.2831 18.4967 21.0005 19.9865 21.3867C20.1521 21.4419 20.3728 21.4419 20.5384 21.497C20.7039 21.497 20.9246 21.497 21.0902 21.497C21.3661 21.497 21.6971 21.3867 21.9179 21.2763C22.0835 21.166 22.1938 21.166 22.3041 21.0556L22.4145 20.9452C22.5249 20.8349 22.6353 20.7797 22.7455 20.6693C22.856 20.559 22.9663 20.4486 23.0215 20.3383C23.1319 20.1176 23.1871 19.8416 23.2422 19.5657C23.2422 19.4554 23.2422 19.2898 23.2422 19.1795C23.2422 19.1795 23.1871 19.1242 23.0767 19.0691Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1205">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="footer__soc-link">
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_294_1212)">
+                  <mask
+                    id="mask0_294_1212"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1212)">
+                    <path
+                      d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 0C7.83562 0 0 7.83562 0 17.5C0 27.1644 7.83562 35 17.5 35C27.1644 35 35 27.1644 35 17.5C35 7.83562 27.1644 0 17.5 0ZM26.0954 11.989L23.2225 25.5223C23.011 26.4819 22.4394 26.7152 21.6416 26.2631L17.2666 23.0402L15.1579 25.0731C14.9537 25.3356 14.6373 25.5034 14.2829 25.5034C14.28 25.5034 14.2785 25.5034 14.2756 25.5034L14.5863 21.0496L22.6946 13.7259C23.0446 13.4152 22.6159 13.2387 22.1506 13.5494L12.1334 19.8581L7.81666 18.5106C6.88334 18.2146 6.85709 17.5773 8.01354 17.1194L24.8806 10.6181C25.6652 10.3323 26.3477 10.8048 26.094 11.9904L26.0954 11.989Z"
+                      fill="#B4A06B"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1212">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <p class="footer__bottom-text none">© Homeliga, 2023</p>
+        </div>
+        <div class="footer__centerL">
+          <ul class="footer__centerL-list">
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link"> Услуги </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Покупка недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Продажа недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Аренда недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Элитная недвижимость в Дубае
+              </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text none">
+            Dubai, Business Bay, Bay Square, building 07, office 504
+          </p>
+        </div>
+        <div class="footer__centerR">
+          <ul class="footer__centerR-list">
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link">
+                Каталог недвижимости
+              </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link"> Купить недвижимость </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link"> Снять недвижимости </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link">
+                Вторичная недвижимость
+              </a>
+            </li>
+            <li class="footer__centerR-item none">
+              <a href="#" class="footer__centerR-link"> Комплексы </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text none">
+            Предоставленная информация не является публичной офертой
+          </p>
+        </div>
+        <div class="footer__right">
+          <ul class="footer__right-list">
+            <li class="footer__centerR-item mobile">
+              <a href="#" class="footer__centerR-link"> Комплексы </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#districts" class="footer__right-link"> Районы </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#developers" class="footer__right-link"> Застройщики </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#blog" class="footer__right-link"> Блог о Дубае </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#about" class="footer__right-link"> Об агентстве </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#footer" class="footer__right-link"> Контакты </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text mobile">© Homeliga, 2023</p>
+          <p class="footer__bottom-text mobile">
+            Dubai, Business Bay, Bay Square, building 07, office 504
+          </p>
+          <p class="footer__bottom-text mobile">
+            Предоставленная информация не является<br />
+            публичной офертой
+          </p>
+          <a href="#">
+            <p class="footer__bottom-text">Политика конфиденциальности</p>
+          </a>
+        </div>
+      </div>
+      <div class="container footer__inner ipad">
+        <div class="footer__left">
+          <a href="/" class="logo">
+            <img src="img/footer__logo.svg" alt="" />
+          </a>
+          <a href="tel:+74991234545" class="footer__phone"
+            >+7 (499) 123-45-45</a
+          >
+          <div class="footer__soc">
+            <a href="#" class="footer__soc-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_294_1205)">
+                  <mask
+                    id="mask0_294_1205"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1205)">
+                    <path
+                      d="M35 17.5C35 7.83501 27.165 0 17.5 0C7.83501 0 0 7.83501 0 17.5C0 27.165 7.83501 35 17.5 35C27.165 35 35 27.165 35 17.5Z"
+                      fill="#B4A06B"
+                    />
+                    <path
+                      d="M25.3391 9.63331C23.4629 7.70197 20.8695 6.65356 18.2208 6.65356C12.5924 6.65356 8.06765 11.2335 8.12285 16.8067C8.12285 18.5725 8.61948 20.2831 9.44717 21.8281L8.01245 27.0702L13.365 25.6907C14.8549 26.5184 16.5103 26.9047 18.1656 26.9047C23.7388 26.9047 28.2636 22.3248 28.2636 16.7515C28.2636 14.0477 27.2152 11.5095 25.3391 9.63331ZM18.2208 25.1941C16.731 25.1941 15.2411 24.8078 13.972 24.0353L13.6408 23.8698L10.4404 24.6975L11.2681 21.5522L11.0474 21.2212C8.61948 17.3034 9.7782 12.1164 13.7513 9.6885C17.7242 7.26055 22.856 8.41931 25.2839 12.3923C27.7118 16.3653 26.5531 21.497 22.58 23.9249C21.3109 24.7527 19.7658 25.1941 18.2208 25.1941ZM23.0767 19.0691L22.4697 18.7932C22.4697 18.7932 21.5868 18.407 21.035 18.131C20.9799 18.131 20.9246 18.0759 20.8695 18.0759C20.7039 18.0759 20.5936 18.131 20.4832 18.1862C20.4832 18.1862 20.4281 18.2414 19.6556 19.1242C19.6003 19.2347 19.49 19.2898 19.3796 19.2898H19.3244C19.2692 19.2898 19.1589 19.2347 19.1036 19.1795L18.8278 19.0691C18.2208 18.7932 17.6691 18.4621 17.2276 18.0207C17.1172 17.9103 16.9517 17.7999 16.8413 17.6896C16.455 17.3034 16.0688 16.8619 15.7929 16.3653L15.7377 16.2549C15.6825 16.1998 15.6825 16.1445 15.6274 16.0342C15.6274 15.9238 15.6274 15.8135 15.6825 15.7583C15.6825 15.7583 15.9032 15.4824 16.0688 15.3169C16.1792 15.2064 16.2343 15.041 16.3448 14.9306C16.455 14.765 16.5103 14.5443 16.455 14.3788C16.3999 14.1028 15.7377 12.613 15.5721 12.282C15.4618 12.1164 15.3514 12.0612 15.1859 12.006H15.0203C14.91 12.006 14.7445 12.006 14.5789 12.006C14.4686 12.006 14.3582 12.0612 14.2478 12.0612L14.1927 12.1164C14.0822 12.1716 13.972 12.282 13.8615 12.3371C13.7513 12.4475 13.696 12.5578 13.5857 12.6682C13.1994 13.1648 12.9786 13.7719 12.9786 14.3788C12.9786 14.8202 13.0891 15.2617 13.2546 15.6479L13.3098 15.8135C13.8064 16.8619 14.4686 17.7999 15.3514 18.6277L15.5721 18.8484C15.7377 19.014 15.9032 19.1242 16.0136 19.2898C17.1724 20.2831 18.4967 21.0005 19.9865 21.3867C20.1521 21.4419 20.3728 21.4419 20.5384 21.497C20.7039 21.497 20.9246 21.497 21.0902 21.497C21.3661 21.497 21.6971 21.3867 21.9179 21.2763C22.0835 21.166 22.1938 21.166 22.3041 21.0556L22.4145 20.9452C22.5249 20.8349 22.6353 20.7797 22.7455 20.6693C22.856 20.559 22.9663 20.4486 23.0215 20.3383C23.1319 20.1176 23.1871 19.8416 23.2422 19.5657C23.2422 19.4554 23.2422 19.2898 23.2422 19.1795C23.2422 19.1795 23.1871 19.1242 23.0767 19.0691Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1205">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="#" class="footer__soc-link">
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 35 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_294_1212)">
+                  <mask
+                    id="mask0_294_1212"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="35"
+                    height="35"
+                  >
+                    <path d="M35 0H0V35H35V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_294_1212)">
+                    <path
+                      d="M17.5 35C27.165 35 35 27.165 35 17.5C35 7.83502 27.165 0 17.5 0C7.83502 0 0 7.83502 0 17.5C0 27.165 7.83502 35 17.5 35Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M17.5 0C7.83562 0 0 7.83562 0 17.5C0 27.1644 7.83562 35 17.5 35C27.1644 35 35 27.1644 35 17.5C35 7.83562 27.1644 0 17.5 0ZM26.0954 11.989L23.2225 25.5223C23.011 26.4819 22.4394 26.7152 21.6416 26.2631L17.2666 23.0402L15.1579 25.0731C14.9537 25.3356 14.6373 25.5034 14.2829 25.5034C14.28 25.5034 14.2785 25.5034 14.2756 25.5034L14.5863 21.0496L22.6946 13.7259C23.0446 13.4152 22.6159 13.2387 22.1506 13.5494L12.1334 19.8581L7.81666 18.5106C6.88334 18.2146 6.85709 17.5773 8.01354 17.1194L24.8806 10.6181C25.6652 10.3323 26.3477 10.8048 26.094 11.9904L26.0954 11.989Z"
+                      fill="#B4A06B"
+                    />
+                  </g>
+                </g>
+                <defs>
+                  <clipPath id="clip0_294_1212">
+                    <rect width="35" height="35" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+          <p class="footer__bottom-text none">© Homeliga, 2023</p>
+        </div>
+        <div class="footer__centerL">
+          <ul class="footer__centerL-list">
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link"> Услуги </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Покупка недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Продажа недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Аренда недвижимости в Дубае
+              </a>
+            </li>
+            <li class="footer__centerL-item">
+              <a href="#" class="footer__centerL-link">
+                Элитная недвижимость в Дубае
+              </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text none">
+            Dubai, Business Bay, Bay Square, building 07, office 504
+          </p>
+        </div>
+        <div class="footer__centerR">
+          <ul class="footer__centerR-list">
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link">
+                Каталог недвижимости
+              </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link"> Купить недвижимость </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link"> Снять недвижимости </a>
+            </li>
+            <li class="footer__centerR-item">
+              <a href="#" class="footer__centerR-link">
+                Вторичная недвижимость
+              </a>
+            </li>
+            <li class="footer__centerR-item none">
+              <a href="#" class="footer__centerR-link"> Комплексы </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text none">
+            Предоставленная информация не является публичной офертой
+          </p>
+        </div>
+        <div class="footer__right L">
+          <p class="footer__bottom-text mobile">
+            Dubai, Business Bay, Bay Square, building 07, office 504
+          </p>
+          <p class="footer__bottom-text mobile">© Homeliga, 2023</p>
+        </div>
+        <div class="footer__right C">
+          <ul class="footer__right-list">
+            <li class="footer__centerR-item mobile">
+              <a href="#" class="footer__centerR-link"> Комплексы </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#districts" class="footer__right-link"> Районы </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#developers" class="footer__right-link"> Застройщики </a>
+            </li>
+          </ul>
+          <p class="footer__bottom-text mobile">
+            Предоставленная информация не является публичной офертой
+          </p>
+        </div>
+        <div class="footer__right R">
+          <ul class="footer__right-list">
+            <li class="footer__right-item">
+              <a href="#blog" class="footer__right-link"> Блог о Дубае </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#about" class="footer__right-link"> Об агентстве </a>
+            </li>
+            <li class="footer__right-item">
+              <a href="#footer" class="footer__right-link"> Контакты </a>
+            </li>
+          </ul>
+          <a href="#">
+            <p class="footer__bottom-text">Политика конфиденциальности</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.1.3/imask.min.js"
+      integrity="sha512-54QZ6V8x2x5v5+8JNy98/rP4Ui3CSNlv8KLVS5tTQJCx/Ag4jgUlVUqe54TJ3QLJYSVwt5xPbINvxX7A9XHdHQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

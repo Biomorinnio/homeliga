@@ -1,0 +1,34 @@
+.header__top-right{
+    justify-content: center;
+}
+
+.header.other-pages {
+    padding-bottom: 12px;
+}
+
+.developers__list{
+    margin-bottom: 100px;
+}
+
+.developers__list-items{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    gap: 40px 30px;
+    margin: 40px 0px 46px;
+}
+
+.developers__list-item{
+
+    border-radius: 8px;
+    border: 1px solid #C9C9C9;
+    min-height: 160px;
+}
+
+.developers__list-link{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
