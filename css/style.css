@@ -281,6 +281,14 @@ hr {
   padding-bottom: 16px;
 }
 
+.header__top-right{
+  justify-content: center;
+}
+
+.header.other-pages {
+  padding-bottom: 12px;
+}
+
 .header.fixed.active {
   opacity: 1;
   z-index: 9;
