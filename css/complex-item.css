@@ -109,7 +109,7 @@ h2 {
   background: rgba(255, 255, 255, 0.3) !important;
   width: 34px !important;
   border-radius: unset;
-  height: 3px !important;
+  height: 2px !important;
 }
 .swiper-pagination.features .swiper-pagination-bullet {
   margin-right: 10px !important;
@@ -424,9 +424,20 @@ td {
   }
 }
 @media (max-width: 768px) {
-  .payment__button.none {
-    display: block !important;
-    width: 100%;
+  .payment__button {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-top: 27px;
+    padding: 22px 40px;
+  }
+  .swiper__img {
+    min-height: unset;
+    max-height: unset;
+  }
+ 
+  .swiper__front{
+    max-height: unset;
+    height: unset;
   }
   .payment__article {
     flex-direction: column;
@@ -476,13 +487,13 @@ td {
     font-weight: 800;
   }
   .features__item-text {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24.8px;
   }
-  .payment__button.mobile {
-    display: none !important;
-  }
+
   .payment__text {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24.8px;
   }
   .payment__list {
     display: grid;
@@ -500,7 +511,7 @@ td {
   }
 
   .payment__article {
-    margin: 22px 0px 32px;
+    margin: 17px 0px 23px;
   }
   .payment__item-title {
     font-size: 39px;
@@ -564,9 +575,29 @@ td {
   tr:not(:first-child) td {
     padding-top: 25px;
   }
+  tr{
+    border-top: 0px;
+  }
   .payment__table {
-    margin-top: 29px;
-    width: 100%;
+    margin-top: -8px;
+   
+  }
+  th, td{
+    padding-left: 2px;
+  }
+  td{
+    height: 61px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 18.2px;
+  }
+  tr td:last-child{
+    min-width: 141px;
+
+  }
+  .scrollable-table{
+    width: calc(100% - 40px);
+    margin-left: 20px;
   }
   .catalog {
     margin-top: 59px;
@@ -583,7 +614,7 @@ td {
     margin-bottom: 38px;
   }
   .swiper__card {
-    height: 318px;
+    height: 350px;
   }
   .developers .developers__descr-btn {
     margin-top: 24px;
@@ -595,13 +626,13 @@ td {
     height: 625px;
   }
   .scrollable-table {
-    max-height: 381px;
+    max-height: 290px;
+    margin-top: 20px;
   }
-  .catalog__subtitle,
-  .catalog2 .catalog__subtitle {
-    margin-top: 18px;
-    margin-bottom: 25px;
+  tr:last-child{
+    border-bottom: 0px;
   }
+ 
 }
 @media (max-width: 400px) {
   tr:not(:first-child) td {

@@ -408,9 +408,10 @@ letter-spacing: -0.24px;
 }
 .developer__item-text{
   max-width: 515px;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 14px;
   margin-bottom: 31px;
+  line-height: 24.8px;
 }
 .developer__item-list{
   gap: 30px;
@@ -602,7 +603,7 @@ letter-spacing: -0.24px;
     width: 154px;
   }
   .rewards__item-imgs{
-    margin-bottom: 14px;
+    margin-bottom: 11px;
   }
   .rewards__item-title{
     font-size: 16px;
@@ -610,7 +611,9 @@ letter-spacing: -0.24px;
     margin-bottom: 2px;
   }
   .rewards__item-text{
-    font-size: 11px;
+    font-size: 12px;
+    line-height: 18.6px;
+    min-width: 180px;
   }
   .swiper-rewards.mobile{
     display: none !important;
@@ -640,22 +643,24 @@ letter-spacing: -0.24px;
     margin-bottom:  73px;
   }
   .catalog .container{
-    padding-top: 58px;
+    padding-top: 51px;
   }
   .catalog__back.none{
     display: none !important;
   }
   .catalog__subtitle{
-    margin: 23px 0px 34px;
+    margin: 12px 0px 30px;
   }
   .catalog{
     margin-bottom: 63px;
   }
   .about__developer-title{
-    margin-bottom: 24px;
+    margin-bottom: 14px;
+
   }
   .about__developer-text{
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24.8px;
   }
   .about__developer-text:first-of-type{
     margin-bottom: 27px;

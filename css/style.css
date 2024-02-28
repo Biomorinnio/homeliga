@@ -1079,13 +1079,13 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
   color: #525252;
   font-size: 14px;
   font-weight: 400;
-  line-height: 21.7px;
+  line-height: 155%;
   word-wrap: break-word;
 }
 
 .services__item-link {
   color: #b4a06b;
-  font-size: 14px;
+  font-size: 16px;
 
   font-weight: 600;
   line-height: 21px;
@@ -1284,7 +1284,7 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
 .swiper__subtitle {
   color: var(--Text-grey, #525252);
 
-  font-size: 12px;
+  font-size: 14px;
 
   font-weight: 400;
   line-height: 160%; /* 19.2px */
@@ -1519,7 +1519,7 @@ h3.swiper__title {
   margin: 15px 0px;
 }
 h5.swiper__title {
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1613,7 +1613,7 @@ h5.swiper__title {
   color: var(--White, #fff);
   font-family: "Inter", sans-serif;
   border: none;
-  font-size: 14px;
+  font-size: 16px;
   appearance: none;
   font-weight: 300;
   -webkit-transition: 0.3s all ease;
@@ -1904,7 +1904,7 @@ h5.swiper__title {
 .about__item-subtitle {
   color: var(--Text-grey, #525252);
 
-  font-size: 16px;
+  font-size: 14px;
 
   font-weight: 300;
   line-height: 155%; /* 24.8px */
@@ -2091,7 +2091,7 @@ h5.swiper__title {
 .swiper__center-title {
   color: var(--Dark, #2e2f36);
 
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500px;
   line-height: 130%;
 }
@@ -2830,7 +2830,7 @@ h5.swiper__title {
     min-height: 159px;
   }
   h3.swiper__title {
-    margin: 21px 0px 16px;
+    margin: 14px 0px 14px;
   }
   .swiper__bottom-right svg {
     width: 50px;
@@ -2839,7 +2839,7 @@ h5.swiper__title {
     font-size: 20px;
   }
   .developers .swiper__title {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .swiper__bottom {
@@ -3497,7 +3497,7 @@ h5.swiper__title {
   .swiper__subtitle {
     min-width: 340px;
 
-    font-size: 12px;
+    font-size: 14px;
 
     font-weight: 400;
     line-height: 160%; /* 19.2px */
@@ -3519,7 +3519,7 @@ h5.swiper__title {
   .swiper-pagination3-bullet,
   .swiper-pagination1-bullet {
     width: 34px !important;
-    height: 3px !important;
+    height: 2px !important;
     border-radius: 0px !important;
     margin-right: 10px !important;
     background-color: #c9c9c9 !important;
@@ -4267,7 +4267,7 @@ h5.swiper__title {
     padding: 13px 20px;
   }
   .swiper__center-text {
-    font-size: 14px;
+    font-size: 16px;
 
     font-weight: 400;
     line-height: 21.7px;
@@ -4457,7 +4457,27 @@ h5.swiper__title {
 }
 
 @media (max-width: 768px) {
-
+  .developers__descr-btn{
+    border-width: 2px;
+  }
+  .blog .services__item-link{
+    margin-top: 7px;
+  }
+  .swiper__center-text{
+    font-size: 16px;
+  }
+  .services__item-subtitle{
+    font-size: 14px;
+  }
+  .about__subtitle{
+    margin: 3px 0px 23px;
+  }
+  .about__item-subtitle{
+    font-size: 16px;
+  }
+  .swiper-pagination2.mobile{
+    display: flex !important;
+  }
   .swiper__card:hover .swiper__front img {
     transform: unset;
   }
@@ -4693,6 +4713,7 @@ h5.swiper__title {
   }
   .filter__btn:first-child {
     border-radius: 8px 0px 0px 8px;
+    min-width: 135px;
   }
   .filter__btn:nth-child(2) {
     border-radius: 0px;
@@ -4933,7 +4954,7 @@ h5.swiper__title {
   .swiper__subtitle {
     min-width: 340px;
 
-    font-size: 12px;
+    font-size: 14px;
 color: #858585;
     font-weight: 400;
     line-height: 160%; /* 19.2px */
@@ -4955,7 +4976,7 @@ color: #858585;
   .swiper-pagination3-bullet,
   .swiper-pagination1-bullet {
     width: 34px !important;
-    height: 3px !important;
+    height: 2px !important;
     border-radius: 0px !important;
     margin-right: 10px !important;
     background-color: #c9c9c9 !important;
@@ -5030,11 +5051,11 @@ color: #858585;
   }
   .catalog .container {
     padding-top: 70px;
-    padding-bottom: 227px;
+    padding-bottom: 239px;
   }
   .catalog2 .container {
     padding-top: 70px;
-    padding-bottom: 227px;
+    padding-bottom: 249px;
   }
   .catalog__back {
     width: 101%;
@@ -5373,7 +5394,7 @@ color: #858585;
     padding: 0;
   }
   .swiper__box {
-    margin: 7px 0px;
+    margin: 3px 0px;
   }
   .container.developers__inner.mobile:last-child .developers__descr-btn {
     display: block;
@@ -5404,7 +5425,7 @@ color: #858585;
     padding-bottom: 75px !important;
   }
   .catalog .container {
-    padding-top: 45px;
+    padding-top: 50px;
   }
   .catalog__text .mobile {
     display: block !important;
@@ -5420,13 +5441,13 @@ color: #858585;
   }
   .districts__item-img {
     max-width: unset;
-    max-height: 303px;
+    max-height: 298px;
   }
   .catalog {
     margin-bottom: 60px;
   }
   .developers__descr {
-    padding-bottom: 25px;
+    padding-bottom: 22px;
   }
   .districts__item {
     max-height: 303px;
@@ -5473,7 +5494,7 @@ color: #858585;
     font-weight: 600;
     line-height: 26px;
     max-width: unset;
-    margin: 15px 0px 15px;
+    margin: 13px 0px 8px;
   }
   .services__item-link {
     margin-top: 20px;
@@ -5519,23 +5540,23 @@ color: #858585;
     margin: 15px 0px 5px;
   }
   .about__subtitle {
-    font-size: 14px;
+    font-size: 16px;
 
     font-weight: 400;
-    line-height: 21.7px;
+    line-height: 24.8px;
   }
   .about__item {
     max-width: unset !important;
     width: 100%;
     border-radius: 20px;
-    border: 1px solid #c9c9c9;
+    border: 2px solid #c9c9c9;
     padding: 105px 67px 37px 40px;
   }
   .about__subtitle {
     max-width: 304px;
   }
   .about__list {
-    margin: 20px 0;
+    margin: 20px 0 30px;
     gap: 10px;
   }
   .about__item::before {
@@ -5580,7 +5601,7 @@ color: #858585;
   .footer__inner {
     display: flex !important;
     flex-direction: column;
-    padding: 85px 20px 15px !important;
+    padding: 59px 20px 32px !important;
     gap: 35px !important;
   }
   .footer__inner.ipad {
@@ -5642,7 +5663,7 @@ color: #858585;
     padding-right: 0;
   }
   .services__item:first-child .services__item-title {
-    font-size: 19px;
+    font-size: 20px;
   }
   .mySwiper6.mobile {
     padding-bottom: 45px !important;
@@ -5716,16 +5737,16 @@ color: #858585;
   }
   .swiper__card-list {
     left: 14px;
-    top: 20px;
+    top: 14px;
   }
   .swiper__card {
     height: 350px;
   }
   .developers .swiper__text-box {
-    padding: 15px 20px;
+    padding: 11px 17px;
   }
   .mySwiper1 {
-    padding-bottom: 62px !important;
+    padding-bottom: 52px !important;
   }
   .mySwiper2 {
     padding-bottom: 60px !important;
@@ -5759,7 +5780,7 @@ color: #858585;
     gap: 20px;
   }
   .about__prof {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: -5px;
   }
   .about__name {
@@ -5800,7 +5821,11 @@ color: #858585;
   }
 
   .blog .swiper__center {
-    padding: 85px 30px 23px;
+    padding: 80px 30px 23px;
+    gap: 10px;
+  }
+  .swiper__center-text{
+    line-height: 24.8px;
   }
   .header.fixed {
     padding-bottom: 0px;
@@ -5873,8 +5898,8 @@ color: #858585;
   }
   .catalog__subtitle,
   .catalog2 .catalog__subtitle {
-    margin-top: 18px;
-    margin-bottom: 25px;
+    margin-top: 13px;
+    margin-bottom: 30px;
   }
 
 }
