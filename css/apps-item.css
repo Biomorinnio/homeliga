@@ -778,7 +778,7 @@ gap: 10px;
     background: rgba(255, 255, 255, 0.1);
     color: #b8d8ff;
     padding: 19px 14px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 160%; /* 22.4px */
   }
@@ -793,7 +793,7 @@ gap: 10px;
     background: var(--Grey-BG, #f3f3f3);
     color: var(--Dark, #2e2f36);
     padding: 21px 0;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .catalog {
@@ -849,6 +849,7 @@ gap: 10px;
   }
   .preview .preview__top-text {
     font-size: 14px;
+    font-weight: 400;
   }
   
   .preview__top-left {
@@ -1021,7 +1022,7 @@ gap: 10px;
     gap: 18px;
   }
   .preview__advantages-title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .preview__advantages-subtitle {
     font-size: 14px;
@@ -1053,14 +1054,14 @@ gap: 10px;
     margin-bottom: 56px;
   }
   .catalog.zoom .catalog__title {
-    max-width: 220px;
+
     font-size: 20px;
     position: relative;
   }
   .catalog.zoom .catalog__title::before {
     position: absolute;
-    right: -95px;
-    bottom: -28px;
+    right: -20px;
+    bottom: -23px;
     content: "";
     width: 106px;
 
