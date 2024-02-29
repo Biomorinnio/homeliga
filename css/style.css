@@ -4123,7 +4123,7 @@ h5.swiper__title {
     width: 50px;
   }
   .swiper__profile-title {
-    font-size: 14px;
+    font-size: 16px;
   }
   .blog .swiper__card-item {
     padding: 4px 13px;
@@ -4961,7 +4961,7 @@ color: #858585;
   }
   .swiper__title {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 150%; /* 30px */
   }
   .swiper-pagination,
