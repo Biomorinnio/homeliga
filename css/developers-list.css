@@ -1,34 +1,109 @@
-.header__top-right{
-    justify-content: center;
+.header__top-right {
+  justify-content: center;
 }
 
 .header.other-pages {
-    padding-bottom: 12px;
+  padding-bottom: 12px;
 }
 
-.developers__list{
-    margin-bottom: 100px;
+.developers__list {
+  margin-bottom: 93px;
 }
 
-.developers__list-items{
-    display: grid;
-    grid-template-columns: repeat(4, 23%);
-    gap: 40px 30px;
-    margin: 40px 0px 46px;
+.developers__list-items {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  gap: 40px 30px;
+  margin: 40px 0px 46px;
 }
 
-.developers__list-item{
-
-    border-radius: 8px;
-    border: 1px solid #C9C9C9;
-    min-height: 160px;
+.developers__list-item {
+  border-radius: 8px;
+  border: 1px solid #c9c9c9;
+  min-height: 160px;
 }
 
-.developers__list-link{
+.developers__list-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    width: 100%;
-    height: 100%;
+@media (max-width: 1440px) {
+  .developers__list-items {
+    gap: 32px 30px;
+  }
+  .developers__list-item {
+    min-height: 140px;
+  }
+  .developers__list-img {
+    width: 133px;
+    object-fit: contain;
+    max-height: 75px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .header.other-pages {
+    padding-top: 6px;
+    padding-bottom: 7px;
+  }
+  .navigation {
+    margin-top: 97px;
+    margin-bottom: 30px;
+  }
+
+  .developers__list-items {
+    grid-template-columns: repeat(3, 30.5%);
+    gap: 17px 28px;
+    overflow: hidden;
+    max-height: 884px;
+  }
+  .developers__list-item {
+    min-height: 133px;
+  }
+  .developers__list {
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    padding-bottom: 7px;
+    padding-top: 10px;
+  }
+  .navigation {
+    margin-top: 87px;
+    margin-bottom: 62px;
+  }
+  .developers__list-items {
     display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 26px;
+    gap: 20px;
+    max-height: 1420px;
+  }
+  .developers__list-title {
+    font-size: 32px !important;
+  }
+  .developers__list-item {
+    min-height: 160px;
+  }
+  .developers__list-link {
     justify-content: center;
-    align-items: center;
+    min-height: 160px;
+  }
+  .developers__list-img {
+    width: 151px;
+    max-height: 87px;
+  }
+  .developers__list {
+    margin-bottom: 60px;
+  }
+  .catalog2 .container {
+    padding-bottom: 261px;
+  }
 }
