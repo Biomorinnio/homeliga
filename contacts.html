@@ -37,86 +37,7 @@
 
     </div>
 
-    <section class="imagePop" id="imagePopId">
-
-
-      <div class="click1" onclick="imageMoveLeft();">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5 32.2501L25.75 33.9999L12.5 20.75L25.75 7.5L27.5 9.25003L16.0001 20.75L27.5 32.2501Z" fill="white"/>
-          </svg>
-          
-      </div>
-      <div class="click2" onclick="imageMoveRight();">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 7.74994L14.25 6.00006L27.5 19.25L14.25 32.5L12.5 30.75L23.9999 19.25L12.5 7.74994Z" fill="white"/>
-          </svg>
-          
-      </div>
-  
-      <div class="close1" onclick="imagePopNone();">
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_205_3081)">
-          <path d="M38 12.82L35.18 10L24 21.18L12.82 10L10 12.82L21.18 24L10 35.18L12.82 38L24 26.82L35.18 38L38 35.18L26.82 24L38 12.82Z" fill="white"/>
-          </g>
-          <defs>
-          <clipPath id="clip0_205_3081">
-          <rect width="48" height="48" rx="24" fill="white"/>
-          </clipPath>
-          </defs>
-        </svg>        
-      </div>
-  
-        
-  
-      <section class="imagePopUnder" onclick="imagePopNone();">
-      </section>
-  
-      
-  
-      <section class="imageContain" id="imageContainId" onclick="imageChange(id)">
-      
-        <div class="swiper mySwiper7 mobile"> 
-          <div class="swiper-wrapper">
-              <div class="swiper-slide"  id="model-1-image" style="background-image: url(img/preview-1.png)">
-                <div class="swiper-slide__box">
-  
-                  <img src="img/preview-1.png" alt="" class="swiper-slide__img" >
-                </div>
-              </div>
-              <div class="swiper-slide" id="model-2-image" style="background-image: url(img/preview-2.jpg)">
-                <div class="swiper-slide__box">
-  
-                  <img src="img/preview-2.png" alt="" class="swiper-slide__img"  >
-                </div>
-              </div>
-              <div class="swiper-slide" id="model-3-image" style="background-image: url(img/preview-3.png)" >
-                <div class="swiper-slide__box">
-  
-                  <img src="img/preview-3.png" alt="" class="swiper-slide__img" >
-                </div>
-              </div> 
-           
-              
-              <div class="swiper-slide" id="model-4-image" style="background-image: url(img/preview-4.jpg)" >
-                <div class="swiper-slide__box">
-  
-                  <img src="img/preview-4.png" alt="" class="swiper-slide__img" >
-                </div>
-              </div>
-              <div class="swiper-slide" id="model-5-image" style="background-image: url(img/preview-5.png)" >
-                <div class="swiper-slide__box">
-  
-                  <img src="img/preview-5.png" alt="" class="swiper-slide__img" >
-                </div>
-              </div>
-             
-          </div>     
-        </div>
-        <div class="swiper-pagination7 mobile">
-        </div>
-      </section>
-  
-    </section>
+ 
    
     <header class="header other-pages">
       <div class="container">
@@ -413,7 +334,7 @@
        
       </div>
       <div class="container navigation__inner mobile">
-        <a href="#">
+        <a href="index.html">
         <svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M4.79079 0.244078C5.06974 0.569515 5.06974 1.09715 4.79079 1.42259L1.72444 5L4.79079 8.57741C5.06974 8.90285 5.06974 9.43049 4.79079 9.75592C4.51184 10.0814 4.05958 10.0814 3.78064 9.75592L0.209209 5.58926C-0.0697365 5.26382 -0.0697365 4.73618 0.209209 4.41074L3.78064 0.244078C4.05958 -0.0813592 4.51184 -0.0813592 4.79079 0.244078Z" fill="#858585"/>
         </svg>          
@@ -433,9 +354,10 @@
                 <hr/>
                 <div class="contacts__inner">
                     <div class="contacts__descr">
+                      <div class="contacts__descr-left">
                         <h4 class="contacts__descr-title">Центральный офис в Дубае</h4>
-                        <p class="contacts__descr-text">Единый телефон</p>
-                        <a href="tel:+74991234545" class="contacts__descr-tel">+7 (499) 123-45-45</a>
+                        <p class="contacts__descr-text none">Единый телефон</p>
+                        <a href="tel:+74991234545" class="contacts__descr-tel none">+7 (499) 123-45-45</a>
                         <ul class="contacts__descr-list">
                             <li class="contacts__descr-item">
                                 <img src="img/contacts__descr-1.svg" alt="" class="contacts__descr-img">
@@ -461,16 +383,22 @@
                            
                             </li>
                         </ul>
-                        <button class="contacts__descr-btn">
+                        <button class="contacts__descr-btn none">
                             <a href="#" class="contacts__descr-link">Заказать обратный звонок</a>
                         </button>
+                      </div>
+                      <div class="contacts__descr-right mobile">
+                        <p class="contacts__descr-text ">Единый телефон</p>
+                        <a href="tel:+74991234545" class="contacts__descr-tel ">+7 (499) 123-45-45</a>
+                        <button class="contacts__descr-btn ">
+                          <a href="#" class="contacts__descr-link">Заказать обратный звонок</a>
+                      </button>
+                      </div>
                     </div>
                     <div class="contacts__content">
-                        <!-- Slider main container -->
                         <div class="swiper-contacts">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                            <!-- Slides -->
+    
                             <div class="swiper-slide">
                                 <img src="img/contacts__content-1.jpg" alt="" class="swiper-contacts-img">
                             </div>
@@ -495,10 +423,10 @@
                    
                             <div class="swiper-pagination contacts"></div>
                         
-                            <svg class="swiper-button-prev contacts none" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="swiper-button-prev contacts " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5 32.2501L25.75 33.9999L12.5 20.75L25.75 7.5L27.5 9.25003L16.0001 20.75L27.5 32.2501Z" fill="#FFFFFF"/>
                                 </svg>          
-                              <svg class="swiper-button-next contacts none" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <svg class="swiper-button-next contacts " width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 7.74994L14.25 6.00006L27.5 19.25L14.25 32.5L12.5 30.75L23.9999 19.25L12.5 7.74994Z" fill="#FFFFFF"/>
                               </svg>
                         </div>
