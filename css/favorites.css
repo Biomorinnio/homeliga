@@ -80,7 +80,9 @@ h3.swiper__title {
 }
 
 .favorites__pagination-number {
-  padding: 9px 10px;
+  padding: 6px 7px;
+  margin: 3px 3px;
+
   font-weight: 500;
   transition: 0.3s all ease;
   cursor: pointer;
@@ -91,8 +93,12 @@ h3.swiper__title {
   cursor: unset;
 }
 
+.favorites__pagination-number.active:hover{
+  background: unset;
+}
+
 .favorites__pagination-number:hover {
-  color: #b4a06b;
+  background: #f3f3f3;
 }
 
 .favorites__pagination-text {
