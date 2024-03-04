@@ -325,17 +325,13 @@ shadow?.addEventListener("click", () => {
   filterValList.classList.remove("active");
   filterValListM.classList.remove("active");
   shadow.classList.remove("active");
-  document
-    .querySelectorAll(".filter__price3.filter__choice")[0]
+  document?.querySelectorAll(".filter__price3.filter__choice")[0]
     .classList.remove("active");
-  document
-    .querySelector(".filter__apps2.filter__choice.mobile")
+  document?.querySelector(".filter__apps2.filter__choice.mobile")
     .classList.remove("active");
-  document
-    .querySelector(".filter__search-list.filter__choice.mobile")
+  document?.querySelector(".filter__search-list.filter__choice.mobile")
     .classList.remove("active");
-  document
-    .querySelector(".filter__search-list .filter__search-list.filter__choice")
+  document?.querySelector(".filter__search-list .filter__search-list.filter__choice")
     .classList.remove("active");
 
   closedPopup();
@@ -371,8 +367,7 @@ filterApps?.addEventListener("click", () => {
   shadow.classList.toggle("active");
   filterAppsList.classList.toggle("active");
   filterAppsListM.classList.add("active");
-  document
-    .querySelector(".filter__search-list .filter__search-list.filter__choice")
+  document?.querySelector(".filter__search-list .filter__search-list.filter__choice")
     .classList.remove("active");
 
   if (window.matchMedia("(max-width: 1180px)").matches) {
@@ -391,8 +386,7 @@ filterBed?.addEventListener("click", () => {
   document.querySelector('.filter__price-item.spec svg').classList.remove('active')
   document.querySelector('.filter__price2-list .filter__price2-item.spec svg').classList.remove('active')
 
-  document
-    .querySelector(".filter__search-list .filter__search-list.filter__choice")
+  document?.querySelector(".filter__search-list .filter__search-list.filter__choice")
     .classList.remove("active");
 });
 
@@ -407,8 +401,7 @@ filterPrice?.addEventListener("click", () => {
   document.querySelector('.filter__price-item.spec svg').classList.toggle('active')
 
   shadow.classList.toggle("active");
-  document
-    .querySelector(".filter__search-list .filter__search-list.filter__choice")
+  document?.querySelector(".filter__search-list .filter__search-list.filter__choice")
     .classList.remove("active");
 
   filterPriceList.classList.toggle("active");
@@ -717,8 +710,7 @@ for (let i of radioBtnsMobile) {
 const openPriceIpad = document.querySelectorAll(".filter__price2-item.l")[1];
 
 openPriceIpad?.addEventListener("click", () => {
-  document
-    .querySelectorAll(".filter__price3.filter__choice")[0]
+  document?.querySelectorAll(".filter__price3.filter__choice")[0]
     .classList.add("active");
   shadow.classList.add("active");
 
@@ -733,8 +725,7 @@ openPriceIpad?.addEventListener("click", () => {
 document.querySelector(".filter__list-close")?.addEventListener("click", () => {
   document.querySelector("body").classList.remove("active");
   filterSearch[0].disabled = false
-  document
-    .querySelector(".filter__search-list.filter__choice.mobile")
+  document?.querySelector(".filter__search-list.filter__choice.mobile")
     .classList.remove("active");
   shadow.classList.remove("active");
 

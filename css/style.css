@@ -1204,7 +1204,7 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
   position: absolute;
   left: 20px;
   top: 20px;
-  z-index: 5;
+  z-index: 4;
   display: flex;
   align-items: center;
   gap: 10px;
