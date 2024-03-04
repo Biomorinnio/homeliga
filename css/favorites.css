@@ -80,12 +80,21 @@ h3.swiper__title {
 }
 
 .favorites__pagination-number {
-  padding: 6px 7px;
-  margin: 3px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin: 3px 4px;
   border-radius: 5px;
   font-weight: 500;
   transition: 0.3s all ease;
   cursor: pointer;
+}
+
+
+.favorites__pagination-number.ipad{
+  display: flex !important;
 }
 
 .favorites__pagination-number.active {
@@ -194,11 +203,13 @@ h3.swiper__title {
 }
 
 @media (max-width: 768px) {
+  
   .header .container{
     padding-bottom: 7px;
     padding-top: 10px;
   }
-  .swiper__card-box.none{
+  .swiper__card-box.none, 
+  .favorites__pagination-number.ipad{
     display: none !important;
   }
   .navigation{
