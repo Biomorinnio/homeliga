@@ -65,6 +65,7 @@ h3.swiper__title {
   height: unset;
   background: #f3f3f3;
   border-radius: 20px;
+  overflow: visible;
 }
 
 .swiper__card-list {
@@ -142,6 +143,20 @@ h3.swiper__title {
 .swiper__img {
   max-height: 197px;
 }
+
+.swiper__card-box svg.clicked > circle {
+  fill: var(--Sand, #b4a06b);
+}
+.swiper__card-box svg.clicked > g path {
+  fill: #fff;
+}
+
+.swiper__like.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 
 @media (max-width: 1440px) {
   .swiper__top {
