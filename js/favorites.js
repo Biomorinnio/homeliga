@@ -10,10 +10,18 @@ for (let i = 0; i < favlikes.length; i++) {
     favlikesBox[i].classList.remove("active");
   });
   favlikes[i]?.addEventListener("click", () => {
-    favBoxes[i].style.display = 'none';
+    favBoxes[i].classList.add('hiding');
+    setTimeout(()=>{
+      favBoxes[i].style.display = 'none'
+    }, 300)
   });
 }
 
 document.querySelector('.favorites__btn').addEventListener('click', ()=>{
-    for(let i of favBoxes) i.style.display = 'none'
+    for(let i of favBoxes){
+      i.classList.add('hiding');
+      setTimeout(()=>{
+        i.style.display = 'none'
+      }, 300)
+    } 
 })

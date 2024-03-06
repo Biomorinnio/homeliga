@@ -73,6 +73,29 @@ h3.swiper__title {
   justify-content: space-between;
 }
 
+.swiper__card-list svg{
+  background: #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 7px;
+  transition: .3s all ease;
+}
+
+.swiper__card-list svg:hover{
+  background: #B4A06B;
+}
+
+.swiper__card-list svg g path{
+  transition: .3s all ease;
+}
+
+.swiper__card-list svg:hover > g path{
+  fill: #fff;
+}
+
+
+
 .favorites__pagination {
   display: flex;
   align-items: center;
@@ -149,6 +172,21 @@ h3.swiper__title {
 }
 .swiper__card-box svg.clicked > g path {
   fill: #fff;
+}
+
+.swiper__card-box.hiding{
+  animation: hiding .31s;
+
+}
+
+@keyframes hiding {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    display: none;
+  }
 }
 
 .swiper__like.active {
