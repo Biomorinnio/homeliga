@@ -46,7 +46,7 @@ hr {
 .contacts__btn {
   background: unset;
   color: #858585;
-  transition: 0.3s all ease;
+  transition: .3s border;
   border-bottom: 1px solid transparent;
   padding-bottom: 15px;
   min-width: 123px;
@@ -57,7 +57,7 @@ hr {
 
 .contacts__btn.active {
   border-bottom: 1px solid #2e2f36;
-  font-weight: 700;
+  font-weight: 600;
   color: #2e2f36;
 }
 
@@ -132,7 +132,7 @@ hr {
 }
 
 .contacts__descr-title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
   margin-bottom: 27px;
 }
@@ -145,7 +145,7 @@ hr {
 
 .contacts__descr-tel {
   color: #2e2f36;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   display: block;
   margin: 8px 0 33px;
@@ -186,6 +186,13 @@ justify-content: space-between;
     border: 1px solid #c9c9c9;
     padding: 0;
     border-radius: 8px;
+}
+
+.contacts__descr-btn .contacts__descr-link:hover{
+  transition: .3s all ease;
+  background: var(--Sand, #b4a06b);
+  color: var(--White, #fff);
+
 }
 
 .contacts__descr-btn .contacts__descr-link{
