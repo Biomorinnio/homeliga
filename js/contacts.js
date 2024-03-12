@@ -30,6 +30,8 @@ for(let i of contactsTabs) i.addEventListener('click', ()=>{
     arrText.splice(3, 1)
     arrText.push(i.textContent.split(' ')[i.textContent.split(' ').length-1])
     contactsTitle.textContent =  arrText.join(' ')
-  
+
+    if(contactsTitle.textContent == 'Центральный офис в Москве') document.querySelector('.contacts iframe').src = "https://yandex.ru/map-widget/v1/?um=constructor%3A713b919f3adc806843eef678c6f1887e3b787829e62741dee0f9e6c389dc363c&amp;source=constructor"
+    if(contactsTitle.textContent == 'Центральный офис в Дубае') document.querySelector('.contacts iframe').src = "https://yandex.ru/map-widget/v1/?um=constructor%3Aa8b88211b67b2f798644cd7625a9fba61cec79fa2bec939943171680a41a883d&amp;source=constructor"
 })
 

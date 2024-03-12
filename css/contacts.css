@@ -31,8 +31,6 @@
   display: flex;
   align-items: self-start;
   gap: 20px;
-
-
 }
 
 hr {
@@ -46,7 +44,7 @@ hr {
 .contacts__btn {
   background: unset;
   color: #858585;
-  transition: .3s border;
+  transition: 0.3s border;
   border-bottom: 1px solid transparent;
   padding-bottom: 15px;
   min-width: 123px;
@@ -66,11 +64,10 @@ hr {
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
-    max-height: 401px;
+  max-height: 401px;
 }
 
 .contacts__content {
-
   max-width: 600px;
   overflow: hidden;
   border-radius: 0px 20px 20px 0px;
@@ -149,14 +146,13 @@ hr {
   font-size: 20px;
   display: block;
   margin: 8px 0 33px;
-
 }
 
-.contacts__descr-list{
-    margin-bottom: 35px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.contacts__descr-list {
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .contacts__descr-item {
@@ -169,58 +165,60 @@ hr {
   width: 252px;
   display: flex;
   align-items: center;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
-.contacts__descr-link{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 160%;
-    min-width: 160px;
+.contacts__descr-link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  min-width: 160px;
 }
 
-.contacts__descr-btn{
-    background: transparent;
-    color: #2e2f36;
-    font-weight: 500;
-    border: 1px solid #c9c9c9;
-    padding: 0;
-    border-radius: 8px;
+.contacts__descr-btn {
+  background: transparent;
+  color: #2e2f36;
+  font-weight: 500;
+  border: 1px solid #c9c9c9;
+  padding: 0;
+  border-radius: 8px;
 }
 
-.contacts__descr-btn .contacts__descr-link:hover{
-  transition: .3s all ease;
+.contacts__descr-btn:hover {
+  transition: 0.3s all ease;
   background: var(--Sand, #b4a06b);
   color: var(--White, #fff);
-
+  border: 1px solid transparent;
 }
 
-.contacts__descr-btn .contacts__descr-link{
-    padding: 18px 38px;
-    display: block;
+.contacts__descr-btn .contacts__descr-link {
+  border-radius: 8px;
+  padding: 18px 38px;
+  display: block;
+  transition: none;
 }
 
-@media(max-width: 1440px){
-  .contacts__descr-title{
+@media (max-width: 1440px) {
+  .contacts__descr-title {
     font-size: 23px;
     margin-bottom: 27px;
   }
-  .contacts__descr-tel{
+  .contacts__descr-tel {
     margin: 8px 0px 34px;
   }
-  .contacts__descr-list{
+  .contacts__descr-list {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
-  .contacts__content{
+  .contacts__content {
     max-width: 540px;
-   
   }
-  .swiper-contacts, .swiper-contacts-img{
+  .swiper-contacts,
+  .swiper-contacts-img {
     height: 100%;
   }
-  .contacts iframe{
+  .contacts iframe {
     max-height: 520px;
   }
 }
@@ -235,54 +233,53 @@ justify-content: space-between;
   .navigation__inner.mobile {
     display: none !important;
   }
-  .header.other-pages{
+  .header.other-pages {
     padding-top: 4px;
     padding-bottom: 9px;
   }
-  .navigation{
+  .navigation {
     margin-top: 87px;
   }
-  .contacts__inner{
+  .contacts__inner {
     flex-direction: column;
     background: #fff;
     max-height: unset;
   }
-  .contacts__descr{
+  .contacts__descr {
     width: 100%;
     padding: 0;
     display: flex;
     justify-content: space-between;
   }
-  hr{
+  hr {
     margin-bottom: 35px;
   }
-  .contacts__descr-title{
+  .contacts__descr-title {
     margin-bottom: 31px;
   }
- 
-  .contacts__descr-tel{
+
+  .contacts__descr-tel {
     margin-bottom: 21px;
   }
-  .contacts__descr-btn .contacts__descr-link{
+  .contacts__descr-btn .contacts__descr-link {
     padding: 18px 33px;
   }
-  .contacts__content{
+  .contacts__content {
     max-width: unset;
     max-height: 405px;
     border-radius: 20px;
   }
-  .swiper-contacts-img{
+  .swiper-contacts-img {
     border-radius: 20px;
   }
-  .contacts iframe{
+  .contacts iframe {
     max-height: 395px;
     margin: 37px 0 80px;
   }
-
 }
 
 @media (max-width: 768px) {
-  .navigation{
+  .navigation {
     margin-bottom: 52px;
   }
   .navigation__inner.mobile {
@@ -304,87 +301,89 @@ justify-content: space-between;
     font-size: 12px;
     font-weight: 400;
   }
-  .header .container{
+  .header .container {
     padding-top: 13px;
     padding-bottom: 4px;
   }
-  .contacts .container{
+  .contacts .container {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .contacts__title{
+  .contacts__title {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .contacts__btns{
+  .contacts__btns {
     margin-top: 27px;
     margin-left: 20px;
     margin-right: 20px;
   }
-  .contacts__btn{
+  .contacts__btn {
     font-size: 16px;
     min-height: 33px;
   }
-  .contacts__descr{
+  .contacts__descr {
     flex-direction: column;
     margin-bottom: 31px;
     padding-left: 20px;
     padding-right: 20px;
   }
-  hr{
+  hr {
     margin-bottom: 24px;
     margin-left: 20px;
     margin-right: 20px;
     width: calc(100% - 40px);
   }
-  .contacts__descr-title{
+  .contacts__descr-title {
     font-size: 20px;
   }
-  .contacts__descr-left .none{
+  .contacts__descr-left .none {
     display: block !important;
   }
-  .contacts__descr-right{
+  .contacts__descr-right {
     display: none !important;
   }
-  .contacts__descr-title{
+  .contacts__descr-title {
     margin-bottom: 21px;
   }
-  .contacts__descr-article{
+  .contacts__descr-article {
     width: 272px;
   }
-  .contacts__descr-list{
+  .contacts__descr-list {
     margin-bottom: 25px;
   }
-  .contacts__descr-btn{
+  .contacts__descr-btn {
     width: 100%;
- 
   }
-  .contacts__descr-btn .contacts__descr-link{
+  .contacts__descr-btn .contacts__descr-link {
     padding: 10px 0;
-
   }
-  .swiper-button-next.contacts, .swiper-button-prev.contacts{
+  .swiper-button-next.contacts,
+  .swiper-button-prev.contacts {
     display: none;
   }
-  .swiper-contacts-img, .swiper-contacts, .contacts__content{
+  .swiper-contacts-img,
+  .swiper-contacts,
+  .contacts__content {
     border-radius: 0px;
   }
-  .contacts__content, .swiper-contacts{
+  .contacts__content,
+  .swiper-contacts {
     max-height: 240px;
   }
-  .swiper-pagination.contacts .swiper-pagination-bullet, .swiper-pagination7 .swiper-pagination-bullet{
+  .swiper-pagination.contacts .swiper-pagination-bullet,
+  .swiper-pagination7 .swiper-pagination-bullet {
     height: 2px !important;
   }
-  .swiper-pagination.contacts{
+  .swiper-pagination.contacts {
     margin-bottom: -8px;
   }
-  .contacts iframe{
- 
+  .contacts iframe {
     margin: 30px 20px 62px;
     width: calc(100% - 40px);
     max-height: 468px;
   }
-  .catalog2 .container{
+  .catalog2 .container {
     padding-bottom: 261px;
   }
 }
