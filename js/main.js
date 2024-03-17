@@ -318,7 +318,7 @@ shadow?.addEventListener("click", () => {
   switchList[0].classList.remove("active");
   switchList[1]?.classList.remove("active");
   filterAppsList.classList.remove("active");
-  filterBedList.classList.remove("active");
+  filterBedList?.classList.remove("active");
   filterPriceList.classList.remove("active");
   burgerMenu.classList.remove("active");
   filterSearchList.classList.remove("active");
@@ -337,7 +337,7 @@ shadow?.addEventListener("click", () => {
   closedPopup();
 
   document.querySelector('.filter__apps-item svg').classList.remove('active');
-  document.querySelector('.filter__bed-item svg').classList.remove('active')
+  document.querySelector('.filter__bed-item svg')?.classList.remove('active')
   document.querySelector('.filter__price-item.spec svg').classList.remove('active')
   document.querySelector('.filter__price2-list .filter__price2-item.spec svg').classList.remove('active')
   document.querySelector('.filter__price2-item.l svg').classList.remove('active')
@@ -358,11 +358,11 @@ for (let i = 0; i < filterBtns.length; i++) {
 
 filterApps?.addEventListener("click", () => {
   document.querySelector('.filter__apps-item svg').classList.toggle('active')
-  document.querySelector('.filter__bed-item svg').classList.remove('active')
+  document.querySelector('.filter__bed-item svg')?.classList.remove('active')
   document.querySelector('.filter__price-item.spec svg').classList.remove('active')
   document.querySelector('.filter__price2-list .filter__price2-item.spec svg').classList.remove('active')
 
-  filterBedList.classList.remove("active");
+  filterBedList?.classList.remove("active");
   filterPriceList.classList.remove("active");
   shadow.classList.toggle("active");
   filterAppsList.classList.toggle("active");
@@ -379,9 +379,9 @@ filterBed?.addEventListener("click", () => {
   filterAppsList.classList.remove("active");
   filterPriceList.classList.remove("active");
   shadow.classList.toggle("active");
-  filterBedList.classList.toggle("active");
+  filterBedList?.classList.toggle("active");
 
-  document.querySelector('.filter__bed-item svg').classList.toggle('active')
+  document.querySelector('.filter__bed-item svg')?.classList.toggle('active')
   document.querySelector('.filter__apps-item svg').classList.remove('active')
   document.querySelector('.filter__price-item.spec svg').classList.remove('active')
   document.querySelector('.filter__price2-list .filter__price2-item.spec svg').classList.remove('active')
@@ -392,11 +392,11 @@ filterBed?.addEventListener("click", () => {
 
 filterPrice?.addEventListener("click", () => {
   filterAppsList.classList.remove("active");
-  filterBedList.classList.remove("active");
+  filterBedList?.classList.remove("active");
   filterValList.classList.remove("active");
 
   document.querySelector('.filter__apps-item svg').classList.remove('active')
-  document.querySelector('.filter__bed-item svg').classList.remove('active')
+  document.querySelector('.filter__bed-item svg')?.classList.remove('active')
   document.querySelector('.filter__price2-list .filter__price2-item.spec svg').classList.remove('active')
   document.querySelector('.filter__price-item.spec svg').classList.toggle('active')
 
@@ -454,10 +454,10 @@ for (let i = 0; i < filterSearch.length; i++) {
 
     filterAppsList.classList.remove("active");
     filterPriceList.classList.remove("active");
-    filterBedList.classList.remove("active");
+    filterBedList?.classList.remove("active");
 
     document.querySelector('.filter__apps-item svg').classList.remove('active')
-    document.querySelector('.filter__bed-item svg').classList.remove('active')
+    document.querySelector('.filter__bed-item svg')?.classList.remove('active')
     document.querySelector('.filter__price-item.spec svg').classList.remove('active')
   });
 }
@@ -465,9 +465,9 @@ for (let i = 0; i < filterSearch.length; i++) {
 document.querySelector('.filter__search-box')?.addEventListener('click', ()=>{
   filterAppsList.classList.remove("active");
   filterPriceList.classList.remove("active");
-  filterBedList.classList.remove("active");
+  filterBedList?.classList.remove("active");
   document.querySelector('.filter__apps-item svg').classList.remove('active')
-  document.querySelector('.filter__bed-item svg').classList.remove('active')
+  document.querySelector('.filter__bed-item svg')?.classList.remove('active')
   document.querySelector('.filter__price-item.spec svg').classList.remove('active')
 })
 
@@ -759,19 +759,7 @@ const phoneInputs = document.querySelectorAll(
 
 
 
-var maskOptions = {
-  mask: "+{0}(000)000-00-00",
-  lazy: false,
-};
-var mask = new IMask(phoneMask[0], maskOptions);
-var mask = new IMask(phoneMask[1], maskOptions);
 
-for (let i = 0; i < phoneMask.length; i++) {
-  phoneMask[i]?.addEventListener("input", (e) => {
-    if (phoneMask[i].value.length > 0) phoneInputs[i].classList.add("active");
-    else phoneInputs[i].classList.remove("active");
-  });
-}
 
 document.querySelector('.preview__top-btn')?.addEventListener('click', ()=>{
   document.querySelector('.preview__top-btn')?.classList.toggle('clicked')
@@ -896,5 +884,19 @@ if (window.matchMedia("(max-width: 1180px)").matches) {
   console.log(filterSearch[0])
   
   document.querySelector("body").classList.add("active");
+  });
+}
+
+var maskOptions = {
+  mask: "+{0}(000)000-00-00",
+  lazy: false,
+};
+var mask = new IMask(phoneMask[0], maskOptions);
+var mask = new IMask(phoneMask[1], maskOptions);
+
+for (let i = 0; i < phoneMask.length; i++) {
+  phoneMask[i]?.addEventListener("input", (e) => {
+    if (phoneMask[i].value.length > 0) phoneInputs[i].classList.add("active");
+    else phoneInputs[i].classList.remove("active");
   });
 }
