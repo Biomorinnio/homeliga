@@ -1,64 +1,189 @@
-
-
-
-
-.description{
-    margin: 90px 0;
+.navigation {
+  margin: 30px 0 43px;
 }
 
-.description__title{
-    font-size: 24px;
-    margin-bottom: 18px;
+.description {
+  margin: 90px 0;
 }
 
-.description__text{
-    color: #525252;
-    line-height: 155%;
-    font-size: 16px;
-    max-width: 1070px;
+.description__title {
+  font-size: 24px;
+  margin-bottom: 18px;
 }
 
-.districts-list-inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.description__text {
+  color: #525252;
+  line-height: 155%;
+  font-size: 16px;
+  max-width: 1070px;
 }
 
-.districts__list-box{
-    position: relative;
+.districts-list-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.districts__list-box svg{
-    position: absolute;
-    left: 20px;
-    top: 14.5px;
+.districts__list-box {
+  position: relative;
 }
 
-.districts__list-input{
-    width: 100%;
-    height: 100%;
-    padding: 15px 10px 15px 44px;
-    background: #F3F3F3;
-    border-radius: 8px;
-    border: none;
-    font-size: 14px;
-    color: #858585;
-    min-width: 270px;
+.districts__list-box svg {
+  position: absolute;
+  left: 20px;
+  top: 14.5px;
 }
 
-input:focus, input:hover{
-    outline: none;
+.districts__list-input {
+  width: 100%;
+  height: 100%;
+  padding: 15px 10px 15px 44px;
+  background: #fff;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  color: #858585;
+  min-width: 270px;
+  border: 1px solid #C9C9C9;
 }
 
-.districts__list{
-    margin: 37px 0 48px;
+input:focus,
+input:hover {
+  outline: none;
 }
 
-.districts__item-link{
-    display: block;
-    height: 100%;
+.districts__list {
+  margin: 37px 0 48px;
+  gap: 30px;
+  grid-template-columns: repeat(4, 23.1%);
+}
+
+.districts__item-link {
+  display: block;
+  height: 100%;
 }
 
 .districts__item-link:hover > .districts__item-img {
-    transform: scale(1.07);
-  }
+  transform: scale(1.07);
+}
+
+.description {
+  margin: 96px 0 90px;
+}
+
+@media (max-width: 1440px) {
+    .districts__list{
+        grid-template-columns: repeat(4, 22.9%)
+    }
+    .districts__list-input{
+        min-width: 228px;
+        padding-left: 44px;
+        max-width: 240px;
+    }
+    .description__text{
+        max-width: 960px;
+    }
+}
+@media (max-width: 1180px) {
+    .districts__list{
+        grid-template-columns: repeat(3, 31.4%)
+    }
+    .navigation{
+        margin: 87px 0 40px;
+    }
+    .districts__list{
+        margin: 39px 0 29px;
+        gap: 20px;
+        max-height: 1040px;
+        overflow: hidden;
+    }
+    .districts__list-input{
+        font-size: 12px;
+        padding: 12px 10px 12px 44px;
+        width: 220px;
+        min-width: unset;
+        max-width: unset;
+    }
+    .districts__list-box svg{
+        width: 12px;
+        left: 20px;
+    top: 10.5px;
+    }
+    .description__text{
+        max-width: 960px;
+    }
+    .districts__item{
+        max-height: 240px;
+    }
+    .districts__title{
+        bottom: 12px;
+    }
+    .favorites__pagination{
+        gap: 6px;
+    }
+    .description {
+        margin: 75px 0;
+    }
+    .description__text{
+        font-size: 14px;
+        line-height: 155%;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation{
+        margin-bottom: 51px;
+    }
+    .districts-list-inner{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 43px;
+    }
+    .districts__list-box{
+
+        width: 100%;
+    }
+    .districts__list-input{
+        width: 100%;
+        font-size: 14px;
+        padding: 10.5px 10px 10.5px 37px;
+    }
+    .districts__list-box svg{
+        width: 13px;
+        left: 12px;
+    }
+    .districts__list{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 29px;
+        max-height: 1900px;
+    }
+    .districts__item{
+        max-height: unset;
+        min-height: 300px;
+    }
+    .districts__title{
+        bottom: 19px;
+    }
+    .favorites__pagination-number:nth-of-type(4), .favorites__pagination-number:nth-of-type(5){
+        display: none;
+    }
+    .favorites__pagination{
+        gap: 7px;
+    }
+    .description{
+        margin: 55px 0 55px;
+    }
+    .description__title{
+        max-width: 278px;
+    }
+    .description__text{
+        font-size: 16px;
+        line-height: 155%;
+    }
+    .catalog2 .container{
+        padding-bottom: 263px;
+    }
+}
+
