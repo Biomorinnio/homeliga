@@ -275,7 +275,7 @@ font-weight: 500;
 
 @media (max-width:768px) {
     .complexes__list{
-        margin-top: 70px;
+        margin-top: 65px;
     }
     .header__phone-icon, .header__favorites.mobile{
         display: flex !important;
@@ -329,7 +329,7 @@ font-weight: 500;
         min-width: unset;
     }
     .filter__back {
-        min-height: 593px;
+        min-height: 588px;
     }
     .complexes__inner{
         flex-direction: column;
