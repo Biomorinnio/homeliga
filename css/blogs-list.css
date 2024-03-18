@@ -45,8 +45,14 @@
     position: relative;
     padding-top: 70px;
     background: #F3F3F3;
-    border-radius: 20px;
+    border-radius: 20px 20px 40px 40px;
+    cursor: pointer;
+}
 
+
+
+.blog__swiper-box{
+    border-radius: 0px 0px 20px 20px;
 }
 
 .swiper__center{
@@ -60,6 +66,10 @@
     padding: 0;
     background: transparent;
     gap: 5px;
+}
+
+.swiper__card-item:last-child{
+    color: #B8B8BA;
 }
 
 .swiper__card-list{
@@ -96,10 +106,12 @@
     height: 100%;
 }
 
-.blog__swiper-btn:hover{
+.blogs__list-item:hover .blog__swiper-btn{
     background: #B4A06B;
     color: #fff;
 }
+
+
 
 .description{
     margin: 93px 0 92px;
