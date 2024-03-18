@@ -18,6 +18,8 @@
     
     <title>Homeliga</title>
 
+        <!--NOLIM--><!--NLM048--><!--settings{"preloaderType":"11","preloaderColor":"#B4A06B","preloaderColor2":"#B4A06B","preloaderColor3":"#ffffff","backgroundColor":"#2E2F36","preloaderSize":"100","animSpeed":"1000","showTime":"3","preloaderPosition":"0","preloaderPositionMobile":"0","padding":"0","paddingMobile":"0","bgOpacity":"100","blockScroll":"0"}settingsend--> <style> .n048-hide { opacity: 0; transition: opacity 400ms; } .display_none { display: none !important; } .nl_reploader_father { z-index: 99999999; } .nl_reploader_father:before { content: ''; display: block; position: fixed; left: 0; top: 0; right: 0; bottom: 0; width: 100%; height: 100%; background: #2E2F36; opacity: 100%; z-index: 99999998; } .n048-loader { z-index: 99999999; position: fixed; } .nl_reploader_father svg, .nl_reploader_father svg path { width: 100px; ; } </style> <div class="nl_reploader_father n048-show"> <div class="n048-loader"> <iframe width="100px" height="100px" style="border:0" src='data:image/svg+xml,%3Csvg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve"%3E %3Cpath fill="%23B4A06B" opacity="0.2" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/%3E %3Cpath fill="%23B4A06B" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z"%3E %3CanimateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="1000ms" repeatCount="indefinite"/%3E %3C/path%3E %3C/svg%3E'></iframe> </div> </div> <script> (function() { function setPreloaderPosition() { let windowWidth = document.documentElement.clientWidth; let windowHeight = document.documentElement.clientHeight; if (document.querySelector("#nlm048-style")) { document.querySelector("#nlm048-style").remove(); } if (window.innerWidth > 480) { document.querySelector("body").insertAdjacentHTML("beforeend", ` <style id="nlm048-style"> .n048-loader { top: ${windowHeight/2}px; left: ${windowWidth/2}px; transform: translate(-50%, -50%); } </style> `); } else if (window.innerWidth < 481) { document.querySelector("body").insertAdjacentHTML("beforeend", ` <style id="nlm048-style"> .n048-loader { top: ${windowHeight/2}px; left: ${windowWidth/2}px; transform: translate(-50%, -50%); } </style> `); } } setPreloaderPosition(); window.addEventListener("resize", setPreloaderPosition); function t_ready(t) { "loading" != document.readyState ? t() : document.addEventListener ? document.addEventListener("DOMContentLoaded", t) : document.attachEvent("onreadystatechange", function() { "loading" != document.readyState && t() }) } t_ready(function () { setTimeout(function() { document.querySelector(".nl_reploader_father").classList.replace('n048-show', 'n048-hide'); setTimeout(function() { document.querySelector(".nl_reploader_father").classList.add('display_none'); }, 500); }, 3 * 1000); }); }()); </script> 
+
 
   </head>
   <body>
@@ -95,9 +97,19 @@
             </ul>
             <a href="tel:+74991234545" class="header__phone">
               <p class="header__phone-text">+7 (499) 123-45-45</p>
-              <svg class="header__phone-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="header__phone-icon" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_569_5170)">
+                <path d="M9.14286 0.833252H2.85714C1.55679 0.833252 0.5 1.95409 0.5 3.33325V16.6666C0.5 18.0458 1.55679 19.1666 2.85714 19.1666H9.14286C10.4432 19.1666 11.5 18.0458 11.5 16.6666V3.33325C11.5 1.95409 10.4432 0.833252 9.14286 0.833252ZM7.57143 17.4999H4.42857V16.6666H7.57143V17.4999ZM10.125 14.9999H1.875V3.33325H10.125V14.9999Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_569_5170">
+                <rect width="12" height="20" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+              <!-- <svg class="header__phone-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.9995 12.7956L13.5504 11.2448C13.758 11.0371 14.0219 10.895 14.3095 10.836C14.5971 10.7769 14.8958 10.8035 15.1684 10.9125L17.0571 11.6686C17.3354 11.7799 17.574 11.9722 17.7422 12.2204C17.9102 12.4688 18 12.7618 18 13.0616V16.4961C18.0004 16.7003 17.9593 16.9025 17.8789 17.0901C17.7987 17.2777 17.6809 17.447 17.5329 17.5877C17.3848 17.7282 17.2097 17.8371 17.0182 17.9077C16.8265 17.9782 16.6226 18.0088 16.4187 17.9978C3.1799 17.1739 0.506133 5.96096 0.00968873 1.66708C-0.0142906 1.45723 0.0063455 1.24462 0.0704357 1.04319C0.134381 0.84191 0.240326 0.656325 0.38115 0.498934C0.52212 0.341398 0.694626 0.215543 0.887623 0.129509C1.08077 0.0435615 1.28975 -0.000589896 1.50106 5.95153e-06H4.87473C5.17454 -8.58133e-06 5.46753 0.0898192 5.71575 0.257834C5.96412 0.425979 6.15639 0.664609 6.26771 0.942913L7.02313 2.8316C7.13213 3.10424 7.15872 3.40289 7.09958 3.6905C7.04057 3.9781 6.89844 4.24202 6.69076 4.44955L5.13996 6.00049C5.13996 6.00049 5.99972 12.0459 11.9995 12.7956Z" fill="white"/>
-              </svg>              
+              </svg>               -->
             </a>
             <a href="#" class="header__favorites mobile">
                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -271,7 +283,7 @@
                 <rect width="12" height="20" fill="white"/>
                 </clipPath>
                 </defs>
-                </svg>
+              </svg>
                               
           </a>
             <p class="header__top-text">Dubai, Business Bay, Bay Square 7<br class="none"/> office 504</p>
@@ -415,7 +427,7 @@
                         <input type="number" placeholder="до">
                         <ul class="filter__price2-list">
                           <li class="filter__price2-item l">
-                            RUB
+                            <f>RUB</f>
                             <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M0.317301 0.792894C0.740369 0.402369 1.4263 0.402369 1.84937 0.792894L6.5 5.08579L11.1506 0.792893C11.5737 0.402369 12.2596 0.402369 12.6827 0.792893C13.1058 1.18342 13.1058 1.81658 12.6827 2.20711L7.26603 7.20711C6.84296 7.59763 6.15704 7.59763 5.73397 7.20711L0.317301 2.20711C-0.105767 1.81658 -0.105767 1.18342 0.317301 0.792894Z" fill="#858585"/>
                               </svg>
@@ -458,7 +470,7 @@
                               <input type="number" placeholder="до">
                               <ul class="filter__price2-list">
                                 <li class="filter__price2-item l">
-                                  RUB
+                                  <f>RUB</f>
                                   <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.317301 0.792894C0.740369 0.402369 1.4263 0.402369 1.84937 0.792894L6.5 5.08579L11.1506 0.792893C11.5737 0.402369 12.2596 0.402369 12.6827 0.792893C13.1058 1.18342 13.1058 1.81658 12.6827 2.20711L7.26603 7.20711C6.84296 7.59763 6.15704 7.59763 5.73397 7.20711L0.317301 2.20711C-0.105767 1.81658 -0.105767 1.18342 0.317301 0.792894Z" fill="#858585"/>
                                     </svg>
@@ -569,7 +581,8 @@
                           <input type="number" placeholder="до" name="number">
                           <ul class="filter__price2-list">
                             <li class="filter__price2-item spec">
-                              RUB
+                              <f>RUB</f>
+                              
                               <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.317301 0.792894C0.740369 0.402369 1.4263 0.402369 1.84937 0.792894L6.5 5.08579L11.1506 0.792893C11.5737 0.402369 12.2596 0.402369 12.6827 0.792893C13.1058 1.18342 13.1058 1.81658 12.6827 2.20711L7.26603 7.20711C6.84296 7.59763 6.15704 7.59763 5.73397 7.20711L0.317301 2.20711C-0.105767 1.81658 -0.105767 1.18342 0.317301 0.792894Z" fill="#858585"/>
                                 </svg>

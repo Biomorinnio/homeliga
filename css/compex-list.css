@@ -1,6 +1,9 @@
 .header {
   padding-top: 28px;
 }
+.shadow.active{
+    z-index: 2;
+}
 .navigation {
   margin: 17px 0px 20px;
 }
@@ -47,9 +50,12 @@
 .filter__price {
     min-width: 248px;
 }
+.filter__search-list{
+    min-width: 467px;
+}
 
 .complexes__list{
-    margin: 53px 0 100px;
+    margin: 63px 0 100px;
     position: relative;
     z-index: 1;
 }
@@ -96,11 +102,13 @@ font-weight: 500;
 .swiper__front, .swiper__back{
     justify-content: start;
     align-items: start;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .swiper__img{
-    max-height: 350px;
+    max-height: 365px;
 }
+
 
 
 .favorites__pagination {
@@ -200,7 +208,9 @@ font-weight: 500;
     .description__text{
         max-width: 960px;
     }
-    
+    .filter__search-list{
+        min-width: 348px;
+    }
 }
 
 @media (max-width: 1180px) {
@@ -258,15 +268,18 @@ font-weight: 500;
         font-size: 12px;
         line-height: 160%;
     }
-    .header__phone-icon, .header__favorites.mobile{
+    .header__favorites.mobile{
         display: none !important;
     }
 }
 
 @media (max-width:768px) {
+    .complexes__list{
+        margin-top: 70px;
+    }
     .header__phone-icon, .header__favorites.mobile{
-        display: block !important;
-    
+        display: flex !important;
+        justify-content: center;
     }
     .header{
         padding-top: 0px;
@@ -300,8 +313,8 @@ font-weight: 500;
         gap: 8px;
     }
     .filter .container{
-        padding-top: 63px;
-        padding-bottom: 68px;
+        padding-top: 55px;
+        padding-bottom: 60px;
     }
     .filter__title{
         font-size: 28px;
@@ -345,7 +358,7 @@ font-weight: 500;
     }
 
     .description{
-        margin: 55px 0 55px;
+        margin: 65px 0 65px;
     }
     .description__title{
         max-width: 278px;
@@ -356,6 +369,7 @@ font-weight: 500;
     }
     .catalog2 .container{
         padding-bottom: 263px;
+        padding-top: 55px;
     }
     .swiper__box, .swiper__subtitle{
         min-width: unset;

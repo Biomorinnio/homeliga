@@ -887,6 +887,27 @@ if (window.matchMedia("(max-width: 1180px)").matches) {
   });
 }
 
+document.getElementById('price1').addEventListener('change', (e)=>{
+  if(e.currentTarget.checked) for(let i of document.querySelectorAll('.filter__price2-item f')) i.textContent = document.querySelector('label[for="price1"]').textContent;
+  
+})
+document.getElementById('price2').addEventListener('change', (e)=>{
+    if(e.currentTarget.checked) for(let i of document.querySelectorAll('.filter__price2-item f')) i.textContent = document.querySelector('label[for="price2"]').textContent;
+})
+document.getElementById('price3').addEventListener('change', (e)=>{
+    if(e.currentTarget.checked) for(let i of document.querySelectorAll('.filter__price2-item f')) i.textContent = document.querySelector('label[for="price3"]').textContent;
+})
+document.getElementById('price4').addEventListener('change', (e)=>{
+    if(e.currentTarget.checked) for(let i of document.querySelectorAll('.filter__price2-item f')) i.textContent = document.querySelector('label[for="price4"]').textContent;
+})
+document.getElementById('price5').addEventListener('change', (e)=>{
+    if(e.currentTarget.checked) for(let i of document.querySelectorAll('.filter__price2-item f')) i.textContent = document.querySelector('label[for="price5"]').textContent;
+})
+document.getElementById('price6').addEventListener('change', (e)=>{
+    if(e.currentTarget.checked) for(let i of document.querySelectorAll('.filter__price2-item f')) i.textContent = document.querySelector('label[for="price6"]').textContent;
+})
+
+
 var maskOptions = {
   mask: "+{0}(000)000-00-00",
   lazy: false,
