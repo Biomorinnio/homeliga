@@ -99,12 +99,14 @@
 
 .blog__swiper-box{
     margin-top: 24px;
-    
+    max-height: 149px;
+    overflow: hidden;
 }
 
 .blog__swiper-img{
     height: 100%;
 }
+
 
 .blogs__list-item:hover .blog__swiper-btn{
     background: #B4A06B;
