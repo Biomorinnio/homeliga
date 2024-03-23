@@ -51,17 +51,6 @@ var swiperFirst = new Swiper(".mySwiper1.none", {
   },
 });
 
-// swiperFirst.on("slideChange", function () {
-//   var slides = swiperFirst.slides;
-//   var activeIndex = swiperFirst.activeIndex;
-//   for (let i of slides) i.classList.remove("visible");
-//   console.log(activeIndex);
-//   if (activeIndex >= 0 && activeIndex < slides.length - 2) {
-//     slides[activeIndex].classList.add("visible");
-//     slides[activeIndex + 1].classList.add("visible");
-//     slides[activeIndex + 2].classList.add("visible");
-//   }
-// });
 
 var swiper2 = new Swiper(".mySwiper2.mobile", {
   loop: true,
@@ -115,16 +104,7 @@ var swiperSecond = new Swiper(".mySwiper2.none", {
   },
 });
 
-// swiperSecond.on("slideChange", function () {
-//   var slides = swiperSecond.slides;
-//   var activeIndex = swiperSecond.activeIndex;
-//   for (let i of slides) i.classList.remove("visible");
-//   if (activeIndex >= 0 && activeIndex < slides.length - 2) {
-//     slides[activeIndex].classList.add("visible");
-//     slides[activeIndex + 1].classList.add("visible");
-//     slides[activeIndex + 2].classList.add("visible");
-//   }
-// });
+
 
 var swiper3 = new Swiper(".mySwiper3", {
   slidesPerView: 1,
