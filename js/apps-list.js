@@ -1,4 +1,5 @@
 const appsFilterBtns = document.querySelectorAll(".apps__list-btn");
+const colFilterBtns = document.querySelectorAll('.filter__col-item');
 
 const shadow = document.querySelector(".shadow");
 
@@ -8,6 +9,12 @@ const filterSearchInput = document.querySelector('.filter__search-inp');
 const filterSearchList = document.querySelector('.filter__search-list');
 const filterFrom = document.querySelector(".filter__from");
 const filterFromList = document.querySelector(".filter__from2");
+const filterDev = document.querySelector(".filter__developers");
+const filterDevList = document.querySelector(".filter__developers2");
+const filterAdd = document.querySelector(".filter__add");
+const filterAddList = document.querySelector(".filter__add2");
+const filterTitle = document.querySelector(".apps__title-filter");
+const filterTitleList = document.querySelector(".apps__title-filter2");
 
 
 const burgerOpen = document.querySelectorAll(".header__burger");
@@ -38,10 +45,17 @@ for (let i of appsFilterBtns)
     i.classList.add("active");
 });
 
+for(let i of colFilterBtns) i.addEventListener('click', ()=>{
+    i.classList.toggle('active')
+})
+
 shadow?.addEventListener("click", () => {
     filterAppsList.classList.remove("active");
     filterSearchList.classList.remove('active');
     filterFromList.classList.remove('active');
+    filterDevList.classList.remove('active');
+    filterAddList.classList.remove('active');
+    filterTitleList.classList.remove('active');
   
     burgerMenu.classList.remove("active");
   
@@ -104,6 +118,7 @@ for (let i = 0; i < switchLang.length; i++) {
 filterApps.addEventListener('click', ()=>{
     filterAppsList.classList.add('active')
     shadow.classList.add('active')
+    openedPopup()
 })
 
 filterSearchInput.addEventListener('input', (e)=>{
@@ -115,4 +130,50 @@ filterSearchInput.addEventListener('input', (e)=>{
 filterFrom.addEventListener('click', ()=>{
     filterFromList.classList.add('active')
     shadow.classList.add('active')
+     openedPopup()
 })
+
+filterDev.addEventListener('click', ()=>{
+    filterDevList.classList.add('active')
+    shadow.classList.add('active')
+     openedPopup()
+})
+filterAdd.addEventListener('click', ()=>{
+    filterAddList.classList.add('active')
+    shadow.classList.add('active')
+     openedPopup()
+})
+filterTitle.addEventListener('click', ()=>{
+    filterTitleList.classList.add('active')
+    shadow.classList.add('active')
+     openedPopup()
+})
+
+
+
+const swiperLikes = document.querySelectorAll(
+    ".swiper__card-list svg"
+  );
+  const swiperLikesBox = document.querySelectorAll(".swiper__like");
+  
+  if (!window.matchMedia("(max-width: 768px)").matches) {
+    for (let i = 0; i < swiperLikes.length; i++) {
+      swiperLikes[i]?.addEventListener("mouseover", () => {
+        swiperLikesBox[i].classList.add("active");
+      });
+      swiperLikes[i]?.addEventListener("mouseout", () => {
+        swiperLikesBox[i].classList.remove("active");
+      });
+    }
+  }
+  
+  for (let i = 0; i < swiperLikes.length; i++) {
+    swiperLikes[i]?.addEventListener("click", () => {
+      swiperLikes[i].classList.toggle("clicked");
+      if (swiperLikes[i].classList.contains("clicked")) {
+        swiperLikesBox[i].innerHTML = "Убрать из избранного";
+      } else {
+        swiperLikesBox[i].innerHTML = "Добавить в избранное";
+      }
+    });
+  }
