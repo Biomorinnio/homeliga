@@ -132,6 +132,10 @@ input:hover {
 }
 
 @media (max-width: 768px) {
+    .filter__choice{
+   
+        position: fixed;
+      }
     .navigation{
         margin-bottom: 51px;
     }
