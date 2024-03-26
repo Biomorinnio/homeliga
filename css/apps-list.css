@@ -19,6 +19,7 @@ input[type="number"] {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-bottom: -2px;
 }
 
 .apps__list-btn {
@@ -30,6 +31,7 @@ input[type="number"] {
   background: transparent;
   border-bottom: 2px solid transparent;
   color: #858585;
+
 }
 
 .apps__list-btn.active {
@@ -44,20 +46,25 @@ input[type="number"] {
 
 .apps__list-reset {
   background: transparent;
-  padding: 0px 0px 17px;
+  margin: 0px 0px 14px;
   display: flex;
   align-items: center;
   gap: 10px;
   color: #858585;
   font-size: 14px;
   font-weight: 400;
+  
+}
+
+.apps__list-reset:hover{
+  color: #2e2f36;
 }
 
 .filter__apps {
   border-radius: 8px;
   border: 1px solid #c9c9c9;
 
-  min-width: 214px;
+  min-width: 216px;
 }
 
 .filter__apps-item {
@@ -131,7 +138,7 @@ input[type="number"] {
 }
 
 .filter__choice {
-  top: 59px;
+  top: 55px;
   left: -1px;
   width: 100%;
   max-height: 390px;
@@ -290,6 +297,10 @@ input[type="number"] {
   border-radius: 8px;
 }
 
+.filter__apps-btn:hover{
+  opacity: 0.7;
+}
+
 .swiper__card-list svg {
   padding: 0;
 }
@@ -355,6 +366,24 @@ input[type="number"] {
   line-height: 155%;
   font-size: 16px;
   max-width: 1070px;
+}
+
+.filter__price2-item{
+  padding: 0;
+  border: 0px;
+  color: #B4A06B !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.filter__price2-item f{
+  min-width: 30px;
+}
+
+.filter__price3{
+  min-width: 100px;
+  top: 40px;
+  left: -20px;
 }
 
 @media (max-width: 1440px) {

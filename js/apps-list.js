@@ -5,16 +5,28 @@ const shadow = document.querySelector(".shadow");
 
 const filterApps = document.querySelector(".filter__apps-item");
 const filterAppsList = document.querySelector(".filter__apps2");
+const filterAppsInputs = document.querySelectorAll('.filter__apps-item2 input')
+let appsArr = ['Апартаменты']
+
 const filterSearchInput = document.querySelector(".filter__search-inp");
 const filterSearchList = document.querySelector(".filter__search-list");
+
 const filterFrom = document.querySelector(".filter__from");
 const filterFromList = document.querySelector(".filter__from2");
+const filterFromInputs = document.querySelectorAll(".filter__from-item2 input");
+
 const filterDev = document.querySelector(".filter__developers");
 const filterDevList = document.querySelector(".filter__developers2");
+
 const filterAdd = document.querySelector(".filter__add");
 const filterAddList = document.querySelector(".filter__add2");
+
 const filterTitle = document.querySelector(".apps__title-filter");
 const filterTitleList = document.querySelector(".apps__title-filter2");
+
+const filterPrice = document.querySelector('.filter__price2-list');
+const filterPriceList = document.querySelector('.filter__price3');
+const filterPriceInputs = document.querySelectorAll('.filter__price2-item input');
 
 const burgerOpen = document.querySelectorAll(".header__burger");
 const burgerClose = document.querySelector(".burger__menu-close");
@@ -119,6 +131,20 @@ filterApps.addEventListener("click", () => {
   filterAppsList.classList.add("active");
   shadow.classList.add("active");
 });
+for(let i = 0; i < filterAppsInputs.length; i++) filterAppsInputs[i].addEventListener('click', ()=>{
+  
+  let labelText = document.querySelectorAll('.filter__apps-item2 label')[i].textContent;
+  
+  if (appsArr.indexOf(labelText) !== -1) {
+    appsArr.splice(appsArr.indexOf(labelText), 1);
+  }
+  else{
+    appsArr.push(labelText);
+  }
+
+  if(appsArr.join(', ').length > 19) document.querySelector('.filter__apps-item f').textContent = appsArr.join(', ').substring(0, 19) + '...';
+  else document.querySelector('.filter__apps-item f').textContent = appsArr.join(', ');
+})
 
 filterSearchInput.addEventListener("input", (e) => {
   filterSearchList.classList.add("active");
@@ -130,6 +156,11 @@ filterFrom.addEventListener("click", () => {
   filterFromList.classList.add("active");
   shadow.classList.add("active");
 });
+for(let i = 0; i < filterFromInputs.length; i++) filterFromInputs[i].addEventListener('click', ()=>{
+  for(let j of filterFromInputs) j.checked = false;
+  filterFromInputs[i].checked = true;
+  document.querySelector('.filter__from-item f').textContent = document.querySelectorAll('.filter__from-item2 label')[i].textContent
+})
 
 filterDev.addEventListener("click", () => {
   filterDevList.classList.add("active");
@@ -143,6 +174,15 @@ filterTitle.addEventListener("click", () => {
   filterTitleList.classList.add("active");
   shadow.classList.add("active");
 });
+filterPrice.addEventListener("click", () => {
+  filterPriceList.classList.add("active");
+  shadow.classList.add("active");
+});
+for(let i = 0; i < filterPriceInputs.length; i++) filterPriceInputs[i].addEventListener('click', ()=>{
+  for(let j of filterPriceInputs) j.checked = false;
+  filterPriceInputs[i].checked = true;
+  document.querySelector('.filter__price2-item.spec f').textContent = document.querySelectorAll('.filter__price2-item label')[i].textContent
+})
 
 const swiperLikes = document.querySelectorAll(".swiper__card-list svg");
 const swiperLikesBox = document.querySelectorAll(".swiper__like");
@@ -177,8 +217,6 @@ const filterAppsListM = document.querySelector(".filter__apps2.mobile");
 const filterDateM = document.querySelector('.mobile .filter__date');
 const filterDateListM = document.querySelector('.filter__date2');
 
-const filterPrice = document.querySelector('.filter__price2-list');
-const filterPriceList = document.querySelector('.filter__price3');
 
 const filterArea = document.querySelector('.filter__area2-list');
 const filterAreaList = document.querySelector('.filter__area2');
@@ -237,11 +275,7 @@ filterDateM.addEventListener("click", () => {
   shadow.classList.add("active");
   blockScroll();
 });
-filterPrice.addEventListener("click", () => {
-  filterPriceList.classList.add("active");
-  shadow.classList.add("active");
-  blockScroll();
-});
+
 filterArea.addEventListener("click", () => {
   filterAreaList.classList.add("active");
   shadow.classList.add("active");
