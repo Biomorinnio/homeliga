@@ -94,6 +94,25 @@ input[type="number"] {
   outline: none;
 }
 
+.filter__area-item{
+  color: #B4A06B;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+.filter__area{
+  position: relative;
+}
+
+.filter__area2.filter__choice{
+  min-width: 80px;
+  top: 40px;
+  left: -20px;
+}
+
 .filter__search-box {
   padding: 0;
   position: relative;
@@ -146,7 +165,7 @@ input[type="number"] {
 }
 
 .filter__search-box {
-  padding: 12px 19px 15px;
+  padding: 13px 19px 14px;
   border: 1px solid #c9c9c9;
   border-radius: 8px;
 }
@@ -270,7 +289,8 @@ input[type="number"] {
   border-radius: 8px;
   border: 1px solid #c9c9c9;
   cursor: pointer;
-  min-width: 194px;
+  min-width: 220px;
+
   position: relative;
 }
 
@@ -283,6 +303,7 @@ input[type="number"] {
   color: #858585;
   font-size: 14px;
   padding: 13px 18px;
+
 }
 
 .filter__add2 {

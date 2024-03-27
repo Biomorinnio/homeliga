@@ -5,8 +5,8 @@ const shadow = document.querySelector(".shadow");
 
 const filterApps = document.querySelector(".filter__apps-item");
 const filterAppsList = document.querySelector(".filter__apps2");
-const filterAppsInputs = document.querySelectorAll('.filter__apps-item2 input')
-let appsArr = ['Апартаменты']
+const filterAppsInputs = document.querySelectorAll('.filter__apps-item2 input');
+let appsArr = ['Апартаменты'];
 
 const filterSearchInput = document.querySelector(".filter__search-inp");
 const filterSearchList = document.querySelector(".filter__search-list");
@@ -20,6 +20,8 @@ const filterDevList = document.querySelector(".filter__developers2");
 
 const filterAdd = document.querySelector(".filter__add");
 const filterAddList = document.querySelector(".filter__add2");
+const filterAddInputs = document.querySelectorAll('.filter__add-item2 input');
+let addArr = [];
 
 const filterTitle = document.querySelector(".apps__title-filter");
 const filterTitleList = document.querySelector(".apps__title-filter2");
@@ -27,6 +29,10 @@ const filterTitleList = document.querySelector(".apps__title-filter2");
 const filterPrice = document.querySelector('.filter__price2-list');
 const filterPriceList = document.querySelector('.filter__price3');
 const filterPriceInputs = document.querySelectorAll('.filter__price2-item input');
+
+const filterArea = document.querySelector('.filter__area');
+const filterAreaList = document.querySelector('.filter__area2');
+const filterAreaInputs = document.querySelectorAll('.filter__area2-item input');
 
 const burgerOpen = document.querySelectorAll(".header__burger");
 const burgerClose = document.querySelector(".burger__menu-close");
@@ -166,10 +172,31 @@ filterDev.addEventListener("click", () => {
   filterDevList.classList.add("active");
   shadow.classList.add("active");
 });
+
 filterAdd.addEventListener("click", () => {
   filterAddList.classList.add("active");
   shadow.classList.add("active");
 });
+for(let i = 0; i < filterAddInputs.length; i++) filterAddInputs[i].addEventListener('click', ()=>{
+  
+  let labelText = document.querySelectorAll('.filter__add-item2 label')[i].textContent;
+  console.log(labelText)
+  if (addArr.indexOf(labelText) !== -1) {
+    addArr.splice(addArr.indexOf(labelText), 1);
+  }
+  else{
+    addArr.push(labelText);
+  }
+
+  if(addArr.join(', ').length > 19) document.querySelector('.filter__add-item f').textContent = addArr.join(', ').substring(0, 19) + '...';
+  else document.querySelector('.filter__add-item f').textContent = addArr.join(', ');
+
+  let flag = false;
+  for(let k of filterAddInputs) if(k.checked) flag = true
+
+  if(!flag) document.querySelector('.filter__add-item f').textContent = 'Доп. параметры'
+})
+
 filterTitle.addEventListener("click", () => {
   filterTitleList.classList.add("active");
   shadow.classList.add("active");
@@ -182,6 +209,15 @@ for(let i = 0; i < filterPriceInputs.length; i++) filterPriceInputs[i].addEventL
   for(let j of filterPriceInputs) j.checked = false;
   filterPriceInputs[i].checked = true;
   document.querySelector('.filter__price2-item.spec f').textContent = document.querySelectorAll('.filter__price2-item label')[i].textContent
+})
+filterArea.addEventListener("click", () => {
+  filterAreaList.classList.add("active");
+  shadow.classList.add("active");
+});
+for(let i = 0; i < filterAreaInputs.length; i++) filterAreaInputs[i].addEventListener('click', ()=>{
+  for(let j of filterAreaInputs) j.checked = false;
+  filterAreaInputs[i].checked = true;
+  document.querySelector('.filter__area-item f').textContent = document.querySelectorAll('.filter__area2-item label')[i].textContent
 })
 
 const swiperLikes = document.querySelectorAll(".swiper__card-list svg");
@@ -218,8 +254,8 @@ const filterDateM = document.querySelector('.mobile .filter__date');
 const filterDateListM = document.querySelector('.filter__date2');
 
 
-const filterArea = document.querySelector('.filter__area2-list');
-const filterAreaList = document.querySelector('.filter__area2');
+const filterAreaM = document.querySelector('.filter__area2-list');
+const filterAreaMList = document.querySelector('.filter__area2');
 
 const filterTitleM = document.querySelector('.filter__icon.mobile');
 const filterTitleListM = document.querySelector('.apps__title-filter2.filter__choice.mobile');
@@ -276,8 +312,8 @@ filterDateM.addEventListener("click", () => {
   blockScroll();
 });
 
-filterArea.addEventListener("click", () => {
-  filterAreaList.classList.add("active");
+filterAreaM.addEventListener("click", () => {
+  filterAreaMList.classList.add("active");
   shadow.classList.add("active");
   blockScroll();
 });
