@@ -180,6 +180,7 @@ input[type="number"] {
   font-size: 14px;
 }
 
+
 .filter__search-list::-webkit-scrollbar,
 .filter__developers2::-webkit-scrollbar {
   width: 3px;
@@ -319,7 +320,7 @@ input[type="number"] {
 }
 
 .filter__apps-btn:hover{
-  opacity: 0.7;
+  background: #CBBD98;
 }
 
 .swiper__card-list svg {
@@ -413,16 +414,16 @@ input[type="number"] {
     flex-wrap: wrap;
   }
   .filter__apps {
-    min-width: 200px;
+    min-width: 216px;
   }
   .apps__filter-input {
-    max-width: 80px;
+    max-width: 82px;
   }
   .filter__from {
-    min-width: 213px;
+    min-width: 200px;
   }
   .filter__developers {
-    min-width: 215px;
+    min-width: 227px;
   }
   .filter__add {
     min-width: 242px;
@@ -435,6 +436,7 @@ input[type="number"] {
     max-width: 185px;
     padding: 12px 0;
   }
+  
 }
 
 @media (max-width: 1180px) {

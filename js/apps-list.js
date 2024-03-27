@@ -10,6 +10,8 @@ let appsArr = ['Апартаменты'];
 
 const filterSearchInput = document.querySelector(".filter__search-inp");
 const filterSearchList = document.querySelector(".filter__search-list");
+const filterSearchInputs = document.querySelectorAll('.filter__search-item input');
+let searchArr = [];
 
 const filterFrom = document.querySelector(".filter__from");
 const filterFromList = document.querySelector(".filter__from2");
@@ -17,6 +19,8 @@ const filterFromInputs = document.querySelectorAll(".filter__from-item2 input");
 
 const filterDev = document.querySelector(".filter__developers");
 const filterDevList = document.querySelector(".filter__developers2");
+const filterDevInputs = document.querySelectorAll(".filter__developers-item2 input");
+let devArr = [];
 
 const filterAdd = document.querySelector(".filter__add");
 const filterAddList = document.querySelector(".filter__add2");
@@ -79,6 +83,8 @@ shadow?.addEventListener("click", () => {
   filterPriceList.classList.remove("active");
   filterAreaList.classList.remove("active");
   filterTitleListM.classList.remove("active");
+
+  for(let i of document.querySelectorAll('.filter__search-inp')) i.value = ''
   
 
   shadow.classList.remove("active");
@@ -157,6 +163,24 @@ filterSearchInput.addEventListener("input", (e) => {
   shadow.classList.add("active");
   if (!e.target.value) filterSearchList.classList.remove("active");
 });
+for(let i = 0; i < filterSearchInputs.length; i++) filterSearchInputs[i].addEventListener('click', ()=>{
+  
+  let labelText = document.querySelectorAll('.filter__search-item label')[i].textContent;
+  
+  if (searchArr.indexOf(labelText) !== -1) {
+    searchArr.splice(searchArr.indexOf(labelText), 1);
+  }
+  else{
+    searchArr.push(labelText);
+  }
+  if(searchArr.join(', ').length > 30){
+    document.querySelector('.filter__search-inp').placeholder = searchArr.join(', ').substring(0, 30) + '...';
+    
+  } 
+  else document.querySelector('.filter__search-inp').placeholder = searchArr.join(', ');
+
+  if(!document.querySelector('.filter__search-inp').placeholder) document.querySelector('.filter__search-inp').placeholder = 'Район, название проекта'
+})
 
 filterFrom.addEventListener("click", () => {
   filterFromList.classList.add("active");
@@ -172,6 +196,24 @@ filterDev.addEventListener("click", () => {
   filterDevList.classList.add("active");
   shadow.classList.add("active");
 });
+for(let i = 0; i < filterDevInputs.length; i++) filterDevInputs[i].addEventListener('click', ()=>{
+  
+  let labelText = document.querySelectorAll('.filter__developers-item2 label')[i].textContent;
+  if (devArr.indexOf(labelText) !== -1) {
+    devArr.splice(devArr.indexOf(labelText), 1);
+  }
+  else{
+    devArr.push(labelText);
+  }
+
+  if(devArr.join(', ').length > 19) document.querySelector('.filter__developers-item f').textContent = devArr.join(', ').substring(0, 19) + '...';
+  else document.querySelector('.filter__developers-item f').textContent = devArr.join(', ');
+
+  let flag = false;
+  for(let k of filterDevInputs) if(k.checked) flag = true;
+  
+  if(!flag) document.querySelector('.filter__developers-item f').textContent = 'Застройщик'
+})
 
 filterAdd.addEventListener("click", () => {
   filterAddList.classList.add("active");
@@ -180,7 +222,6 @@ filterAdd.addEventListener("click", () => {
 for(let i = 0; i < filterAddInputs.length; i++) filterAddInputs[i].addEventListener('click', ()=>{
   
   let labelText = document.querySelectorAll('.filter__add-item2 label')[i].textContent;
-  console.log(labelText)
   if (addArr.indexOf(labelText) !== -1) {
     addArr.splice(addArr.indexOf(labelText), 1);
   }
