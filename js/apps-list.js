@@ -5,7 +5,7 @@ const shadow = document.querySelector(".shadow");
 
 const filterApps = document.querySelector(".filter__apps-item");
 const filterAppsList = document.querySelector(".filter__apps2");
-const filterAppsInputs = document.querySelectorAll('.filter__apps-item2 input');
+const filterAppsInputs = document.querySelectorAll('.filter__apps2.one .filter__apps-item2 input');
 let appsArr = ['Апартаменты'];
 
 const filterSearchInput = document.querySelector(".filter__search-inp");
@@ -146,6 +146,7 @@ filterApps.addEventListener("click", () => {
 for(let i = 0; i < filterAppsInputs.length; i++) filterAppsInputs[i].addEventListener('click', ()=>{
   
   let labelText = document.querySelectorAll('.filter__apps-item2 label')[i].textContent;
+
   
   if (appsArr.indexOf(labelText) !== -1) {
     appsArr.splice(appsArr.indexOf(labelText), 1);
@@ -156,6 +157,17 @@ for(let i = 0; i < filterAppsInputs.length; i++) filterAppsInputs[i].addEventLis
 
   if(appsArr.join(', ').length > 19) document.querySelector('.filter__apps-item f').textContent = appsArr.join(', ').substring(0, 19) + '...';
   else document.querySelector('.filter__apps-item f').textContent = appsArr.join(', ');
+
+  let flag = false;
+  for(let k of filterAppsInputs){
+    if(k.checked) flag = true;
+    console.log(k.checked)
+    console.log(filterAppsInputs)
+  } 
+  if(!flag){
+    document.querySelector('.filter__apps-item f').textContent = 'Апартаменты';
+    filterAppsInputs[0].checked = true;
+  }
 })
 
 filterSearchInput.addEventListener("input", (e) => {

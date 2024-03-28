@@ -67,6 +67,12 @@ input[type="number"] {
   min-width: 216px;
 }
 
+.filter__apps2{
+  min-width: 220px;
+}
+
+
+
 .filter__apps-item {
   padding: 0;
   border-right: 0px;
@@ -388,6 +394,10 @@ input[type="number"] {
   line-height: 155%;
   font-size: 16px;
   max-width: 1070px;
+}
+
+.filter__price3{
+  border: 0px;
 }
 
 .filter__price2-item{
