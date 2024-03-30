@@ -300,12 +300,28 @@ for (let i = 0; i < swiperLikes.length; i++) {
 
 /*/ mobile /*/
 
+const disctrictsSearchInput = document.querySelector(".mobile .filter__search-box");
+let searchInput = document.querySelectorAll(".filter__search-box input")[document.querySelectorAll(".filter__search-box input").length - 1];
+const filterDistrictsList =  document.querySelector(".filter__search-list.filter__choice.mobile")
+const filterDistrictsInputs = document.querySelectorAll('.filter__search-list.mobile .filter__search-item input');
+const filterDistrictsBtn1 = document.querySelector('.filter__search-list.mobile .filter__apps-btn1');
+const filterDistrictsBtn2 = document.querySelector('.filter__search-list.mobile .filter__apps-btn2');
+let districtsArr = []
+
 const filterAppsM = document.querySelector(".mobile .filter__apps-item");
 const filterAppsListM = document.querySelector(".filter__apps2.mobile");
 const filterAppsMInputs = document.querySelectorAll(".filter__apps2.mobile .filter__apps-item2 input");
 const filterAppsBtn1 = document.querySelector('.filter__apps2.mobile .filter__apps-btn1');
 const filterAppsBtn2 = document.querySelector('.filter__apps2.mobile .filter__apps-btn2');
 const filterAppsClose = document.querySelector('.filter__apps2.mobile svg');
+
+const filterDevM =  document.querySelector(".apps__list-filters.mobile .filter__developers-item")
+const filterDevListM =  document.querySelector(".filter__dev-list.mobile")
+const filterDevMInputs = document.querySelectorAll('.filter__dev-list.mobile .filter__dev-item input');
+const filterDevBtn1 = document.querySelector('.filter__dev-list.mobile .filter__apps-btn1');
+const filterDevBtn2 = document.querySelector('.filter__dev-list.mobile .filter__apps-btn2');
+const filterDevClose = document.querySelector('.filter__dev-list.mobile svg');
+
 
 const filterPriceM = document.querySelector('.apps__list-filters.mobile .filter__price2-list');
 const filterPriceMList = document.querySelector('.filter__price3.mobile');
@@ -341,17 +357,9 @@ for(let i of filterFromBtns) i.addEventListener('click', ()=>{
   i.classList.add('active')
 })
 
-const disctrictsSearchInput = document.querySelector(
-  ".mobile .filter__search-box"
-);
 
-let searchInput = document.querySelectorAll(".filter__search-box input")[
-  document.querySelectorAll(".filter__search-box input").length - 1
-];
 disctrictsSearchInput.addEventListener("click", () => {
-  document
-    .querySelector(".filter__search-list.filter__choice.mobile")
-    .classList.add("active");
+  filterDistrictsList.classList.add("active");
 
   searchInput.readOnly = false;
   disctrictsSearchInput.disabled = true;
@@ -369,11 +377,53 @@ searchInput.addEventListener("input", () => {
 document.querySelector(".filter__list-close").addEventListener("click", () => {
   searchInput.readOnly = true;
   disctrictsSearchInput.disabled = false;
-  document
-    .querySelector(".filter__search-list.filter__choice.mobile")
-    .classList.remove("active");
+  filterDistrictsList.classList.remove("active");
+  shadow.classList.remove('active')
   unblockScroll();
+  for(let j of document.querySelectorAll('.filter__search-inp')){
+    j.value = ''
+  } 
 });
+filterDistrictsBtn1.addEventListener('click', ()=>{
+  for(let i of filterDistrictsInputs) i.checked = false;
+
+  for(let j of document.querySelectorAll('.filter__search-inp')){
+    j.value = ''
+    j.placeholder = 'Район, название проекта';
+  } 
+
+  districtsArr = []
+
+})
+filterDistrictsBtn2.addEventListener('click', ()=>{
+
+  if(districtsArr.join(', ').length > 35) for(let i of document.querySelectorAll('.filter__search-inp')){
+    i.placeholder = districtsArr.join(', ').substring(0, 35) + '...';
+    i.value = ''
+  }
+  else for(let j of document.querySelectorAll('.filter__search-inp')){
+    j.placeholder = districtsArr.join(', ');
+    j.value = ''
+  } 
+
+  filterDistrictsList.classList.remove("active");
+  shadow.classList.remove("active");
+  unblockScroll();
+})
+for(let i = 0; i < filterDistrictsInputs.length; i++) filterDistrictsInputs[i].addEventListener('click', ()=>{
+  
+  let labelText = document.querySelectorAll('.filter__search-list.mobile .filter__search-item label')[i].textContent;
+
+  if (districtsArr.indexOf(labelText) !== -1) {
+    districtsArr.splice(districtsArr.indexOf(labelText), 1);
+  }
+  else{
+    districtsArr.push(labelText);
+  }
+
+
+})
+
 
 filterAppsM.addEventListener("click", () => {
   filterAppsListM.classList.add("active");
@@ -419,7 +469,48 @@ filterAppsClose.addEventListener("click", () => {
   unblockScroll();
 });
 
+filterDevM.addEventListener("click", () => {
+  filterDevListM.classList.add("active");
+  blockScroll()
+});
+filterDevBtn1.addEventListener('click', ()=>{
+  for(let i of filterDevMInputs) i.checked = false;
+  filterDevMInputs[0].checked = true;
+  for(let j of document.querySelectorAll('.filter__developers-item f')) j.textContent = 'Все застройщики';
 
+  devArr = ['']
+
+
+})
+filterDevBtn2.addEventListener('click', ()=>{
+
+  if(devArr.join(', ').length > 35) for(let i of document.querySelectorAll('.filter__developers-item f')){
+    i.textContent = devArr.join(', ').substring(0, 35) + '...';
+  }
+  else for(let j of document.querySelectorAll('.filter__developers-item f')) j.textContent = devArr.join(', ');
+
+  filterDevListM.classList.remove("active");
+  unblockScroll();
+})
+for(let i = 0; i < filterDevMInputs.length; i++) filterDevMInputs[i].addEventListener('click', ()=>{
+  
+  let labelText = document.querySelectorAll('.filter__dev-item label')[i].textContent;
+  if(labelText != 'Все застройщики'){
+    filterDevMInputs[0].checked = false;
+
+  }
+  if (devArr.indexOf(labelText) !== -1) {
+    devArr.splice(devArr.indexOf(labelText), 1);
+  }
+  else{
+    devArr.push(labelText);
+  }
+
+})
+filterDevClose.addEventListener('click', ()=>{
+  filterDevListM.classList.remove("active");
+  unblockScroll()
+})
 
 filterDateM.addEventListener("click", () => {
   filterDateListM.classList.add("active");

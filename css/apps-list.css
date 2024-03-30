@@ -734,7 +734,7 @@ input[type="number"] {
     position: relative;
     display: none;
  }
- .filter__rent-item, .filter__rent-item2, .filter__date-item2, .filter__area2.filter__choice .filter__area2-item{
+ .filter__rent-item, .filter__rent-item2, .filter__date-item2, .filter__area2.filter__choice .filter__area2-item, .filter__dev-item{
   display: flex;
     justify-content: space-between;
     align-items: center;
@@ -747,6 +747,11 @@ input[type="number"] {
    border-top: 1px solid #cecece;
     padding-left: 1px;
     padding-right: 1px;
+ }
+ .filter__dev-item{
+  border-bottom: 1px solid #cecece;
+  padding-left: 1px;
+  padding-right: 1px;
  }
  .filter__price2-item{
   padding: 10px;
@@ -800,4 +805,86 @@ input[type="number"] {
 .filter__price3{
   left: 0px;
 }
+
+.filter__search-list.filter__choice .filter__search-box svg{
+  margin-bottom: 0px;
+  align-self: center;
+}
+.filter__search-list.filter__choice.mobile.active, .filter__dev-list.mobile{
+  max-height: 390px;
+}
+.filter__dev-list.mobile{
+  top: 0px;
+  border-radius: 0px;
+  min-height: 100svh;
+  overflow-x: unset;
+  overflow-y: unset;
+  position: fixed;
+}
+.filter__dev-list.mobile svg{
+  position: unset;
+}
+.filter__dev-box svg{
+  position: unset;
+  margin-bottom: 0px;
+  align-self: center;
+}
+.filter__dev-box{
+
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--Stroke, #c9c9c9);
+  background: var(--White, #fff);
+  padding: 10px 12px 10px;
+  margin-bottom: 13px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+ 
+}
+.filter__dev-inp{
+  color: #858585;
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+  border: none;
+  color: var(--Grey, #858585);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.filter__search-list::-webkit-scrollbar,
+.filter__developers2::-webkit-scrollbar {
+  width: unset;
+
+  background: unset;
+}
+
+.filter__search-list::-webkit-scrollbar-track,
+.filter__developers2::-webkit-scrollbar-track {
+  background: unset;
+
+  border-radius: unset;
+}
+
+.filter__search-list::-webkit-scrollbar-thumb,
+.filter__developers2::-webkit-scrollbar-thumb {
+  background: unset;
+  border-radius: unset;
+}
+
+.filter__dev-item .custom-checkbox + label{
+  padding: 8px 20px;
+}
+.filter__list-box{
+  overflow-x: unset;
+}
+.filter__dev-inp:focus{
+  outline: none;
+}
+
 }
