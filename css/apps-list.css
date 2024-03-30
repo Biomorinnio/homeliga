@@ -726,4 +726,78 @@ input[type="number"] {
   .favorites__list {
     margin-bottom: 27px;
   }
+
+ .filter__rent-list{
+  border-radius: 8px;
+    border: 1px solid #c9c9c9;
+    cursor: pointer;
+    position: relative;
+    display: none;
+ }
+ .filter__rent-item, .filter__rent-item2, .filter__date-item2, .filter__area2.filter__choice .filter__area2-item{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    color: #2e2f36;
+    font-size: 14px;
+    padding: 11px 18px;
+  }
+  .filter__rent-item2, .filter__date-item2, .filter__date-item2, .filter__area2.filter__choice .filter__area2-item{
+   border-top: 1px solid #cecece;
+    padding-left: 1px;
+    padding-right: 1px;
+ }
+ .filter__price2-item{
+  padding: 10px;
+  border: 1px solid #C9C9C9;
+  color: #242424 !important;
+ }
+ .filter__area2-item{
+  color: #242424 !important;
+ }
+ .filter__rent2{
+  bottom: 0px;
+ }
+ .filter__choice.mobile.active{
+  display: flex !important;
+  gap: 0px;
+ }
+ .filter__choice svg{
+  align-self: flex-end;
+  margin-bottom: 13px;
+ }
+
+ .filter__date-btn1 {
+  width: 100%;
+  padding: 11px 0px;
+  color: var(--Dark, #2e2f36);
+  border-radius: 8px;
+  background: var(--Grey-BG, #f3f3f3);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.filter__date-btn2 {
+  padding: 11px 0px;
+  color: var(--White, #fff);
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+}
+.filter__choice{
+  max-height: unset;
+}
+.filter__area2.filter__choice{
+  top: unset;
+  left: unset;
+}
+.filter__price3{
+  left: 0px;
+}
 }

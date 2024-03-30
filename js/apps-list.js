@@ -81,8 +81,11 @@ shadow?.addEventListener("click", () => {
   filterAppsListM.classList.remove("active");
   filterDateListM.classList.remove("active");
   filterPriceList.classList.remove("active");
+  filterPriceMList.classList.remove("active");
   filterAreaList.classList.remove("active");
   filterTitleListM.classList.remove("active");
+  filterRentList.classList.remove('active')
+  filterAreaMList.classList.remove('active')
 
   for(let i of document.querySelectorAll('.filter__search-inp')) i.value = ''
   
@@ -159,11 +162,8 @@ for(let i = 0; i < filterAppsInputs.length; i++) filterAppsInputs[i].addEventLis
   else document.querySelector('.filter__apps-item f').textContent = appsArr.join(', ');
 
   let flag = false;
-  for(let k of filterAppsInputs){
-    if(k.checked) flag = true;
-    console.log(k.checked)
-    console.log(filterAppsInputs)
-  } 
+  for(let k of filterAppsInputs) if(k.checked) flag = true;
+   
   if(!flag){
     document.querySelector('.filter__apps-item f').textContent = 'Апартаменты';
     filterAppsInputs[0].checked = true;
@@ -302,13 +302,34 @@ for (let i = 0; i < swiperLikes.length; i++) {
 
 const filterAppsM = document.querySelector(".mobile .filter__apps-item");
 const filterAppsListM = document.querySelector(".filter__apps2.mobile");
+const filterAppsMInputs = document.querySelectorAll(".filter__apps2.mobile .filter__apps-item2 input");
+const filterAppsBtn1 = document.querySelector('.filter__apps2.mobile .filter__apps-btn1');
+const filterAppsBtn2 = document.querySelector('.filter__apps2.mobile .filter__apps-btn2');
+const filterAppsClose = document.querySelector('.filter__apps2.mobile svg');
+
+const filterPriceM = document.querySelector('.apps__list-filters.mobile .filter__price2-list');
+const filterPriceMList = document.querySelector('.filter__price3.mobile');
+const filterPriceMInputs = document.querySelectorAll('.filter__price3.mobile .filter__price2-item input');
+const filterPriceClose = document.querySelector('.filter__price3 svg');
 
 const filterDateM = document.querySelector('.mobile .filter__date');
 const filterDateListM = document.querySelector('.filter__date2');
+const filterDateInputs = document.querySelectorAll('.filter__date2 input');
+const filterDateBtn1 = document.querySelector('.filter__date-btn1');
+const filterDateBtn2 = document.querySelector('.filter__date-btn2');
+const dateArr = [];
+const filterDateClose = document.querySelector('.filter__date2 svg');
 
+const filterRent = document.querySelector('.filter__rent-list');
+const filterRentList = document.querySelector('.filter__rent2');
+const filterRentInputs = document.querySelectorAll('.filter__rent-item2 input');
+const filterRentClose = document.querySelector('.filter__rent2 svg');
 
 const filterAreaM = document.querySelector('.filter__area2-list');
-const filterAreaMList = document.querySelector('.filter__area2');
+const filterAreaMList = document.querySelector('.filter__area2.mobile');
+const filterAreaMInputs = document.querySelectorAll('.filter__area2.mobile .filter__area2-item input');
+const filterAreaClose = document.querySelector('.filter__area2 svg');
+
 
 const filterTitleM = document.querySelector('.filter__icon.mobile');
 const filterTitleListM = document.querySelector('.apps__title-filter2.filter__choice.mobile');
@@ -316,8 +337,8 @@ const filterTitleListM = document.querySelector('.apps__title-filter2.filter__ch
 const filterFromBtns = document.querySelectorAll('.filter__from-btn');
 
 for(let i of filterFromBtns) i.addEventListener('click', ()=>{
-
-  i.classList.toggle('active')
+  for(let j of filterFromBtns) j.classList.remove('active')
+  i.classList.add('active')
 })
 
 const disctrictsSearchInput = document.querySelector(
@@ -359,10 +380,116 @@ filterAppsM.addEventListener("click", () => {
   shadow.classList.add("active");
   blockScroll();
 });
+filterAppsBtn1.addEventListener('click', ()=>{
+  for(let i of filterAppsMInputs) i.checked = false;
+  filterAppsMInputs[0].checked = true;
+  for(let j of document.querySelectorAll('.filter__apps-item f')) j.textContent = 'Апартаменты';
+
+  appsArr = ['Апартаменты']
+
+
+})
+filterAppsBtn2.addEventListener('click', ()=>{
+
+  if(appsArr.join(', ').length > 35) for(let i of document.querySelectorAll('.filter__apps-item f')){
+    i.textContent = appsArr.join(', ').substring(0, 35) + '...';
+  }
+  else for(let j of document.querySelectorAll('.filter__apps-item f')) j.textContent = appsArr.join(', ');
+
+  filterAppsListM.classList.remove("active");
+  shadow.classList.remove("active");
+  unblockScroll();
+})
+for(let i = 0; i < filterAppsMInputs.length; i++) filterAppsMInputs[i].addEventListener('click', ()=>{
+  
+  let labelText = document.querySelectorAll('.filter__apps-item2 label')[i].textContent;
+
+  if (appsArr.indexOf(labelText) !== -1) {
+    appsArr.splice(appsArr.indexOf(labelText), 1);
+  }
+  else{
+    appsArr.push(labelText);
+  }
+
+
+})
+filterAppsClose.addEventListener("click", () => {
+  filterAppsListM.classList.remove("active");
+  shadow.classList.remove("active");
+  unblockScroll();
+});
+
+
+
 filterDateM.addEventListener("click", () => {
   filterDateListM.classList.add("active");
   shadow.classList.add("active");
   blockScroll();
+});
+for(let i = 0; i < filterDateInputs.length; i++) filterDateInputs[i].addEventListener('click', ()=>{
+
+  let labelText = document.querySelectorAll('.filter__date-item2 label')[i].textContent;
+  if(labelText != 'Любая дата сдачи'){
+    filterDateInputs[0].checked = false;
+
+  }
+  
+  if (dateArr.indexOf(labelText) !== -1) {
+    dateArr.splice(dateArr.indexOf(labelText), 1);
+  }
+  else{
+    dateArr.push(labelText);
+  }
+
+  let flag = false;
+  for(let k of filterDateInputs) if(k.checked) flag = true;
+   
+  if(!flag){
+    document.querySelector('.filter__date-item f').textContent = 'Любая дата сдачи';
+    filterDateInputs[0].checked = true;
+  }
+
+})
+filterDateBtn1.addEventListener('click', ()=>{
+  for(let i of filterDateInputs) i.checked = false;
+  filterDateInputs[0].checked = true;
+  for(let j of document.querySelectorAll('.filter__date-item f')) j.textContent = 'Любая дата сдачи';
+
+  dateArr = ['Любая дата сдачи']
+
+})
+filterDateBtn2.addEventListener('click', ()=>{
+
+  for(let i of document.querySelectorAll('.filter__date-item f')) i.textContent = dateArr.join(', ');
+  
+  filterDateListM.classList.remove("active");
+  shadow.classList.remove("active");
+  unblockScroll();
+})
+filterDateClose.addEventListener("click", () => {
+  filterDateListM.classList.remove("active");
+  shadow.classList.remove("active");
+  unblockScroll();
+});
+
+filterPriceM.addEventListener('click', ()=>{
+  filterPriceMList.classList.add("active");
+  shadow.classList.add("active");
+  blockScroll();
+})
+for(let i = 0; i < filterPriceMInputs.length; i++) filterPriceMInputs[i].addEventListener('click', ()=>{
+  
+  for(let j of filterPriceMInputs) j.checked = false;
+  filterPriceMInputs[i].checked = true;
+
+  let labelText = document.querySelectorAll('.apps__list-filters.mobile .filter__price2-item label')[i].textContent;
+  document.querySelector('.apps__list-filters.mobile .filter__price2-item f').textContent = labelText;
+ 
+})
+filterPriceClose.addEventListener("click", () => {
+  filterPriceMList.classList.remove("active");
+  shadow.classList.remove("active");
+  unblockScroll();
 });
 
 filterAreaM.addEventListener("click", () => {
@@ -375,4 +502,61 @@ filterTitleM.addEventListener("click", () => {
   shadow.classList.add("active");
   blockScroll();
 });
+for(let i = 0; i < filterAreaMInputs.length; i++) filterAreaMInputs[i].addEventListener('click', ()=>{
+
+  for(let j of filterAreaMInputs) j.checked = false;
+  filterAreaMInputs[i].checked = true;
+
+  let labelText = document.querySelectorAll('.filter__area2.mobile .filter__area2-item label')[i].textContent;
+ 
+  document.querySelector('.filter__area2-item f').textContent = labelText;
+
+})
+filterAreaClose.addEventListener("click", () => {
+  filterAreaMList.classList.remove("active");
+  shadow.classList.remove("active");
+  unblockScroll();
+});
+
+filterRent.addEventListener("click", () => {
+  filterRentList.classList.add("active");
+  shadow.classList.add("active");
+  blockScroll();
+});
+for(let i = 0; i < filterRentInputs.length; i++) filterRentInputs[i].addEventListener('click', ()=>{
+
+  for(let j of filterRentInputs) j.checked = false;
+  filterRentInputs[i].checked = true;
+
+  let labelText = document.querySelectorAll('.filter__rent-item2 label')[i].textContent;
+ 
+  document.querySelector('.filter__rent-item f').textContent = labelText;
+
+})
+filterRentClose.addEventListener('click', ()=>{
+  filterRentList.classList.remove("active");
+  shadow.classList.remove("active");
+  unblockScroll();
+})
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+  for(let i of appsFilterBtns){
+    i.addEventListener('click', ()=>{
+      if(i.textContent !== 'Новостройки'){
+        for(let j of document.querySelectorAll('.filter__developers')) j.style.display = 'none';
+        for(let j of document.querySelectorAll('.filter__date')) j.style.display = 'none';
+        document.querySelector('.filter__from-btns').style.display = 'none';
+        filterRent.style.display = 'none';
+  
+        if(i.textContent == 'Аренда') filterRent.style.display = 'block';
+      }
+      else{
+        for(let j of document.querySelectorAll('.filter__developers')) j.style.display = 'block';
+        for(let j of document.querySelectorAll('.filter__date')) j.style.display = 'block';
+        document.querySelector('.filter__from-btns').style.display = 'block';
+        filterRent.style.display = 'none';
+      }
+    })
+  }
+}
 
