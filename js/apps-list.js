@@ -321,6 +321,7 @@ const filterDevMInputs = document.querySelectorAll('.filter__dev-list.mobile .fi
 const filterDevBtn1 = document.querySelector('.filter__dev-list.mobile .filter__apps-btn1');
 const filterDevBtn2 = document.querySelector('.filter__dev-list.mobile .filter__apps-btn2');
 const filterDevClose = document.querySelector('.filter__dev-list.mobile svg');
+let devArrM = []
 
 
 const filterPriceM = document.querySelector('.apps__list-filters.mobile .filter__price2-list');
@@ -333,7 +334,7 @@ const filterDateListM = document.querySelector('.filter__date2');
 const filterDateInputs = document.querySelectorAll('.filter__date2 input');
 const filterDateBtn1 = document.querySelector('.filter__date-btn1');
 const filterDateBtn2 = document.querySelector('.filter__date-btn2');
-const dateArr = [];
+let dateArr = [];
 const filterDateClose = document.querySelector('.filter__date2 svg');
 
 const filterRent = document.querySelector('.filter__rent-list');
@@ -473,24 +474,9 @@ filterDevM.addEventListener("click", () => {
   filterDevListM.classList.add("active");
   blockScroll()
 });
-filterDevBtn1.addEventListener('click', ()=>{
-  for(let i of filterDevMInputs) i.checked = false;
-  filterDevMInputs[0].checked = true;
-  for(let j of document.querySelectorAll('.filter__developers-item f')) j.textContent = 'Все застройщики';
-
-  devArr = ['']
-
-
-})
-filterDevBtn2.addEventListener('click', ()=>{
-
-  if(devArr.join(', ').length > 35) for(let i of document.querySelectorAll('.filter__developers-item f')){
-    i.textContent = devArr.join(', ').substring(0, 35) + '...';
-  }
-  else for(let j of document.querySelectorAll('.filter__developers-item f')) j.textContent = devArr.join(', ');
-
+filterDevClose.addEventListener('click', ()=>{
   filterDevListM.classList.remove("active");
-  unblockScroll();
+  unblockScroll()
 })
 for(let i = 0; i < filterDevMInputs.length; i++) filterDevMInputs[i].addEventListener('click', ()=>{
   
@@ -498,19 +484,46 @@ for(let i = 0; i < filterDevMInputs.length; i++) filterDevMInputs[i].addEventLis
   if(labelText != 'Все застройщики'){
     filterDevMInputs[0].checked = false;
 
-  }
-  if (devArr.indexOf(labelText) !== -1) {
-    devArr.splice(devArr.indexOf(labelText), 1);
+    if (devArrM.indexOf(labelText) !== -1) {
+      devArrM.splice(devArrM.indexOf(labelText), 1);
+    }
+    else{
+      devArrM.push(labelText);
+    }
   }
   else{
-    devArr.push(labelText);
+    for(let i of filterDevMInputs) i.checked = false;
+    filterDevMInputs[0].checked = true;
+    devArrM = ['']
   }
 
+
+
+
 })
-filterDevClose.addEventListener('click', ()=>{
+filterDevBtn1.addEventListener('click', ()=>{
+  for(let i of filterDevMInputs) i.checked = false;
+  filterDevMInputs[0].checked = true;
+  for(let j of document.querySelectorAll('.filter__developers-item f')) j.textContent = 'Все застройщики';
+
+  devArrM = ['']
+
+
+})
+filterDevBtn2.addEventListener('click', ()=>{
+  if(devArrM[0] == 'Все застройщики') devArrM.shift();
+  if(devArrM[0] == '') devArrM[0] = ['Все застройщики'];
+
+  if(devArrM.join(', ').length > 35) for(let i of document.querySelectorAll('.filter__developers-item f')){
+    i.textContent = devArrM.join(', ').substring(0, 35) + '...';
+  }
+  else for(let j of document.querySelectorAll('.filter__developers-item f')) j.textContent = devArrM.join(', ');
+
   filterDevListM.classList.remove("active");
-  unblockScroll()
+  unblockScroll();
 })
+
+
 
 filterDateM.addEventListener("click", () => {
   filterDateListM.classList.add("active");
@@ -523,22 +536,29 @@ for(let i = 0; i < filterDateInputs.length; i++) filterDateInputs[i].addEventLis
   if(labelText != 'Любая дата сдачи'){
     filterDateInputs[0].checked = false;
 
-  }
+    if (dateArr.indexOf(labelText) !== -1) {
+      dateArr.splice(dateArr.indexOf(labelText), 1);
+    }
+    else{
+      dateArr.push(labelText);
+    }
   
-  if (dateArr.indexOf(labelText) !== -1) {
-    dateArr.splice(dateArr.indexOf(labelText), 1);
+    let flag = false;
+    for(let k of filterDateInputs) if(k.checked) flag = true;
+     
+    if(!flag){
+      document.querySelector('.filter__date-item f').textContent = 'Любая дата сдачи';
+      filterDateInputs[0].checked = true;
+    }
+
   }
   else{
-    dateArr.push(labelText);
-  }
-
-  let flag = false;
-  for(let k of filterDateInputs) if(k.checked) flag = true;
-   
-  if(!flag){
-    document.querySelector('.filter__date-item f').textContent = 'Любая дата сдачи';
+    for(let i of filterDateInputs) i.checked = false;
     filterDateInputs[0].checked = true;
+    dateArr = ['Любая дата сдачи']
   }
+  
+ 
 
 })
 filterDateBtn1.addEventListener('click', ()=>{
@@ -550,6 +570,8 @@ filterDateBtn1.addEventListener('click', ()=>{
 
 })
 filterDateBtn2.addEventListener('click', ()=>{
+  if(dateArr[0] == 'Любая дата сдачи') dateArr.shift();
+  if(!dateArr.length) dateArr[0] = ['Любая дата сдачи'];
 
   for(let i of document.querySelectorAll('.filter__date-item f')) i.textContent = dateArr.join(', ');
   
