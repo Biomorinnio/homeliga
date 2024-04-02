@@ -5802,8 +5802,8 @@ color: #858585;
     margin: 0;
   }
   .header__phone svg {
-    width: 14px;
-    height: 24px;
+    width: 17px;
+    height: 100%;
   }
   .header__top-right {
     margin-top: 0px;
