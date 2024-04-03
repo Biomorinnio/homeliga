@@ -673,3 +673,19 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   }
 }
 
+
+
+
+const openPopupBtn = document.querySelector('.favorites__btn');
+const closePopup = document.querySelector('.modal-dialog .close')
+const popup = document.querySelector('.modal');
+
+openPopupBtn.addEventListener('click', ()=>{
+    popup.classList.add('active');
+    openedPopup();
+})
+
+closePopup.addEventListener('click', ()=>{
+  popup.classList.remove('active');
+  closedPopup();
+})

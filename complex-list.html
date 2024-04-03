@@ -27,7 +27,22 @@
 
     </div>
 
-
+    <div id="openModal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+              <a title="Close" class="close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 2.01429L17.9857 0L10 7.98571L2.01429 0L0 2.01429L7.98571 10L0 17.9857L2.01429 20L10 12.0143L17.9857 20L20 17.9857L12.0143 10L20 2.01429Z" fill="#fff"/>
+                  </svg>
+              </a>
+          </div>
+          <div class="modal-body">    
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa8b88211b67b2f798644cd7625a9fba61cec79fa2bec939943171680a41a883d&amp;source=constructor" width="1170" height="580" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
    
 
 
@@ -838,7 +853,7 @@
                   <div class="complexes__inner">
                       <h2 class="complexes__title">Найдено 12 комплексов</h2>
                       <button class="complexes__inner-btn">
-                        <a href="#" class="complexes__inner-link">
+                        <a class="complexes__inner-link">
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.1471 15L4.85294 13.1361L1.05882 14.6228C0.794117 14.7263 0.551471 14.6967 0.330882 14.534C0.110294 14.3713 0 14.1568 0 13.8905V2.24112C0 2.06361 0.0479413 1.90444 0.143824 1.76361C0.239118 1.62337 0.367647 1.52367 0.529412 1.4645L4.85294 0L10.1471 1.86391L13.9412 0.377219C14.2059 0.273669 14.4485 0.295858 14.6691 0.443787C14.8897 0.591716 15 0.806213 15 1.08728V12.7811C15 12.9734 14.9485 13.1361 14.8456 13.2692C14.7426 13.4024 14.6029 13.4985 14.4265 13.5577L10.1471 15ZM9.48529 13.3802V2.99556L5.51471 1.59763V11.9822L9.48529 13.3802ZM10.8088 13.3802L13.6765 12.426V1.90828L10.8088 2.99556V13.3802ZM1.32353 13.0917L4.19118 11.9822V1.59763L1.32353 2.57396V13.0917Z" fill="white"/>
                             </svg>
@@ -1531,6 +1546,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/complex-list.js"></script>
 
   </body>
 </html>

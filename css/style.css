@@ -279,6 +279,13 @@ hr {
   background: #35363d;
   padding-top: 17px;
   padding-bottom: 16px;
+  position: fixed;
+  z-index: 99;
+ 
+}
+
+.main.main{
+  margin-top: 99px;
 }
 
 .header__top-right{
@@ -1317,7 +1324,7 @@ ul.filter__search-list li.filter__search-item:nth-child(4) {
 
   font-size: 14px;
 
-  font-weight: 400;
+  font-weight: 300;
   line-height: 160%; /* 19.2px */
 }
 
@@ -2966,6 +2973,10 @@ padding: 0 30px;
   .navigation{
     margin-top: 28px;
   }
+  
+.main.main{
+  margin-top: 97px;
+}
 }
 
 @media (max-width: 1220px) {
@@ -3035,6 +3046,15 @@ padding: 0 30px;
   }
 
   .districts__item.none {
+    display: none !important;
+  }
+  .main.main{
+    margin-top: 87px;
+  }
+  .header.other-pages{
+    position: fixed !important;
+  }
+  .header__favorites.mobile{
     display: none !important;
   }
 }
@@ -3585,7 +3605,7 @@ padding: 0 30px;
 
     font-size: 14px;
 
-    font-weight: 400;
+    font-weight: 300;
     line-height: 160%; /* 19.2px */
   }
   .swiper__title {
