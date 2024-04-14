@@ -4536,7 +4536,9 @@ padding: 0 30px;
   .filter__list-close {
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 18px;
+    width: 15px;
+    height: 15px;
   }
   .filter__search-list.filter__choice .filter__search-box {
     margin: 44px 20px 24px;

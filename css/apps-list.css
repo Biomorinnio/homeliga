@@ -359,12 +359,14 @@ input[type="number"] {
 .apps__title-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   color: #2e2f36;
   font-weight: 500;
   font-size: 14px;
-  padding: 11px 18px;
+  padding: 11px 0px;
   cursor: pointer;
+  min-width: 185px;
 }
 
 .apps__title-item2 {
@@ -374,6 +376,10 @@ input[type="number"] {
   color: #2e2f36;
   font-weight: 500;
   font-size: 14px;
+}
+
+.apps__title-filter2.filter__choice{
+  padding-right: 0px;
 }
 
 .favorites__list {
@@ -394,6 +400,7 @@ input[type="number"] {
   line-height: 155%;
   font-size: 16px;
   max-width: 1070px;
+  font-weight: 300;
 }
 
 .filter__price3{
@@ -433,6 +440,7 @@ input[type="number"] {
 .modal-dialog iframe{
   border-radius: 20px;
   width: 100%;
+  height: 760px;
 }
 
 @media (max-width: 1440px) {
@@ -651,6 +659,26 @@ input[type="number"] {
   .filter__area {
     display: none;
   }
+
+  .swiper__card-item.none{
+    display: block !important;
+  }
+  .swiper__card-list{
+   justify-content: space-between;
+  }
+
+  .swiper__card-list svg:hover circle {
+    fill: #fff;
+  }
+  .swiper__card-box svg:hover > g path{
+    fill: #000;
+  }
+  .swiper__card-list svg.clicked circle {
+    fill: #b4a06b;
+  }
+  .swiper__card-box svg.clicked > g path{
+    fill: #fff;
+  }
 }
 
 @media (max-width: 768px) {
@@ -788,6 +816,9 @@ input[type="number"] {
  .filter__choice svg{
   align-self: flex-end;
   margin-bottom: 13px;
+  width: 15px;
+  height: 15px;
+  top: 18px;
  }
 
  .filter__date-btn1 {
@@ -909,8 +940,28 @@ input[type="number"] {
   height: 400px;
 }
 .modal-dialog iframe{
-  height: 400px;
+  height: 520px;
 }
+.apps__list-btn{
+  width: 100%;
+}
+.apps__list-btns{
+  width: 100%;
+}
+.filter__col{
+  flex-wrap: unset;
+  margin-right: 0px;
+}
+.filter__col-item{
+  width: 100%;
+}
+.filter__price-item2 input, .filter__area-item input{
+  max-width: unset;
+}
+.apps__title-filter2.filter__choice{
+  padding-right: 20px;
+}
+
 
 }
 

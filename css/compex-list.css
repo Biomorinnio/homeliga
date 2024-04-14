@@ -10,6 +10,9 @@
 .navigation {
   margin: 17px 0px 20px;
 }
+.custom-checkbox + label{
+    cursor: pointer;
+}
 .navigation__inner {
   display: flex;
   align-items: center;
@@ -23,6 +26,10 @@
 }
 .navigation__text:hover {
   opacity: 1;
+}
+.filter__price2-item.spec{
+    min-width: 75px;
+    justify-content: space-between;
 }
 
 .navigation__text:last-child {
@@ -196,6 +203,7 @@ font-weight: 500;
     line-height: 155%;
     font-size: 16px;
     max-width: 1070px;
+    font-weight: 300;
 }
 
 .modal-dialog{
@@ -211,6 +219,7 @@ font-weight: 500;
 .modal-dialog iframe{
     border-radius: 20px;
     width: 100%;
+    height: 760px;
 }
 
 @media (max-width: 1440px) {
@@ -297,8 +306,8 @@ font-weight: 500;
         height: 400px;
     }
     .modal-dialog iframe{
-        height: 400px;
-    }
+        height: 520px;
+      }
     .complexes__list{
         margin-top: 65px;
     }
@@ -405,5 +414,12 @@ font-weight: 500;
     }
     .swiper__text-box{
         padding: 10px 20px 17px;
+    }
+
+    .filter__search-box .filter__search-list.active{
+        display: none;
+    }
+    .filter__search-list.filter__choice{
+        position: fixed;
     }
 }

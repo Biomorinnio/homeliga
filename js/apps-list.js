@@ -29,6 +29,9 @@ let addArr = [];
 
 const filterTitle = document.querySelector(".apps__title-filter");
 const filterTitleList = document.querySelector(".apps__title-filter2");
+const filterTitleItems = document.querySelectorAll('.apps__title-filter2 .apps__title-item2');
+const filterTitleInputs = document.querySelectorAll('.apps__title-filter2 input');
+const filterTitleTextes = document.querySelectorAll('.apps__title-filter2 .apps__title-item2 f');
 
 const filterPrice = document.querySelector('.filter__price2-list');
 const filterPriceList = document.querySelector('.filter__price3');
@@ -675,6 +678,26 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 
 
 
+if (window.matchMedia("(max-width: 768px)").matches) {
+  for(let i = 0; i < filterTitleInputs.length; i++){
+    filterTitleInputs[i].addEventListener('click', ()=>{
+
+        for(let j of filterTitleInputs) j.checked = false;
+        filterTitleInputs[i].checked = true;
+        
+      })
+    }
+  }
+
+  for(let i = 0; i < filterTitleItems.length; i++){
+    filterTitleItems[i].addEventListener('click', ()=>{
+      let text = document.querySelector('.apps__title-filter .apps__title-item f').textContent
+      document.querySelector('.apps__title-filter .apps__title-item f').textContent = filterTitleTextes[i].textContent
+      filterTitleTextes[i].textContent = text;
+      })
+    }
+  
+
 
 const openPopupBtn = document.querySelector('.favorites__btn');
 const closePopup = document.querySelector('.modal-dialog .close')
@@ -686,6 +709,6 @@ openPopupBtn.addEventListener('click', ()=>{
 })
 
 closePopup.addEventListener('click', ()=>{
-  popup.classList.remove('active');
-  closedPopup();
+    popup.classList.remove('active');
+    closedPopup();
 })
