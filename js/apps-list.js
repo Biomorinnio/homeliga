@@ -699,16 +699,25 @@ if (window.matchMedia("(max-width: 768px)").matches) {
   
 
 
-const openPopupBtn = document.querySelector('.favorites__btn');
-const closePopup = document.querySelector('.modal-dialog .close')
-const popup = document.querySelector('.modal');
 
-openPopupBtn.addEventListener('click', ()=>{
-    popup.classList.add('active');
-    openedPopup();
-})
-
-closePopup.addEventListener('click', ()=>{
-    popup.classList.remove('active');
-    closedPopup();
-})
+    const openPopupBtn = document.querySelector('.favorites__inner .favorites__btn');
+    const popup = document.querySelector('.modal');
+    const popupClose = document.querySelector('.modal .close')
+    
+    openPopupBtn.addEventListener('click', ()=>{
+        popup.classList.add('active');
+        openedPopup();
+    
+    })
+    
+    popup.addEventListener('click', ()=>{
+      popup.classList.remove('active');
+      closedPopup();
+    
+    })
+    
+    popupClose.addEventListener('click', ()=>{
+      popup.classList.remove('active');
+      closedPopup();
+    
+    })

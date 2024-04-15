@@ -302,8 +302,8 @@ font-weight: 500;
 
 @media (max-width:768px) {
     .modal-dialog{
-        width: calc(100% - 110px);
-        height: 400px;
+        width: calc(100% - 80px);
+        margin: 0;
     }
     .modal-dialog iframe{
         height: 520px;

@@ -14,11 +14,25 @@ function closedPopup() {
 }
 
 const openPopupBtn = document.querySelector('.complexes__inner-link');
-const popup = document.querySelector('.modal')
+const popup = document.querySelector('.modal');
+const popupClose = document.querySelector('.modal .close')
 
 openPopupBtn.addEventListener('click', ()=>{
     popup.classList.add('active');
     openedPopup();
+
+})
+
+popup.addEventListener('click', ()=>{
+  popup.classList.remove('active');
+  closedPopup();
+
+})
+
+popupClose.addEventListener('click', ()=>{
+  popup.classList.remove('active');
+  closedPopup();
+
 })
 
 const burgerOpen = document.querySelectorAll(".header__burger");
@@ -54,6 +68,8 @@ shadow?.addEventListener("click", () => {
   filterPriceMList.classList.remove('active')
 
   shadow.classList.remove("active");
+
+
 
   for(let i of document.querySelectorAll('.filter__search-inp')) i.value = ''
 
